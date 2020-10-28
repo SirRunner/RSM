@@ -1,0 +1,64 @@
+;;;;;;;;;;;;;;;;;x
+mobile_artillery;Mobile Artillery;;;;;;;;;;;;;;;;;x
+guard;Motorized Infantry;;;;;;;;;;;;;;;;;x
+irregular;Light Infantry;;;;;;;;;;;;;;;;;x
+cavalry;Picket Cavalry;;;;;;;;;;;;;;;;;x
+hussar;Light Cavalry;;;;;;;;;;;;;;;;;x
+artillery;Heavy Artillery;;;;;;;;;;;;;;;;;x
+strategic_mobility;Army Mobility;;;;;;;;;;;;;;;;;x
+machine_guns;Automatic Weapons;;;;;;;;;;;;;;;;;x
+volley_fire;Volley Fire;;;;;;;;;;;;;;;;;x
+volley_fire_desc;Firing in volleys help to make infantry attacks coordinated and more effective. Beyond this increase in firepower, it also helps the overall morale of the unit;;;;;;;;;;;;;;;;;x
+artillery_activation;Heavy Artillery;;;;;;;;;;;;;;;;;x
+artillery_activation_desc;This literally is an invention to ensure that uncivs can only recruit Mobile Artillery;;;;;;;;;;;;;;;;;x
+column_formation;Column Formation;;;;;;;;;;;;;;;;;x
+column_formation_desc;Column formation allows infantry to move more quickly than any battle formation. However, this formation spread an army out, reducing the overall defense of the army;;;;;;;;;;;;;;;;;x
+line_formation;Line Formation;;;;;;;;;;;;;;;;;x
+line_formation_desc;Line formation allows infantry to bring in the maximum firepower the unit can support. However, because of relatively slow rate of fire, the line falls prey to cavalry charges rather easily;;;;;;;;;;;;;;;;;x
+square_formation;Square Formation;;;;;;;;;;;;;;;;;x
+square_formation_desc;Square formation allows infantry to form a defensive square against cavalry charges. Each side features multiple rows of infantry, with each man pointing their bayonets outwards.;;;;;;;;;;;;;;;;;x
+bayonets;Bayonets;;;;;;;;;;;;;;;;;x
+bayonets_desc;Poke poke stab stab. Oh boy here I dab.;;;;;;;;;;;;;;;;;x
+screen_and_shock_cavalry;Screen and Shock Cavalry;;;;;;;;;;;;;;;;;x
+screen_and_shock_cavalry_desc;During Napoleonic times, cavalry was used in two cases. Some cavalry were used as scouts - they did not truly play a large role in combat itself. However, that does not mean that that cavalry was unimportant. On the other hand, cavalry was also used as heavy cavalry, meant for quick strikes against an unprepared opponent.;;;;;;;;;;;;;;;;;x
+field_artillery;Field Artillery;;;;;;;;;;;;;;;;;x
+field_artillery_desc;After Napoleon, it was clear that artillery was a must for any army, regardless of the terrain in which they would be fighting. Even though the emphasis was on mobile artillery that could quickly change its position on the battlefield, heavier artillery still had its role.;;;;;;;;;;;;;;;;;x
+round_shot;Round Shot;;;;;;;;;;;;;;;;;x
+round_shot_desc;Your basic cannonball. Did you expect a long description?;;;;;;;;;;;;;;;;;x
+canister_shot;Canister Shot;;;;;;;;;;;;;;;;;x
+canister_shot_desc;At close range, artillery would usually switch their shot to canister shot - just a tin can fill with projectiles such a nails or bullets. Upon being shot, this essentially turned the artillery piece into a giant shotgun;;;;;;;;;;;;;;;;;x
+long_rifles;Long Rifles;;;;;;;;;;;;;;;;;x
+long_rifles;Long rifles typically were just normal flintlock rifles adapted to shoot longer for hunters. These rifles were much more accurate than the normal rifles used by armies.;;;;;;;;;;;;;;;;;x
+skirmisher_infantry;Skirmisher Infantry;;;;;;;;;;;;;;;;;x
+skirmisher_infantry_desc;Before the infantry lines were in range of each other, light infantry would run ahead of the formation and engage the enemy. Their goal was to force the opposing side's light infantry to retreat, allowing their own line infantry to get in formation unharrassed.;;;;;;;;;;;;;;;;;x
+percussion_caps;Percussion Caps;;;;;;;;;;;;;;;;;x
+percussion_caps_desc;The percussion cap allows rifles to fire reliably in any weather conditions. It is a percussion primer which led to the caplock mechanism.;;;;;;;;;;;;;;;;;x
+minie_ball;Minié Ball;;;;;;;;;;;;;;;;;x
+minie_ball_desc;The Minié ball is a spin stabilizing bullet small enough to be put in the barrel of a rifled long gun. It greatly increased the accuracy and range of the weapon it was used in.;;;;;;;;;;;;;;;;;x
+valee_system;Valée System;;;;;;;;;;;;;;;;;x
+valee_system_desc;The Valée System mostly improved the speed of artillery. However, it also slightly improved the range of its weapons and decreased supply consumption by standardizing wheel size and lumber usage.;;;;;;;;;;;;;;;;;x
+military_household;Military Household;;;;;;;;;;;;;;;;;x
+military_household_desc;The military household is the personal military staff of the highest ranking general in the army.;;;;;;;;;;;;;;;;;x
+army_general_headquarters;Army General Headquarters;;;;;;;;;;;;;;;;;x
+army_general_headquarters_desc;The army general headquarters is very similar, yet distinct, from the military household. Essentially, it is all of the men in the upper command structure of the army, as well as their personal staff.;;;;;;;;;;;;;;;;;x
+army_corps;Army Corps;;;;;;;;;;;;;;;;;x
+army_corps_desc;Regardless of the actual name of the different sections of any army, almost every part of an army can be broken down into smaller semi-autonomous units: corps are made of divisions, which are made of brigades, which are made of regiments;;;;;;;;;;;;;;;;;x
+strategic_mobility_invention;Strategic Mobility;;;;;;;;;;;;;;;;;x
+strategic_mobility_invention_desc;Strategic Mobility is the ability to move an army to the battlefield. Clearly this is important...;;;;;;;;;;;;;;;;;x
+operational_mobility;Operational Mobility;;;;;;;;;;;;;;;;;x
+operational_mobility_desc;Operational Mobility is the ability of armies, or sections of armies, to move from one section of the battlefield to another. Clearly this too is important...;;;;;;;;;;;;;;;;;x
+la_hitte_system;La Hitte System;;;;;;;;;;;;;;;;;x
+la_hitte_system_desc;The La Hitte system greatly increased the firepower of artillery.;;;;;;;;;;;;;;;;;x
+rotating_bolt;Rotating Bolt;;;;;;;;;;;;;;;;;x
+rotating_bolt_desc;The rotating bolt allowed a breech loading rifle to fire more securely? IDK. At any rate, it locks in the the back of the barrel, securing the ammunition inside. How this is helpful, I don't know, but I wanted an invention.;;;;;;;;;;;;;;;;;x
+waterproof_paper_cartrige;Waterproof Paper Cartrige;;;;;;;;;;;;;;;;;x
+waterproof_paper_cartrige_desc;Wet paper can't make things go boom.;;;;;;;;;;;;;;;;;x
+obturation;Obturation;;;;;;;;;;;;;;;;;x
+obturation_desc;The rotating bolt makes sense now..... Breech loaded artillery suffered from a lack of obturation: the sealing of a breech after firing to ensure that gases did not escape. This both was potentially dangerous to the crew, and it decreased the firepower of the weapon.;;;;;;;;;;;;;;;;;x
+screw_breech_block_or_sliding_wedge;Screw Breech Block or Sliding Wedge;;;;;;;;;;;;;;;;;x
+screw_breech_block_or_sliding_wedge_desc;Solved the issue of obturation.;;;;;;;;;;;;;;;;;x
+machine_gun_armament;Machine Guns;;;;;;;;;;;;;;;;;x
+gatling_guns;Gatling Guns;;;;;;;;;;;;;;;;;x
+gatling_guns_desc;Gatling guns were not truly considered automatic weapons considering that they were operated by a handcrank. However, they were an important stepping stone on the way to machine guns...;;;;;;;;;;;;;;;;;x
+motorized_infantry_activation;Motorized Infantry;;;;;;;;;;;;;;;;;x
+motorized_infantry_activation_desc;What else would we use cars for?;;;;;;;;;;;;;;;;;x
