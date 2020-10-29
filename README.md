@@ -7,6 +7,7 @@ This mod is made by SirRunner (both on Reddit and Discord - I do post a fair amo
 ## Notes and Thanks
  - This mod is based upon NNM. As such, the Features will be written as if one knows *everything* that the mod (NNM) offers, which I sincerely doubt anyone does, except perhaps the creators.
  - Both of the unit UI changes come from PDM
+ - I have integrated a slightly modified version of Kwizzle's Utility Mod (Utility Mod Decision and Events)
 
 ## Features
 
@@ -16,12 +17,13 @@ This mod is made by SirRunner (both on Reddit and Discord - I do post a fair amo
  
 ### Technology and Inventions
  - Added and changed a number of inventions and techs
- - Currently done the first 4 rows of the army tab
+ - Currently done the first 5 rows of the army tab
 
 ### Military
  - added new unit: Mobile Artillery
  - Irregular renamed Light Infantry
  - Guard renamed Motorized Infantry
+ - Infantry renamed Regular
  - Cavalry renamed Picket Cavalry
  - Hussar renamed Light Cavalry
  - Artillery renamed Heavy Artillery
