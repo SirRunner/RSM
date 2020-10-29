@@ -5,6 +5,7 @@ irregular;Light Infantry;;;;;;;;;;;;;;;;;x
 cavalry;Picket Cavalry;;;;;;;;;;;;;;;;;x
 hussar;Light Cavalry;;;;;;;;;;;;;;;;;x
 artillery;Heavy Artillery;;;;;;;;;;;;;;;;;x
+infantry;Regular;;;;;;;;;;;;;;;;;x
 strategic_mobility;Army Mobility;;;;;;;;;;;;;;;;;x
 machine_guns;Automatic Weapons;;;;;;;;;;;;;;;;;x
 volley_fire;Volley Fire;;;;;;;;;;;;;;;;;x
@@ -62,3 +63,13 @@ gatling_guns;Gatling Guns;;;;;;;;;;;;;;;;;x
 gatling_guns_desc;Gatling guns were not truly considered automatic weapons considering that they were operated by a handcrank. However, they were an important stepping stone on the way to machine guns...;;;;;;;;;;;;;;;;;x
 motorized_infantry_activation;Motorized Infantry;;;;;;;;;;;;;;;;;x
 motorized_infantry_activation_desc;What else would we use cars for?;;;;;;;;;;;;;;;;;x
+hurricane_bombardment;Hurricane Bombardment;;;;;;;;;;;;;;;;;x
+hurricane_bombardment_desc;We hurri-CAN do this!;;;;;;;;;;;;;;;;;x
+automatic_rifles;Automatic Rifles;;;;;;;;;;;;;;;;;x
+automatic_rifles_desc;Presenting the mini machine guns!;;;;;;;;;;;;;;;;;x
+bolt_knob;Bolt Knob;;;;;;;;;;;;;;;;;x
+bolt_knob_desc;This knob may not be the fun type, but it makes it easier to load the weapon. That makes it rather practical.;;;;;;;;;;;;;;;;;x
+spotters;Spotters;;;;;;;;;;;;;;;;;x
+spotters;Spotters were essentially lookouts - their job was quite simply to identify targets.;;;;;;;;;;;;;;;;;x
+vertical_plane_manipulation;Vertical Plane Manipulation;;;;;;;;;;;;;;;;;x
+vertical_plane_manipulation_desc;We're breaking the laws of physics;;;;;;;;;;;;;;;;;x

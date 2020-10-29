@@ -53,6 +53,11 @@ machine_guns = 1
 steel_breech_loaded_artillery = 1
 military_logistics = 1
 army_risk_management = 1
+infiltration = 1
+bolt_action_rifles = 1
+indirect_artillery_fire = 1
+military_directionism = 1
+army_nco_training = 1
 
 post_nelsonian_thought = 1
 clipper_design = 1

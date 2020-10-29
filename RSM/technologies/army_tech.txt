@@ -313,10 +313,36 @@ infiltration = {
 		
 	army_base = {
 		supply_consumption = 0.20
-	} 
-	
+	}
 	max_fort = 1
 	dig_in_cap = 1
+	infantry = {
+		defence = 2
+	}
+	guard = {
+		defence = 2
+	}
+	engineer = {
+		defence = 2
+	}
+	artillery = {
+		defence = 2
+	}
+	mobile_artillery = {
+		defence = 1
+	}
+	dragoon = {
+		defence = 2
+	}
+	hussar = {
+		defence = 1
+	}
+	irregular = {
+		defence = 1
+	}
+	tank = {
+		defence = 2
+	}
 	
 	ai_chance = {
 		factor = 1.5
@@ -677,6 +703,30 @@ bolt_action_rifles = {
 	unit = 1
 	
 	combat_width = -5
+	infantry = {
+		attack = 2
+		supply_consumption = 0.20
+	}
+	engineer = {
+		attack = 2
+		supply_consumption = 0.20
+	}
+	guard = {
+		attack = 2
+		supply_consumption = 0.20
+	}
+	dragoon = {
+		attack = 2
+		supply_consumption = 0.20
+	}
+	hussar = {
+		attack = 1
+		supply_consumption = 0.20
+	}
+	irregular = {
+		attack = 1
+		supply_consumption = 0.20
+	}
 	
 	ai_chance = {
 		factor = 1.1
@@ -814,12 +864,12 @@ iron_muzzle_loaded_artillery = {
 	artillery = {
 		attack = 0.5
 		support = 0.5
-		supply_consumption = 0.2
+		supply_consumption = 0.1
 	}
 	mobile_artillery = {
 		attack = 0.3
 		support = 0.3
-		supply_consumption = 0.2
+		supply_consumption = 0.1
 	}
 	
 	ai_chance = {
@@ -864,12 +914,12 @@ iron_breech_loaded_artillery = {
 	artillery = {
 		attack = 1
 		support = 0.5
-		supply_consumption = 0.3
+		supply_consumption = 0.1
 	}
 	mobile_artillery = {
 		attack = 0.5
 		support = 0.3
-		supply_consumption = 0.3
+		supply_consumption = 0.1
 	}
 	
 	ai_chance = {
@@ -914,12 +964,12 @@ steel_breech_loaded_artillery = {
 	artillery = {
 		attack = 1
 		support = 0.5
-		supply_consumption = 0.3
+		supply_consumption = 0.1
 	}
 	mobile_artillery = {
 		attack = 0.5
 		support = 0.3
-		supply_consumption = 0.3
+		supply_consumption = 0.1
 	}
 	
 	ai_chance = {
@@ -960,11 +1010,16 @@ indirect_artillery_fire = {
 	year = 1900
 	cost = 18000
 	unciv_military = yes
+	
 	artillery = {
-		attack = 0.5
-		defence = 2
+		attack = 2
 		support = 1
-		supply_consumption = 0.3
+		supply_consumption = 0.2
+	}
+	mobile_artillery = {
+		attack = 1
+		support = 0.5
+		supply_consumption = 0.2
 	}
 	
 	ai_chance = {
@@ -1234,7 +1289,7 @@ military_directionism = {
 	
 	army_base = {
 		default_organisation = 10
-		supply_consumption = 0.20
+		supply_consumption = 0.40
 	}
 	ai_chance = {
 		factor = 1.5
@@ -1527,14 +1582,14 @@ army_nco_training = {
 	year = 1900
 	cost = 18000
 	unciv_military = yes
-	morale = 0.25
 	
-
-	military_tactics = 0.25
-
+	morale = 0.5
+	military_tactics = 0.5
 	army_base = {
-		supply_consumption = 0.20
+		supply_consumption = 0.40
+		default_organisation = 10
 	}
+	regular_experience_level = 5
 	
 	ai_chance = {
 		factor = 1.1
