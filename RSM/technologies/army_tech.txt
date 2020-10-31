@@ -416,9 +416,6 @@ modern_army_doctrine = {
 	tank = {
 		defence = 2
 	}
-	plane = {
-		defence = 2
-	}
 	
 	ai_chance = {
 		factor = 1.1
@@ -1479,7 +1476,6 @@ army_professionalism = {
 	cost = 7200
 	unciv_military = yes
 	
-	morale = 0.1
 	military_tactics = 0.1
 	morale = 0.1
 	regular_experience_level = 5

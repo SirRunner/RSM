@@ -75,4 +75,14 @@ vertical_plane_manipulation;Vertical Plane Manipulation;;;;;;;;;;;;;;;;;x
 vertical_plane_manipulation_desc;We're breaking the laws of physics;;;;;;;;;;;;;;;;;x
 medium_tank;Medium Tank;;;;;;;;;;;;;;;;;x
 medium_tank_desc;Just like Light Tanks, but thiccer;;;;;;;;;;;;;;;;;x
-EVT10500DESC;Our military theorists have been busy lately and are close to a breakthrough... \n\n§RPlease look at the inventions for Modern Army Doctrine in order to know your different choices;;;;;;;;;;;;;;;;;x
+mobile_warfare_doctrine;Mobile Warfare Doctrine;;;;;;;;;;;;;;;;;x
+mobile_warfare_doctrine_desc;Our theorists were able to "discover" how to much more effectively utilize our motorized infantry and tanks.;;;;;;;;;;;;;;;;;x
+superior_firepower_doctrine;Superior Firepower Doctrine;;;;;;;;;;;;;;;;;x
+superior_firepower_doctrine_desc;Our theorists were able to "discover" how to much more effectively utilize our heavy artillery and mobile artillery.;;;;;;;;;;;;;;;;;x
+grand_battleplan_doctrine;Grand Battleplan Doctrine;;;;;;;;;;;;;;;;;x
+grand_battleplan_doctrine_desc;Our theorists were able to "discvoer" how to plan our stragegy much more effectively.;;;;;;;;;;;;;;;;;x
+mass_assault_doctrine;Mass Assault Doctrine;;;;;;;;;;;;;;;;;x
+mass_assault_doctrine_desc;We send our enemy's children to church and let the priests do the work... too far?;;;;;;;;;;;;;;;;;x
+assymetrical_warfare_doctrine;Assymetrical Warfare Doctrine;;;;;;;;;;;;;;;;;x
+assymetrical_warfare_doctrine_desc;Flashbacks to 'Nam...;;;;;;;;;;;;;;;;;x
+EVT10500DESC;Our military theorists have been busy attempting to steal from Hearts of Iron IV lately and are close to a breakthrough... \n\n§RPlease look at the inventions for Modern Army Doctrine in order to know your different choices;;;;;;;;;;;;;;;;;x
