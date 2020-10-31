@@ -47,7 +47,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Assymetrical Warfare"
+		name = "Asymetrical Warfare"
 		set_country_flag = doctrine_assymetrical_warfare
 	}
 }
