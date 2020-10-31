@@ -8,6 +8,7 @@ This mod is made by SirRunner (both on Reddit and Discord - I do post a fair amo
  - This mod is based upon NNM. As such, the Features will be written as if one knows *everything* that the mod (NNM) offers, which I sincerely doubt anyone does, except perhaps the creators.
  - Both of the unit UI changes come from PDM
  - I have integrated a slightly modified version of Kwizzle's Utility Mod (Utility Mod Decision and Events)
+ - The army doctrine ideas I stole right off of Heart of Iron IV and a mod for that game, Road to 56
 
 ## Features
 
@@ -17,7 +18,7 @@ This mod is made by SirRunner (both on Reddit and Discord - I do post a fair amo
  
 ### Technology and Inventions
  - Added and changed a number of inventions and techs
- - Currently done the first 5 rows of the army tab
+ - Currently done the army tab. ***Please note that it is not balanced whatsoever***
 
 ### Military
  - added new unit: Mobile Artillery
