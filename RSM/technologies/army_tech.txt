@@ -386,10 +386,39 @@ modern_army_doctrine = {
 	
 	army_base = {
 		supply_consumption = 0.20
-	} 
-	
+	}
 	max_fort = 1
 	dig_in_cap = 1
+	infantry = {
+		defence = 2
+	}
+	guard = {
+		defence = 2
+	}
+	engineer = {
+		defence = 2
+	}
+	artillery = {
+		defence = 2
+	}
+	mobile_artillery = {
+		defence = 1
+	}
+	dragoon = {
+		defence = 2
+	}
+	hussar = {
+		defence = 1
+	}
+	irregular = {
+		defence = 1
+	}
+	tank = {
+		defence = 2
+	}
+	plane = {
+		defence = 2
+	}
 	
 	ai_chance = {
 		factor = 1.1
@@ -766,9 +795,33 @@ modern_divisional_structure = {
 	year = 1919
 	cost = 21600
 	unciv_military = yes
-
 	unit = 2
+	
 	combat_width = -5
+	infantry = {
+		attack = 2
+		supply_consumption = 0.20
+	}
+	engineer = {
+		attack = 2
+		supply_consumption = 0.20
+	}
+	guard = {
+		attack = 2
+		supply_consumption = 0.20
+	}
+	dragoon = {
+		attack = 2
+		supply_consumption = 0.20
+	}
+	hussar = {
+		attack = 1
+		supply_consumption = 0.20
+	}
+	irregular = {
+		attack = 1
+		supply_consumption = 0.20
+	}
 	
 		ai_chance = {
 		factor = 1.1
@@ -1060,11 +1113,21 @@ heavy_armament_dunno = {
 	year = 1919
 	cost = 21600
 	unciv_military = yes
+	
 	artillery = {
-		attack = 0.5
-		defence = 2
+		attack = 2
 		support = 1
-		supply_consumption = 0.3
+		supply_consumption = 0.2
+	}
+	mobile_artillery = {
+		attack = 1
+		support = 0.5
+		supply_consumption = 0.2
+	}
+	tank = {
+		attack = 2
+		siege = 2
+		supply_consumption = 0.2
 	}
 	
 	ai_chance = {
@@ -1334,7 +1397,7 @@ aeronautics = {
 	cost = 21600
 	army_base = {
 		default_organisation = 10
-		supply_consumption = 0.20
+		supply_consumption = 0.40
 	}
 	
 	unciv_military = yes
@@ -1640,11 +1703,13 @@ great_war_experience = {
 	unciv_military = yes
 	morale = 0.5
 
-	military_tactics = 0.25
-
+	morale = 0.5
+	military_tactics = 0.5
 	army_base = {
-		supply_consumption = 0.20
+		supply_consumption = 0.40
+		default_organisation = 10
 	}
+	regular_experience_level = 5
 	
 	ai_chance = {
 		factor = 1.1

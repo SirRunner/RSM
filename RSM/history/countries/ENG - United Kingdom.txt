@@ -58,6 +58,12 @@ bolt_action_rifles = 1
 indirect_artillery_fire = 1
 military_directionism = 1
 army_nco_training = 1
+modern_army_doctrine = 1
+modern_divisional_structure = 1
+heavy_armament_dunno = 1
+aeronautics = 1
+army_nco_training = 1
+great_war_experience = 1
 
 post_nelsonian_thought = 1
 clipper_design = 1
