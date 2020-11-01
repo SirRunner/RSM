@@ -15,7 +15,7 @@ cuirassier = {
 	
 	
 	#Core Abilities
-	priority = 30
+	priority = 3
 	max_strength = 3
 	default_organisation = 30
 	maximum_speed = 6

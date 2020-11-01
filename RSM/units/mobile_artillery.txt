@@ -8,11 +8,11 @@ mobile_artillery = {
 	floating_flag = no
 
 	#Core Abilities
-	priority = 20
+	priority = 15
 	max_strength = 3
 	default_organisation = 30
 	maximum_speed = 5
-	weighted_value = 5.0
+	weighted_value = 2.5
 
 
 	#Building Costs

@@ -13,7 +13,7 @@ hussar = {
 	sprite_mount_attach_node = Saddle_Node
 	
 	#Core Abilities
-	priority = 40
+	priority = 5
 	max_strength = 3
 	default_organisation = 30
 	maximum_speed = 7

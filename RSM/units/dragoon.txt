@@ -14,7 +14,7 @@ dragoon = {
 	floating_flag = yes
 	
 	#Core Abilities
-	priority = 35
+	priority = 5
 	max_strength = 3
 	default_organisation = 30
 	maximum_speed = 6

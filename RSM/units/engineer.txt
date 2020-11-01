@@ -9,7 +9,7 @@ engineer = {
 	primary_culture = yes
 	
 	#Core Abilities
-	priority = 15
+	priority = 5
 	max_strength = 3
 	default_organisation = 30
 	maximum_speed = 5.00

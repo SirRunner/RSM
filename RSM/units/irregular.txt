@@ -8,7 +8,7 @@ irregular = {
 	floating_flag = no
 	
 	#Core Abilities
-	priority = 5
+	priority = 10
 	max_strength = 3
 	default_organisation = 20
 	maximum_speed = 5.00
