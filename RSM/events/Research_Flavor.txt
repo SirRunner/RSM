@@ -3,7 +3,7 @@ country_event = {
 	title = "Military Doctrine"
 	desc = "EVT10500DESC"
 	major = yes
-	fire_only_once = yes
+	allow_multiple_instances = no
 	
 	trigger = {
 		modern_army_doctrine = 1
@@ -29,25 +29,40 @@ country_event = {
 	option = {
 		name = "Mobile Warfare"
 		set_country_flag = doctrine_mobile_warfare
+		ai_chance = {
+			factor = 20
+		}
 	}
 	
 	option = {
 		name = "Superior Firepower"
 		set_country_flag = doctrine_superior_firepower
+		ai_chance = {
+			factor = 20
+		}
 	}
 	
 	option = {
 		name = "Grand Battleplan"
 		set_country_flag = doctrine_grand_battleplan
+		ai_chance = {
+			factor = 20
+		}
 	}
 	
 	option = {
 		name = "Mass Assault"
 		set_country_flag = doctrine_mass_assault
+		ai_chance = {
+			factor = 20
+		}
 	}
 	
 	option = {
 		name = "Asymetrical Warfare"
 		set_country_flag = doctrine_assymetrical_warfare
+		ai_chance = {
+			factor = 20
+		}
 	}
 }
