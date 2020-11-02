@@ -39,6 +39,7 @@ This mod is made by SirRunner (both on Reddit and Discord - I do post a fair amo
  
 #### United Kingdom
  - darker red now
+ - Some new flavor
   
 #### Ireland
  - darker green now
