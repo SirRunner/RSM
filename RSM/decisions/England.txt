@@ -203,6 +203,12 @@ political_decisions = {
 				all_core = { remove_core = ENG }
 			}
 			change_tag = ENL
+			
+			304 = {
+				remove_core = ENL
+				add_core = ISM
+			}
+			release = ISM
 		
 			release = WHA
 			release = IRE
