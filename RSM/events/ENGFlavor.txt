@@ -39,6 +39,24 @@ country_event = {
 			value = -200
 		}
 		prestige = 5
+		random_owned = {
+			limit = {
+				owner = {
+					tag = ENL
+				}
+			}
+			533 = {
+				secede_province = HAN
+				add_core = HAN
+				remove_core = HAN
+				any_pop = {
+					limit = {
+						culture = british
+					}
+					move_pop = 300
+				}
+			}
+		}
 	}
 }
 
