@@ -1,0 +1,17 @@
+country_event = {
+	id = 100000
+	title = "Return of the English Settlers"
+	desc = "EVT100000DESC"
+	is_triggered_only = yes
+	
+	option = {
+		name = "We welcome them"
+		any_country = {
+			limit = {
+				in_sphere = ENL
+				NOT = { tag = HAN }
+			}
+			country_event = 10600
+		}
+	}
+}

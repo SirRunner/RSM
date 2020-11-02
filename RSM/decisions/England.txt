@@ -46,6 +46,7 @@ political_decisions = {
 		potential = {
 			tag = ENL
 			NOT = { has_country_flag = reclaimed_the_uk }
+			NOT = { has_global_flag = disunited_kingdom }
 		}
 		
 		allow = {
@@ -91,6 +92,7 @@ political_decisions = {
 			tag = ENL
 			has_country_flag = reclaimed_the_uk
 			NOT = { exists = ENG }
+			NOT = { has_global_flag = disunited_kingdom }
 		}
 		
 		allow = {
@@ -175,6 +177,241 @@ political_decisions = {
 					secede_province = THIS
 				}
 			}
+		}
+	}
+	the_disunited_kingdom = {
+		potential = {
+			tag = ENG
+			NOT = { year = 1837 }
+			ai = no
+			NOT = { has_global_flag = disunited_kingdom }
+		}
+		
+		allow = { }
+		
+		effect = {
+			end_war = XHO
+			
+			ENG_300 = { add_core = ENL }
+			ENG_277 = { add_core = ENL }
+			ENG_280 = { add_core = ENL }
+			ENG_284 = { add_core = ENL }
+			ENG_291 = { add_core = ENL }
+			ENG_296 = { add_core = ENL }
+			533 = { add_core = ENL }
+			ENG = {
+				all_core = { remove_core = ENG }
+			}
+			change_tag = ENL
+		
+			release = WHA
+			release = IRE
+			release = SCO
+			517 = {
+				add_core = SPA
+				secede_province = SPA
+			}
+			release = MLT
+			
+			release = CAN
+			release = QUE
+			release = RPL
+			release = NEW
+			release = MRU
+			release = COL
+			
+			release = ARG
+			2217 = {
+				secede_province = FRA
+			}
+			2218  = {
+				secede_province = FRA
+			}
+			2219 = {
+				secede_province = FRA
+			}
+			2220 = {
+				secede_province = FRA
+			}
+			203 = {
+				secede_province = FRA
+			}
+			2224 = {
+				secede_province = FRA
+			}
+			2225 = {
+				secede_province = FRA
+			}
+			2226 = {
+				secede_province = FRA
+			}
+			2227 = {
+				secede_province = FRA
+			}
+			2229 = {
+				secede_province = FRA
+			}
+			2231 = {
+				secede_province = FRA
+			}
+			2232 = {
+				secede_province = FRA
+			}
+			2233 = {
+				secede_province = FRA
+			}
+			2237 = {
+				secede_province = FRA
+			}
+			2238 = {
+				secede_province = FRA
+			}
+			2409 = {
+				secede_province = FRA
+			}
+			2239 = {
+				secede_province = FRA
+			}
+			2242 = {
+				secede_province = FRA
+			}
+			2243 = {
+				secede_province = FRA
+			}
+			1979 = {
+				secede_province = FRA
+			}
+			2129 = {
+				secede_province = FRA
+			}
+			2130 = {
+				secede_province = FRA
+			}
+			2132 = {
+				secede_province = FRA
+			}
+			2125 = {
+				secede_province = FRA
+			}
+			2127 = {
+				secede_province = FRA
+			}
+			2128 = {
+				secede_province = FRA
+			}
+			1325 = {
+				secede_province = FRA
+			}
+			1320 = {
+				secede_province = FRA
+			}
+			
+			release = SAF
+			release = UCA
+			1884 = {
+				add_core = GBU
+			}
+			release = GBU
+			release = ASH
+			release = YEM
+			
+			release = HYD
+			release_vassal = HYD
+			release = MYS
+			release_vassal = MYS
+			release = SRI
+			release = ORI
+			release_vassal = ORI
+			release = BNG
+			release = ASM
+			release = BUR
+			release = BUN
+			release_vassal = BUN
+			release = BHO
+			release_vassal = BHO
+			release = NAG
+			release_vassal = NAG
+			release = MUG
+			release = MEW
+			release_vassal = MEW
+			release = BER
+			release_vassal = BER
+			release = BIH
+			release = JOH
+			release = MAH
+			release_vassal = TRA
+			release_vassal = KUT
+			release_vassal = JOD
+			release_vassal = JAS
+			release_vassal = JAI
+			release_vassal = IND
+			release_vassal = GWA
+			release_vassal = BIK
+			release_vassal = AWA
+			release_vassal = BAS
+			release_vassal = ION
+			
+			release = AST
+			release = NZL
+			
+			# Uncomment after Welsh/Scottish added
+			#WHA = { set_country_flag = return_the_english }
+			#SCO = { set_country_flag = return_the_english }
+			
+			# Uncomment after Australasian added
+			#AST = { set_country_flag = return_the_english }
+			#NZL = { set_country_flag = return_the_english }
+			
+			IRE = { set_country_flag = return_the_english }
+			SPA = { set_country_flag = return_the_english }
+			MLT = { set_country_flag = return_the_english }
+			CAN = { set_country_flag = return_the_english }
+			QUE = { set_country_flag = return_the_english }
+			RPL = { set_country_flag = return_the_english }
+			NEW = { set_country_flag = return_the_english }
+			MRU = { set_country_flag = return_the_english }
+			COL = { set_country_flag = return_the_english }
+			ARG = { set_country_flag = return_the_english }
+			FRA = { set_country_flag = return_the_english }
+			SAF = { set_country_flag = return_the_english }
+			UCA = { set_country_flag = return_the_english }
+			GBU = { set_country_flag = return_the_english }
+			ASH = { set_country_flag = return_the_english }
+			YEM = { set_country_flag = return_the_english }
+			HYD = { set_country_flag = return_the_english }
+			MYS = { set_country_flag = return_the_english }
+			SRI = { set_country_flag = return_the_english }
+			ORI = { set_country_flag = return_the_english }
+			BNG = { set_country_flag = return_the_english }
+			ASM = { set_country_flag = return_the_english }
+			BUR = { set_country_flag = return_the_english }
+			BUN = { set_country_flag = return_the_english }
+			BHO = { set_country_flag = return_the_english }
+			NAG = { set_country_flag = return_the_english }
+			MUG = { set_country_flag = return_the_english }
+			NEW = { set_country_flag = return_the_english }
+			BER = { set_country_flag = return_the_english }
+			BIH = { set_country_flag = return_the_english }
+			JOH = { set_country_flag = return_the_english }
+			MAH = { set_country_flag = return_the_english }
+			
+			set_global_flag = disunited_kingdom
+			country_event = { id = 100000 days = 2 }
+		}
+	}
+	returning_english = {
+		potential = {
+			has_country_flag = return_the_english
+		}
+		allow = { }
+		effect = {
+			any_pop = {
+				limit = {
+					culture = british
+				}
+				move_pop = 300
+			}
+			clear_country_flag = return_the_english
 		}
 	}
 }
