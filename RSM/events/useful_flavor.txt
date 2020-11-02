@@ -1,0 +1,21 @@
+country_event = {
+	id = 10600
+	title = "BYE..."
+	desc = "I don't think you're supposed to see this..."
+	is_triggered_only = yes
+	
+	option = {
+		name = "...Felicia"
+		FROM = {
+			diplomatic_influence = {
+				who = THIS
+				value = -200
+			}
+			relation = {
+				who = THIS
+				value = -200
+			}
+			leave_alliance = THIS
+		}
+	}
+}
