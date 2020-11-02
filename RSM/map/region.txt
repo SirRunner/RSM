@@ -141,7 +141,7 @@ ENG_284 = { 284 286 287 288 289 290 } #Midlands
 
 ENG_291 = { 291 292 293 295 } #Eastern Counties
 
-ENG_296 = { 296 299 297 298 419 } #South West England
+ENG_296 = { 296 299 297 298 } #South West England
 
 ENG_300 = { 300 294 301 302 303 } #South East England
 
@@ -202,7 +202,7 @@ FRA_411 = { 411 413 407 414 432 } #Franche-Comté
 
 FRA_412 = { 412 409 410 } #Alsace-Lorraine
 
-FRA_418 = { 418 415 416 417 } #Normandie
+FRA_418 = { 418 415 416 417 419 } #Normandie
 
 FRA_420 = { 420 421 422 424 423 } #Bretagne
 
