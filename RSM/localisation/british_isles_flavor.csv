@@ -5,4 +5,6 @@ returning_english_title;Return the English!;;;;;;;;;;;;;;;;;x
 returning_english_desc;Huh. You're not supposed to see this....;;;;;;;;;;;;;;;;;x
 returning_irish_title;Return the Irish!;;;;;;;;;;;;;;;;;x
 returning_irish_desc;Huh. You're not supposed to see this....;;;;;;;;;;;;;;;;;x
-EVT100000DESC;It has been some time since all English were living England. With our worldwide abdication of all of our colonies, they are no longer welcome in their homes. They became refugees. No longer. England has a home for all English!;
+norman_princes_title;Norman Princes;;;;;;;;;;;;;;;;;x
+norman_princes_desc;The current kings and queens of England are descendents of William the Conquerer. William, and many know, was a Norman. Since his time as King, we have lost his homeland. \n\nNo longer. Today Queen Victoria announced a bold idea: retake England's ancestral homeland. To victory, or death!;;;;;;;;;;;;;;;;;x
+EVT100000DESC;\nIt has been some time since all English were living England. With our worldwide abdication of all of our colonies, they are no longer welcome in their homes. They became refugees persecuted in their former lands. No longer. England has a home for all English!;

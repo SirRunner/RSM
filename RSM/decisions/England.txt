@@ -436,4 +436,31 @@ political_decisions = {
 			clr_country_flag = return_the_irish
 		}
 	}
+	
+	norman_princes = {
+		potential = {
+			tag = ENL
+			has_global_flag = disunited_kingdom
+		}
+		allow = {
+			has_global_flag = regna_victoria
+		}
+		effect = {
+			casus_belli = {
+				target = FRA
+				type = acquire_state
+				months = 12
+			}
+			war = {
+				target = FRA
+				attacker_goal = {
+					casus_belli = acquire_state
+					state_province_id = 418
+				}
+				call_ally = yes
+			}
+			badboy = 5
+			set_global_flag = norman_war
+		}
+	}
 }

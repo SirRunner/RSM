@@ -57,6 +57,7 @@ country_event = {
 				}
 			}
 		}
+		set_global_flag = regna_victoria
 	}
 }
 
