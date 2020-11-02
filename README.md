@@ -34,11 +34,12 @@ This mod is made by SirRunner (both on Reddit and Discord - I do post a fair amo
 ### Map
  - moved Stirling from Lowlands to Highlands
  - moved Donegal from Connacht to Ulster
+ - moved Channel Islands from South West England to Normandie
  
 ### Countries
  
 #### United Kingdom
- - darker red now
+ - bright pink now
  - Some new flavor
   
 #### Ireland
@@ -51,4 +52,8 @@ This mod is made by SirRunner (both on Reddit and Discord - I do post a fair amo
  - blue now instead of yellow
  
 #### England
- - bright pink now
+ - darker red now
+ - Some new flavor
+ 
+### Isle of Man
+ - added the country
