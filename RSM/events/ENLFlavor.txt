@@ -3,6 +3,7 @@ country_event = {
 	title = "Return of the English Settlers"
 	desc = "EVT100000DESC"
 	is_triggered_only = yes
+	picture = "travellers"
 	
 	option = {
 		name = "We welcome them"
@@ -12,6 +13,12 @@ country_event = {
 				NOT = { tag = HAN }
 			}
 			country_event = 10600
+		}
+		any_pop = {
+			limit = {
+				culture = irish
+			}
+			move_pop = 263
 		}
 	}
 }

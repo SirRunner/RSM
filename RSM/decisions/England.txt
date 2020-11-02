@@ -359,41 +359,41 @@ political_decisions = {
 			#SCO = { set_country_flag = return_the_english }
 			
 			# Uncomment after Australasian added
-			#AST = { set_country_flag = return_the_english }
-			#NZL = { set_country_flag = return_the_english }
+			#AST = { set_country_flag = return_the_english set_country_flag = return_the_irish }
+			#NZL = { set_country_flag = return_the_english set_country_flag = return_the_irish }
 			
 			IRE = { set_country_flag = return_the_english }
-			SPA = { set_country_flag = return_the_english }
-			MLT = { set_country_flag = return_the_english }
-			CAN = { set_country_flag = return_the_english }
-			QUE = { set_country_flag = return_the_english }
-			RPL = { set_country_flag = return_the_english }
-			NEW = { set_country_flag = return_the_english }
-			MRU = { set_country_flag = return_the_english }
-			COL = { set_country_flag = return_the_english }
-			ARG = { set_country_flag = return_the_english }
-			FRA = { set_country_flag = return_the_english }
-			SAF = { set_country_flag = return_the_english }
-			UCA = { set_country_flag = return_the_english }
-			GBU = { set_country_flag = return_the_english }
-			ASH = { set_country_flag = return_the_english }
-			YEM = { set_country_flag = return_the_english }
-			HYD = { set_country_flag = return_the_english }
-			MYS = { set_country_flag = return_the_english }
-			SRI = { set_country_flag = return_the_english }
-			ORI = { set_country_flag = return_the_english }
-			BNG = { set_country_flag = return_the_english }
-			ASM = { set_country_flag = return_the_english }
-			BUR = { set_country_flag = return_the_english }
-			BUN = { set_country_flag = return_the_english }
-			BHO = { set_country_flag = return_the_english }
-			NAG = { set_country_flag = return_the_english }
-			MUG = { set_country_flag = return_the_english }
-			NEW = { set_country_flag = return_the_english }
-			BER = { set_country_flag = return_the_english }
-			BIH = { set_country_flag = return_the_english }
-			JOH = { set_country_flag = return_the_english }
-			MAH = { set_country_flag = return_the_english }
+			SPA = { set_country_flag = return_the_english set_country_flag = return_the_irish }
+			MLT = { set_country_flag = return_the_english set_country_flag = return_the_irish }
+			CAN = { set_country_flag = return_the_english set_country_flag = return_the_irish }
+			QUE = { set_country_flag = return_the_english set_country_flag = return_the_irish }
+			RPL = { set_country_flag = return_the_english set_country_flag = return_the_irish }
+			NEW = { set_country_flag = return_the_english set_country_flag = return_the_irish }
+			MRU = { set_country_flag = return_the_english set_country_flag = return_the_irish }
+			COL = { set_country_flag = return_the_english set_country_flag = return_the_irish }
+			ARG = { set_country_flag = return_the_english set_country_flag = return_the_irish }
+			FRA = { set_country_flag = return_the_english set_country_flag = return_the_irish }
+			SAF = { set_country_flag = return_the_english set_country_flag = return_the_irish }
+			UCA = { set_country_flag = return_the_english set_country_flag = return_the_irish }
+			GBU = { set_country_flag = return_the_english set_country_flag = return_the_irish }
+			ASH = { set_country_flag = return_the_english set_country_flag = return_the_irish }
+			YEM = { set_country_flag = return_the_english set_country_flag = return_the_irish }
+			HYD = { set_country_flag = return_the_english set_country_flag = return_the_irish }
+			MYS = { set_country_flag = return_the_english set_country_flag = return_the_irish }
+			SRI = { set_country_flag = return_the_english set_country_flag = return_the_irish }
+			ORI = { set_country_flag = return_the_english set_country_flag = return_the_irish }
+			BNG = { set_country_flag = return_the_english set_country_flag = return_the_irish }
+			ASM = { set_country_flag = return_the_english set_country_flag = return_the_irish }
+			BUR = { set_country_flag = return_the_english set_country_flag = return_the_irish }
+			BUN = { set_country_flag = return_the_english set_country_flag = return_the_irish }
+			BHO = { set_country_flag = return_the_english set_country_flag = return_the_irish }
+			NAG = { set_country_flag = return_the_english set_country_flag = return_the_irish }
+			MUG = { set_country_flag = return_the_english set_country_flag = return_the_irish }
+			NEW = { set_country_flag = return_the_english set_country_flag = return_the_irish }
+			BER = { set_country_flag = return_the_english set_country_flag = return_the_irish }
+			BIH = { set_country_flag = return_the_english set_country_flag = return_the_irish }
+			JOH = { set_country_flag = return_the_english set_country_flag = return_the_irish }
+			MAH = { set_country_flag = return_the_english set_country_flag = return_the_irish }
 			
 			set_global_flag = disunited_kingdom
 			country_event = { id = 100000 days = 2 }
@@ -411,7 +411,23 @@ political_decisions = {
 				}
 				move_pop = 300
 			}
-			clear_country_flag = return_the_english
+			clr_country_flag = return_the_english
+		}
+	}
+	
+	returning_irish = {
+		potential = {
+			has_country_flag = return_the_irish
+		}
+		allow = { }
+		effect = {
+			any_pop = {
+				limit = {
+					culture = irish
+				}
+				move_pop = 263
+			}
+			clr_country_flag = return_the_irish
 		}
 	}
 }
