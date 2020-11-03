@@ -1,3 +1,11 @@
+#################################
+#								#
+#   England Events				#
+#								#
+#   Path to the Angevin Empire	#
+#								#
+#################################
+
 country_event = {
 	id = 100000
 	title = "Return of the English Settlers"
@@ -20,5 +28,292 @@ country_event = {
 			}
 			move_pop = 263
 		}
+	}
+}
+
+# England victory in Norman War
+country_event = {
+	id = 100001
+	title = "We are Victorous!"
+	desc = "EVT100001DESC"
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = ENL
+		has_global_flag = norman_war
+		FRA_418 = {
+			owner = {
+				tag = ENL
+			}
+		}
+		war = no
+		NOT = { has_global_flag = norman_war_end }
+	}
+	
+	option = {
+		name = "We are the new Normans"
+		# TODO: NEED TO ADD ASSIMILATION MODIFIER FOR FRA_418
+		416 = {
+			state_scope = {
+				change_region_name = "Normandy"
+			}
+
+		}
+		416 = {	change_province_name = "Evreux" }
+		417 = { change_province_name = "Alencon" }
+		set_global_flag = norman_war_end
+	}
+}
+
+# England defeat in Norman War
+country_event = {
+	id = 100002
+	title = "We are Defeated!"
+	desc = "EVT100002DESC"
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = ENL
+		has_global_flag = norman_war
+		FRA_418 = {
+			owner = {
+				NOT = { tag = ENL }
+			}
+		}
+		war = no
+		NOT = { has_global_flag = norman_war_end }
+	}
+	
+	option = {
+		name = "What shall we do now?"
+		FRA_418 = {
+			remove_core = ENL
+		}
+		419 = {
+			secede_province = FRA_399
+			add_core = FRA
+		}
+		set_global_flag = norman_war_end
+	}
+}
+
+# England victory in Channel Crisis
+country_event = {
+	id = 100003
+	title = "We are Victorous!"
+	desc = "EVT100003DESC"
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = ENL
+		has_global_flag = english_channel_crisis
+		FRA_418 = {
+			owner = {
+				tag = ENL
+			}
+		}
+		war = no
+		NOT = { has_global_flag = channel_crisis_end }
+	}
+	
+	option = {
+		name = "The Channel is ours!"
+		# TODO: NEED TO ADD ASSIMILATION MODIFIER FOR FRA_399, FRA_420
+		FRA_399 = {
+			add_core = ENL
+			secede_province = ENL
+		}
+		FRA_420 = {
+			add_core = ENL
+			secede_province = ENL
+		}
+		400 = { change_province_name = "Dunkirk" }
+		399 = {
+			state_scope = {
+				change_region_name = "Picardy"
+			}
+		}
+		420 = {
+			state_scope = {
+				change_region_name = "Brittany"
+			}
+		}
+		set_global_flag = channel_crisis_end
+	}
+}
+
+# England defeat in Channel Crisis
+country_event = {
+	id = 100004
+	title = "We have been Defeated"
+	desc = "EVT100004DESC"
+	fire_only_once = yes
+	major = yes
+		
+	trigger = {
+		tag = ENL
+		has_global_flag = english_channel_crisis
+		FRA_418 = {
+			owner = {
+				NOT = { tag = ENL }
+			}
+		}
+		war = no
+		NOT = { has_global_flag = channel_crisis_end }
+	}
+	
+	option = {
+		name = "What shall we do now?"
+		FRA_418 = {
+			remove_core = ENL
+		}
+		419 = {
+			add_core = FRA
+		}
+	}
+}
+
+# Occitania/Alsace/Corsica ask for support
+country_event = {
+	id = 100005
+	title = "A Curious Offer"
+	desc = "EVT100005DESC"
+	fire_only_once = yes
+	# TODO: ADD IMAGE
+	
+	trigger = {
+		tag = ENL
+		has_global_flag = channel_crisis_end
+		399 = { is_core = ENL }
+		418 = { is_core = ENL }
+		420 = { is_core = ENL }
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "Friends within the enemy? We accept!"
+		treasury = -500000
+		set_global_flag = england_sponser_occitania_alsace_corsica
+	}
+	
+	option = {
+		name = "IT'S A TRAP"
+	}
+}
+
+# Occitania/Alsace/Corsica break free
+country_event = {
+	id = 100006
+	title = "How are you seeing this?"
+	desc = "Occitania, Alsace and Corsica are rebelling"
+	is_triggered_only = yes
+	
+	option = {
+		name = "****"
+		release = OCC
+		release = ALS
+		release = CRS
+		
+		war = {
+			target = OCC
+			attacker_goal = {
+				casus_belli = acquire_all_cores
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+			call_ally = yes
+		}
+		war = {
+			target = ALS
+			attacker_goal = {
+				casus_belli = acquire_all_cores
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+			call_ally = yes
+		}
+		war = {
+			target = CRS
+			attacker_goal = {
+				casus_belli = acquire_all_cores
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+			call_ally = yes
+		}
+	}
+}
+
+# Puppet states if England accepted deal
+country_event = {
+	id = 100007
+	title = "The Deal"
+	desc = "EVT100007DESC"
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = ENL
+		NOT = { exists = FRA }
+		has_global_flag = england_sponser_occitania_alsace_corsica
+	}
+	
+	option = {
+		name = "That was the deal"
+		
+		badboy = 5
+		
+		inherit = OCC
+		inherit = ALS
+		inherit = CRS
+		
+		release_vassal = OCC
+		release_vassal = ALS
+		release_vassal = CRS
+	}
+	
+	option = {
+		name = "We have changed our minds"
+		
+		badboy = -5
+		
+		diplomatic_influence = {
+			who = OCC
+			value = 400
+		}
+		relation = {
+			who = OCC
+			value = 400
+		}
+		create_alliance = OCC
+		
+		diplomatic_influence = {
+			who = ALS
+			value = 400
+		}
+		relation = {
+			who = ALS
+			value = 400
+		}
+		create_alliance = ALS
+		
+		diplomatic_influence = {
+			who = CRS
+			value = 400
+		}
+		relation = {
+			who = CRS
+			value = 400
+		}
+		create_alliance = CRS
 	}
 }

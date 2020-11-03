@@ -190,6 +190,8 @@ political_decisions = {
 		allow = { }
 		
 		effect = {
+			prestige = -15
+			
 			end_war = XHO
 			
 			ENG_300 = { add_core = ENL }
@@ -438,29 +440,121 @@ political_decisions = {
 	}
 	
 	norman_princes = {
+		# TODO: ADD IMAGE
 		potential = {
 			tag = ENL
 			has_global_flag = disunited_kingdom
+			NOT = { has_global_flag = norman_war }
 		}
 		allow = {
 			has_global_flag = regna_victoria
 		}
 		effect = {
-			casus_belli = {
-				target = FRA
-				type = acquire_state
-				months = 12
+			FRA_418 = {
+				add_core = ENL
 			}
 			war = {
 				target = FRA
 				attacker_goal = {
-					casus_belli = acquire_state
+					casus_belli = acquire_core_state
 					state_province_id = 418
 				}
 				call_ally = yes
 			}
 			badboy = 5
 			set_global_flag = norman_war
+		}
+	}
+	
+	english_channel = {
+		# TODO: ADD IMAGE
+		potential = {
+			tag = ENL
+			has_global_flag = norman_war
+			418 = {
+				owner = {
+					tag = ENL
+				}
+			}
+			NOT = { has_global_flag = english_channel_crisis }
+		}
+		allow = {
+			NOT = {
+				truce_with = FRA
+			}
+		}
+		effect = {
+			casus_belli = {
+				target = FRA
+				type = cut_down_to_size
+				months = 12
+			}
+			war = {
+				target = FRA
+				attacker_goal = {
+					casus_belli = cut_down_to_size
+				}
+				defender_goal = {
+					casus_belli = acquire_core_state
+					state_province_id = 418
+				}
+				call_ally = yes
+			}
+			badboy = 10
+			set_global_flag = english_channel_crisis
+		}
+	}
+	
+	stabilize_france = {
+		# TODO: ADD IMAGE
+		potential = {
+			tag = ENL
+			has_global_flag = english_channel_crisis
+			399 = {
+				owner = {
+					tag = ENL
+				}
+			}
+			418 = {
+				owner = {
+					tag = ENL
+				}
+			}
+			420 = {
+				owner = {
+					tag = ENL
+				}
+			}
+			NOT = {
+				has_global_flag = england_stabilize_france
+			}
+		}
+		allow = {
+			NOT = {
+				truce_with = FRA
+			}
+		}
+		effect = {
+			casus_belli = {
+				target = FRA
+				type = conquest
+				months = 12
+			}
+			war = {
+				target = FRA
+				attacker_goal = {
+					casus_belli = conquest
+				}
+				call_ally = yes
+			}
+			FRA = {
+				country_event = {
+					id = 100006
+					days = 30
+				}
+			}
+			badboy = 15
+			set_global_flag = england_stabilize_france
 		}
 	}
 }
