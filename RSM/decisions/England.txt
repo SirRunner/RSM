@@ -557,4 +557,21 @@ political_decisions = {
 			set_global_flag = england_stabilize_france
 		}
 	}
+	
+	become_angevin_empire = {
+		# TODO: ADD IMAGE
+		potential = {
+			tag = ENL
+			has_global_flag = england_stabilize_france
+			NOT = { exists = FRA }
+		}
+		allow = {
+			war = no
+			#nationalism_n_imperialism = 1
+		}
+		effect = {
+			change_tag = AGV
+			prestige = 15
+		}
+	}
 }
