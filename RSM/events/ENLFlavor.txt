@@ -6,6 +6,7 @@
 #								#
 #################################
 
+# Will need to change this up...
 country_event = {
 	id = 100000
 	title = "Return of the English Settlers"
@@ -53,7 +54,6 @@ country_event = {
 	
 	option = {
 		name = "We are the new Normans"
-		# TODO: NEED TO ADD ASSIMILATION MODIFIER FOR FRA_418
 		416 = {
 			state_scope = {
 				change_region_name = "Normandy"
@@ -62,6 +62,12 @@ country_event = {
 		}
 		416 = {	change_province_name = "Evreux" }
 		417 = { change_province_name = "Alencon" }
+		FRA_418 = {
+			add_province_modifier = {
+				name = cultural_assimilation
+				duration = 3650
+			}
+		}
 		set_global_flag = norman_war_end
 	}
 }
@@ -121,7 +127,6 @@ country_event = {
 	
 	option = {
 		name = "The Channel is ours!"
-		# TODO: NEED TO ADD ASSIMILATION MODIFIER FOR FRA_399, FRA_420
 		FRA_399 = {
 			add_core = ENL
 			secede_province = ENL
@@ -139,6 +144,18 @@ country_event = {
 		420 = {
 			state_scope = {
 				change_region_name = "Brittany"
+			}
+		}
+		FRA_399 = {
+			add_province_modifier = {
+				name = cultural_assimilation
+				duration = 3650
+			}
+		}
+		FRA_420 = {
+			add_province_modifier = {
+				name = cultural_assimilation
+				duration = 3650
 			}
 		}
 		set_global_flag = channel_crisis_end
@@ -217,8 +234,19 @@ country_event = {
 	option = {
 		name = "****"
 		release = OCC
+		OCC = {
+			remove_accepted_culture = french
+		}
+		
 		release = ALS
+		ALS = {
+			remove_accepted_culture = french
+		}
+		
 		release = CRS
+		CRS = {
+			remove_accepted_culture = french
+		}
 		
 		war = {
 			target = OCC
@@ -277,14 +305,59 @@ country_event = {
 		inherit = CRS
 		
 		release_vassal = OCC
+		diplomatic_influence = {
+			who = OCC
+			value = 400
+		}
+		relation = {
+			who = OCC
+			value = 400
+		}
+		create_alliance = OCC
+		OCC = {
+			all_core = {
+				remove_core = FRA
+			}
+		}
+		
 		release_vassal = ALS
+		diplomatic_influence = {
+			who = ALS
+			value = 400
+		}
+		relation = {
+			who = ALS
+			value = 400
+		}
+		create_alliance = ALS
+		ALS = {
+			all_core = {
+				remove_core = FRA
+			}
+		}
+		
 		release_vassal = CRS
+		diplomatic_influence = {
+			who = CRS
+			value = 400
+		}
+		relation = {
+			who = CRS
+			value = 400
+		}
+		create_alliance = CRS
+		CRS = {
+			all_core = {
+				remove_core = FRA
+			}
+		}
+		
 	}
 	
 	option = {
 		name = "We have changed our minds"
 		
-		badboy = -5
+		badboy = -2
 		
 		diplomatic_influence = {
 			who = OCC
@@ -315,5 +388,101 @@ country_event = {
 			value = 400
 		}
 		create_alliance = CRS
+	}
+}
+
+# The choice concerned the fate of the French
+country_event = {
+	id = 100008
+	title = "The French Question"
+	desc = "EVT100008DESC"
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = "French lands are English lands."
+		any_owned = {
+			limit = {
+				is_core = FRA
+			}
+			remove_core = FRA
+			add_province_modifier = {
+				name = cultural_assimilation_strong
+				duration = 1825
+			}
+		}
+		badboy = 20
+	}
+	
+	option = {
+		name = "They will remain under the empire."
+		set_global_flag = agv_acceptance_french
+		badboy = 10
+	}
+	
+	option = {
+		name = "They will become autonomous under the empire."
+		FRA_399 = {
+			remove_core = FRA
+		}
+		FRA_418 = {
+			remove_core = FRA
+		}
+		FRA_420 = {
+			remove_core = FRA
+		}
+		any_owned = {
+			limit = {
+				is_core = FRA
+				NOT = { continent = europe }
+			}
+			remove_core = FRA
+		}
+		release_vassal = FRA
+		diplomatic_influence = {
+			who = FRA
+			value = 400
+		}
+		relation = {
+			who = FRA
+			value = 400
+		}
+		create_alliance = FRA
+		badboy = 5
+	}
+	
+	option = {
+		name = "We will release them. After all, we were only there to stabilize the land."
+		FRA_399 = {
+			remove_core = FRA
+		}
+		FRA_418 = {
+			remove_core = FRA
+		}
+		FRA_420 = {
+			remove_core = FRA
+		}
+		release = FRA
+		badboy = -2
+	}
+}
+
+# Gives AGV cores on all French land
+country_event = {
+	id = 100009
+	title = "Our French Brothers"
+	desc = "EVT100009DESC"
+	is_triggered_only = yes
+	
+	# TODO: ADD IMAGE 
+	option = {
+		name = "They are our brothers now..."
+		
+		FRA = {
+			all_core = {
+				add_core = AGV
+				remove_core = FRA
+			}
+		}
 	}
 }

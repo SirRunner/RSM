@@ -571,7 +571,65 @@ political_decisions = {
 		}
 		effect = {
 			change_tag = AGV
+			all_core = {
+				remove_core = ENL
+			}
 			prestige = 15
+		}
+	}
+	
+	the_french_question = {
+		# TODO: ADD IMAGE
+		potential = {
+			tag = AGV
+			NOT = { has_global_flag = agv_french_question }
+		}
+		allow = {
+			revolution_n_counterrevolution = 1
+		}
+		effect = {
+			country_event = 100008
+			set_global_flag = agv_french_question
+		}
+	}
+	
+	agv_french_integration = {
+		picture = embrace_minority
+		potential = {
+			tag = AGV
+			NOT = { has_country_flag = accepted_french }
+			has_global_flag = agv_acceptance_french
+		}
+		
+		allow = {
+			prestige = 50
+			money = 100000
+			NOT = { citizenship_politicy = residency }
+			social_science = 1
+		}
+		
+		effect = {
+			add_accepted_culture = french
+			prestige = -50
+			treasury = -100000
+			
+			country_event = 100009
+			
+			any_pop = {
+				limit = {
+					culture = british 
+				}
+				militancy = 3
+				consciousness = 3
+			}
+			
+			any_pop = {
+				limit = {
+					culture = french
+				}
+				militancy = -5
+			}
+			set_country_flag = accepted_french
 		}
 	}
 }

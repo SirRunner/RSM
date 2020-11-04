@@ -1,6 +1,5 @@
 capital = 300
 primary_culture = british
-culture = french
 religion = protestant
 government = hms_government
 plurality = 5
