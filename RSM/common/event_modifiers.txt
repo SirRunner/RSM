@@ -2,6 +2,21 @@
 # scriptable and usable for event-system below.
 ##################################################################################################
 
+##### GENERIC EVENTS #####
+cultural_assimilation = {
+	assimilation_rate = 0.5
+	immigrant_attract = 0.5
+	pop_militancy_modifier = 0.01
+	icon = 7
+}
+
+cultural_assimilation_strong = {
+	assimilation_rate = 1
+	immigrant_attract = 1
+	pop_militancy_modifier = 0.02
+	icon = 7
+}
+
 ##### POLITICAL EVENTS ######
 government_sanitarium = {
 	population_growth = 0.005
