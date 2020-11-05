@@ -528,6 +528,7 @@ political_decisions = {
 			NOT = {
 				has_global_flag = england_stabilize_france
 			}
+			has_global_flag = france_destabilizing
 		}
 		allow = {
 			NOT = {
@@ -568,6 +569,18 @@ political_decisions = {
 		allow = {
 			war = no
 			nationalism_n_imperialism = 1
+			any_core = {
+				owned_by = ENL
+			}
+			FRA_435 = {
+				owned_by = ENL
+			}
+			425 = {
+				owned_by = ENL
+			}
+			442 = {
+				owned_by = ENL
+			}
 		}
 		effect = {
 			change_tag = AGV
@@ -611,7 +624,7 @@ political_decisions = {
 		effect = {
 			add_accepted_culture = french
 			prestige = -50
-			treasury = -100000
+			treasury = -100000	
 			
 			country_event = 100009
 			
