@@ -1,3 +1,4 @@
+# Removes sphere, alliance and decreases relation of country.
 country_event = {
 	id = 10600
 	title = "BYE..."
@@ -17,5 +18,31 @@ country_event = {
 			}
 			leave_alliance = THIS
 		}
+	}
+}
+
+# Releases any cores of a country from triggering country.
+country_event = {
+	id = 10601
+	title = "Newly Released Country"
+	desc = "How you be seeing this one now then?"
+	is_triggered_only = yes
+	
+	option = {
+		name = "YAY"
+		
+		FROM = {
+			any_state = {
+				limit = {
+					any_owned_province = { is_core = THIS }
+					NOT = { any_owned_province = { is_capital = yes } }
+				}
+				any_owned = {
+					limit = { is_core = THIS }
+					secede_province = THIS
+				}
+			}
+		}
+		ra
 	}
 }

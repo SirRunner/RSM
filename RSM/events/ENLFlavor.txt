@@ -135,6 +135,10 @@ country_event = {
 			add_core = ENL
 			secede_province = ENL
 		}
+		435 = {
+			add_core = ENL
+			secede_province = ENL
+		}
 		400 = { change_province_name = "Dunkirk" }
 		399 = {
 			state_scope = {
@@ -153,6 +157,12 @@ country_event = {
 			}
 		}
 		FRA_420 = {
+			add_province_modifier = {
+				name = cultural_assimilation
+				duration = 3650
+			}
+		}
+		435 = {
 			add_province_modifier = {
 				name = cultural_assimilation
 				duration = 3650
@@ -190,6 +200,7 @@ country_event = {
 		419 = {
 			add_core = FRA
 		}
+		clr_global_flag = english_channel_crisis
 	}
 }
 
@@ -290,7 +301,10 @@ country_event = {
 	major = yes
 	
 	trigger = {
-		tag = ENL
+		OR = {
+			tag = ENL
+			tag = AGV
+		}
 		NOT = { exists = FRA }
 		has_global_flag = england_sponser_occitania_alsace_corsica
 	}
@@ -408,7 +422,7 @@ country_event = {
 			remove_core = FRA
 			add_province_modifier = {
 				name = cultural_assimilation_strong
-				duration = 1825
+				duration = 365
 			}
 		}
 		badboy = 20
@@ -429,6 +443,9 @@ country_event = {
 			remove_core = FRA
 		}
 		FRA_420 = {
+			remove_core = FRA
+		}
+		435 = {
 			remove_core = FRA
 		}
 		any_owned = {
@@ -462,6 +479,9 @@ country_event = {
 		FRA_420 = {
 			remove_core = FRA
 		}
+		435 = {
+			remove_core = FRA
+		}
 		release = FRA
 		badboy = -2
 	}
@@ -486,3 +506,64 @@ country_event = {
 		}
 	}
 }
+
+# French colonial rebellions
+country_event = {
+	id = 100010
+	title = "Colonial Rebellion"
+	desc = "Rebellions happening in colonies"
+	
+	trigger = {
+		tag = FRA
+		has_global_flag = channel_crisis_end
+	}
+	
+	mean_time_to_happen = {
+		months = 10
+	}
+	
+	option = {
+		name = "Drat"
+		
+		random_country = {
+			limit = {
+				tag = NEW
+				exists = yes
+			}
+			77 = {
+				add_core = NEW
+			}
+		}
+		
+		random_country = {
+			limit = {
+				tag = CAN
+				NEW = {
+					exists = no
+				}
+			}
+			77 = {
+				add_core = CAN
+			}
+		}
+		
+		any_country = {
+			limit = {
+				any_core = { owned_by = FRA }
+				NOT = {
+					tag = LOR
+					tag = ALS
+					tag = OCC
+					tag = CRS
+					tag = CAT
+					tag = BSQ
+				}
+			}
+			country_event = 10601
+		}
+		set_global_flag = france_destabilizing
+	}
+}
+
+
+			
