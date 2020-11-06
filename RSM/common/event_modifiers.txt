@@ -591,6 +591,12 @@ gold_rush = {
 	icon = 11
 }
 
+gold_rush_small = {
+	immigrant_attract = 0.1
+	rgo_output = 0.1
+	icon = 11
+}
+
 witwatersrand_gold_rush = {
 	prestige = 0.01
 	icon = 11
