@@ -16,19 +16,6 @@ country_event = {
 	
 	option = {
 		name = "We welcome them"
-		any_country = {
-			limit = {
-				in_sphere = ENL
-				NOT = { tag = HAN }
-			}
-			country_event = 10600
-		}
-		any_pop = {
-			limit = {
-				culture = irish
-			}
-			move_pop = 263
-		}
 	}
 }
 
@@ -565,5 +552,130 @@ country_event = {
 	}
 }
 
+# Returning settlers that released nations get
+country_event = {
+	id = 100011
+	title = "The Settlers"
+	desc = "EVT100011DESC"
+	is_triggered_only = yes
+	
+	option = {
+		name = "We will persecute them all"
+		any_pop = {
+			limit = {
+				has_pop_culture = british
+			}
+			move_pop = 300
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = irish
+			}
+			move_pop = 263
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = scottish
+			}
+			move_pop = 269
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = welsh
+			}
+			move_pop = 273
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = cornish
+			}
+			move_pop = 299
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = manx
+			}
+			move_pop = 304
+		}
 
-			
+		clr_country_flag = return_the_british
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				OR = {
+					primary_culture = british
+					primary_culture = irish
+					primary_culture = scottish
+					primary_culture = welsh
+					primary_culture = cornish
+					primary_culture = manx
+					accepted_culture = british
+					accepted_culture = irish
+					accepted_culture = scottish
+					accepted_culture = welsh
+					accepted_culture = cornish
+					accepted_culture = manx
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "Move the English!"
+		any_pop = {
+			limit = {
+				has_pop_culture = british
+			}
+			move_pop = 300
+		}
+
+		clr_country_flag = return_the_british
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				OR = {
+					primary_culture = british
+					accepted_culture = british
+					tag = FRA
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "EVT100011OPT3"
+		clr_country_flag = return_the_british\
+
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				OR = {
+					tag = FRA
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 100012
+	title = "Acquire the English Colonies"
+	desc = "Hippity Hoppity your colonies are now my property"
+	is_triggered_only = yes
+	
+	option = {
+		ENL = {
+			any_owned = {
+				limit = {
+					is_colonial = yes
+				}
+				secede_province = FRA
+			}
+		}
+		set_country_flag = return_the_british
+	}
+}
+

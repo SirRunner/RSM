@@ -206,111 +206,14 @@ political_decisions = {
 			}
 			change_tag = ENL
 			
+			remove_accepted_culture = scottish
+			remove_accepted_culture = welsh
+			
 			304 = {
 				remove_core = ENL
 			}
-			release = ISM
-		
-			release = WHA
-			release = IRE
-			release = SCO
 			517 = {
 				add_core = SPA
-				secede_province = SPA
-			}
-			# release = MLT
-			
-			# release = CAN
-			# release = QUE
-			# release = RPL
-			# release = NEW
-			# release = MRU
-			# release = COL
-			
-			# release = ARG
-			2217 = {
-				secede_province = FRA
-			}
-			2218  = {
-				secede_province = FRA
-			}
-			2219 = {
-				secede_province = FRA
-			}
-			2220 = {
-				secede_province = FRA
-			}
-			203 = {
-				secede_province = FRA
-			}
-			2224 = {
-				secede_province = FRA
-			}
-			2225 = {
-				secede_province = FRA
-			}
-			2226 = {
-				secede_province = FRA
-			}
-			2227 = {
-				secede_province = FRA
-			}
-			2229 = {
-				secede_province = FRA
-			}
-			2231 = {
-				secede_province = FRA
-			}
-			2232 = {
-				secede_province = FRA
-			}
-			2233 = {
-				secede_province = FRA
-			}
-			2237 = {
-				secede_province = FRA
-			}
-			2238 = {
-				secede_province = FRA
-			}
-			2409 = {
-				secede_province = FRA
-			}
-			2239 = {
-				secede_province = FRA
-			}
-			2242 = {
-				secede_province = FRA
-			}
-			2243 = {
-				secede_province = FRA
-			}
-			1979 = {
-				secede_province = FRA
-			}
-			2129 = {
-				secede_province = FRA
-			}
-			2130 = {
-				secede_province = FRA
-			}
-			2132 = {
-				secede_province = FRA
-			}
-			2125 = {
-				secede_province = FRA
-			}
-			2127 = {
-				secede_province = FRA
-			}
-			2128 = {
-				secede_province = FRA
-			}
-			1325 = {
-				secede_province = FRA
-			}
-			1320 = {
-				secede_province = FRA
 			}
 			1884 = {
 				add_core = GBU
@@ -354,8 +257,12 @@ political_decisions = {
 				country_event = 10600
 			}
 			
+			FRA = {
+				country_event = 100012
+			}
+			
 			set_global_flag = disunited_kingdom
-			country_event = { id = 100000 days = 2 }
+			country_event = { id = 100000 days = 1 }
 		}
 	}
 	returning_english = {
@@ -573,6 +480,20 @@ political_decisions = {
 				militancy = -5
 			}
 			set_country_flag = accepted_french
+		}
+	}
+	
+	irish_settlers = {
+		# TODO: ADD IMAGE
+		potential = {
+			tag = ENL
+			has_global_flag = disunited_kingdom
+		}
+		
+		allow = { }
+		
+		effect = {
+			
 		}
 	}
 }

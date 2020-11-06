@@ -1,10 +1,10 @@
 ;;;;;;;;;;;;;;;;;x
 the_disunited_kingdom_title;The Disunited Kingdom;;;;;;;;;;;;;;;;;x
 the_disunited_kingdom_desc;The United Kingdom is no longer working. Ever since their subjugation, the Irish have been plotting against the crown, attempting to break free. Secret meeting have been occurring in Wales and Scotland, conspiring to tear down everything our ancestors sacrificed to build. Everywhere, the United Kingdom's colonies prepare to rebel against her. Ourside the borders of the empire, her enemies plot against her. There is no stopping this wave of violence. \n\nIt may be possible for the empire to prevail against these internal cracks, but that is not our choice. Our choice is to save our sons for their true purpose!;;;;;;;;;;;;;;;;;x
-returning_english_title;Return the English!;;;;;;;;;;;;;;;;;x
-returning_english_desc;Huh. You're not supposed to see this....;;;;;;;;;;;;;;;;;x
-returning_irish_title;Return the Irish!;;;;;;;;;;;;;;;;;x
-returning_irish_desc;Huh. You're not supposed to see this....;;;;;;;;;;;;;;;;;x
+returning_english_title;The British Question;;;;;;;;;;;;;;;;;x
+returning_english_desc;With the global abdication of England's power, the question remains as to our policies surrounding the English settlers.;;;;;;;;;;;;;;;;;x
+irish_settlers_title;The Irish Settlers Question;;;;;;;;;;;;;;;;;x
+irish_settlers_desc;Ireland is no longer under our kingdom. While they were, a number of Irish moved to our English provinces. What should be done about them?;;;;;;;;;;;;;;;;;x
 norman_princes_title;Norman Princes;;;;;;;;;;;;;;;;;x
 norman_princes_desc;The current kings and queens of England are descendents of William the Conquerer. William, and many know, was a Norman. Since his time as King, we have lost his homeland. \n\nNo longer. Today Queen Victoria announced a bold idea: retake England's ancestral homeland. To victory, or death!;;;;;;;;;;;;;;;;;x
 english_channel_title;The English Channel Crisis;;;;;;;;;;;;;;;;;x
@@ -26,3 +26,8 @@ EVT100005DESC;\nWe have been given a most curious offer. Today some of our advis
 EVT100007DESC;\nWe have won the war against France. When the leaders of Occitania, Alsace and Corsica asked for help, we gave them it. As per the agreement we made, they have offered to be autonomous dependencies of the English crown. Do we follow through with our deal?;;;;;;;;;;;;;;;;;x
 EVT100008DESC;\nAfter a number of requests from the European community, we should make a final decision regarding the French lands we have occupied under the guise of "stabilization". We have a number of options. Regardless of our choice, we should be able to convince the community to solely recognize our claims to the Channel-adjacent regions of Brittany, Normandy and Picardy. \n\n§RThe first and the last two options are rather self explanatory as to what they do. The second option unlocks the path to accepting French as an accepted culture.;;;;;;;;;;;;;;;;;x
 EVT100009DESC;\nNow that the French have taken their rightful place as equals within English society, their concerns are our concerns; their claimed land is ours.;;;;;;;;;;;;;;;;;x
+EVT100011DESC;\nAs we are now freed from the British, there are a number of questions and trials we must face. One of them is the question of the British settlers that have come to our lands. What should we do about them?;;;;;;;;;;;;;;;;;x
+EVT100011OPT3;These settlers are $COUNTRY_ADJ$!;;;;;;;;;;;;;;;;;x
+TESTING1;$FROM_COUNTRY$ has returned all;;;;;;;;;;;;;;;;;x
+TESTING2;$FROM_COUNTRY$ has returned English;;;;;;;;;;;;;;;;;x
+TESTING3;$FROM_COUNTRY$ has kept;;;;;;;;;;;;;;;;;x
