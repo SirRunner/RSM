@@ -208,7 +208,6 @@ political_decisions = {
 			
 			304 = {
 				remove_core = ENL
-				add_core = ISM
 			}
 			release = ISM
 		
@@ -219,16 +218,16 @@ political_decisions = {
 				add_core = SPA
 				secede_province = SPA
 			}
-			release = MLT
+			# release = MLT
 			
-			release = CAN
-			release = QUE
-			release = RPL
-			release = NEW
-			release = MRU
-			release = COL
+			# release = CAN
+			# release = QUE
+			# release = RPL
+			# release = NEW
+			# release = MRU
+			# release = COL
 			
-			release = ARG
+			# release = ARG
 			2217 = {
 				secede_province = FRA
 			}
@@ -313,95 +312,47 @@ political_decisions = {
 			1320 = {
 				secede_province = FRA
 			}
-			
-			release = SAF
-			release = UCA
 			1884 = {
 				add_core = GBU
 			}
-			release = GBU
-			release = ASH
-			release = YEM
 			
-			release = HYD
-			release_vassal = HYD
-			release = MYS
-			release_vassal = MYS
-			release = SRI
-			release = ORI
-			release_vassal = ORI
-			release = BNG
-			release = ASM
-			release = BUR
-			release = BUN
-			release_vassal = BUN
-			release = BHO
-			release_vassal = BHO
-			release = NAG
-			release_vassal = NAG
-			release = MUG
-			release = MEW
-			release_vassal = MEW
-			release = BER
-			release_vassal = BER
-			release = BIH
-			release = JOH
-			release = MAH
-			release_vassal = TRA
-			release_vassal = KUT
-			release_vassal = JOD
-			release_vassal = JAS
-			release_vassal = JAI
-			release_vassal = IND
-			release_vassal = GWA
-			release_vassal = BIK
-			release_vassal = AWA
-			release_vassal = BAS
-			release_vassal = ION
+			any_country = {
+				limit = {
+					any_core = { owned_by = ENL }
+					NOT = {
+						tag = CNW
+						tag = HND
+					}
+				}
+				country_event = 10601
+				set_country_flag = return_the_british
+			}
 			
-			release = AST
-			release = NZL
+			any_country = {
+				limit = {
+					is_vassal = yes
+					overlord = {
+						tag = ENL
+					}
+					NOT = {
+						tag = HAN
+						tag = ION
+					}
+				}
+				country_event = 10602
+			}
 			
-			# Uncomment after Welsh/Scottish added
-			#WHA = { set_country_flag = return_the_english }
-			#SCO = { set_country_flag = return_the_english }
-			
-			# Uncomment after Australasian added
-			#AST = { set_country_flag = return_the_english set_country_flag = return_the_irish }
-			#NZL = { set_country_flag = return_the_english set_country_flag = return_the_irish }
-			
-			IRE = { set_country_flag = return_the_english }
-			SPA = { set_country_flag = return_the_english set_country_flag = return_the_irish }
-			MLT = { set_country_flag = return_the_english set_country_flag = return_the_irish }
-			CAN = { set_country_flag = return_the_english set_country_flag = return_the_irish }
-			QUE = { set_country_flag = return_the_english set_country_flag = return_the_irish }
-			RPL = { set_country_flag = return_the_english set_country_flag = return_the_irish }
-			NEW = { set_country_flag = return_the_english set_country_flag = return_the_irish }
-			MRU = { set_country_flag = return_the_english set_country_flag = return_the_irish }
-			COL = { set_country_flag = return_the_english set_country_flag = return_the_irish }
-			ARG = { set_country_flag = return_the_english set_country_flag = return_the_irish }
-			FRA = { set_country_flag = return_the_english set_country_flag = return_the_irish }
-			SAF = { set_country_flag = return_the_english set_country_flag = return_the_irish }
-			UCA = { set_country_flag = return_the_english set_country_flag = return_the_irish }
-			GBU = { set_country_flag = return_the_english set_country_flag = return_the_irish }
-			ASH = { set_country_flag = return_the_english set_country_flag = return_the_irish }
-			YEM = { set_country_flag = return_the_english set_country_flag = return_the_irish }
-			HYD = { set_country_flag = return_the_english set_country_flag = return_the_irish }
-			MYS = { set_country_flag = return_the_english set_country_flag = return_the_irish }
-			SRI = { set_country_flag = return_the_english set_country_flag = return_the_irish }
-			ORI = { set_country_flag = return_the_english set_country_flag = return_the_irish }
-			BNG = { set_country_flag = return_the_english set_country_flag = return_the_irish }
-			ASM = { set_country_flag = return_the_english set_country_flag = return_the_irish }
-			BUR = { set_country_flag = return_the_english set_country_flag = return_the_irish }
-			BUN = { set_country_flag = return_the_english set_country_flag = return_the_irish }
-			BHO = { set_country_flag = return_the_english set_country_flag = return_the_irish }
-			NAG = { set_country_flag = return_the_english set_country_flag = return_the_irish }
-			MUG = { set_country_flag = return_the_english set_country_flag = return_the_irish }
-			NEW = { set_country_flag = return_the_english set_country_flag = return_the_irish }
-			BER = { set_country_flag = return_the_english set_country_flag = return_the_irish }
-			BIH = { set_country_flag = return_the_english set_country_flag = return_the_irish }
-			JOH = { set_country_flag = return_the_english set_country_flag = return_the_irish }
-			MAH = { set_country_flag = return_the_english set_country_flag = return_the_irish }
+			any_country = {
+				limit = {
+					in_sphere = ENL
+					NOT = { 
+						tag = HAN
+						tag = ION
+						tag = BEL
+					}
+				}
+				country_event = 10600
+			}
 			
 			set_global_flag = disunited_kingdom
 			country_event = { id = 100000 days = 2 }
@@ -409,33 +360,12 @@ political_decisions = {
 	}
 	returning_english = {
 		potential = {
-			has_country_flag = return_the_english
+			has_country_flag = return_the_british
 		}
 		allow = { }
 		effect = {
-			any_pop = {
-				limit = {
-					culture = british
-				}
-				move_pop = 300
-			}
-			clr_country_flag = return_the_english
-		}
-	}
-	
-	returning_irish = {
-		potential = {
-			has_country_flag = return_the_irish
-		}
-		allow = { }
-		effect = {
-			any_pop = {
-				limit = {
-					culture = irish
-				}
-				move_pop = 263
-			}
-			clr_country_flag = return_the_irish
+			country_event = 100011
+			clr_country_flag = return_the_british
 		}
 	}
 	
