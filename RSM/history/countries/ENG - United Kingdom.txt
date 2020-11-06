@@ -1,6 +1,10 @@
 capital = 300
 primary_culture = british
 culture = anglo_canadian
+culture = scottish
+culture = welsh
+culture = cornish
+culture = manx
 religion = protestant
 government = hms_government
 plurality = 30

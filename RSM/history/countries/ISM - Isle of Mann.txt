@@ -1,5 +1,6 @@
 capital = 304
-primary_culture = british
+primary_culture = manx
+culture = british
 religion = protestant
 government = hms_government
 plurality = 5
