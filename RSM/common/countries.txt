@@ -6,6 +6,7 @@ REB 	= 	"countries/rebels.txt"
 ### RANDOM STUFF MOD ###
 ISM		= "countries/Isle of Man.txt"
 AGV		= "countries/Angevin Empire.txt"
+CNW		= "countries/Cornwall.txt"
 
 ### NEW NATIONS MOD ###
 
