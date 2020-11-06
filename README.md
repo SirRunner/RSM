@@ -10,6 +10,7 @@ This mod is made by SirRunner (both on Reddit and Discord - I do post a fair amo
  - I have integrated a slightly modified version of [Kwizzle's Utility Mod](https://www.moddb.com/mods/kwizzles-utility-mod) (Utility Mod Decision and Events)
  - The army doctrine ideas I stole right off of Heart of Iron IV and a mod for that game, [Road to 56](https://steamcommunity.com/sharedfiles/filedetails/?id=820260968)
  - The base assimilation percentages (that can be seen by checking the POP tab) is a slightly modified version of those that the [Heirs to Aquitania](https://github.com/Savolainen5/The-Heirs-to-Aquitania) use. 
+ - Many (but not all) of the cultures added and population changes that have occurred are from [HFM](https://github.com/SighPie/HFM)
 
 ## Features
 
