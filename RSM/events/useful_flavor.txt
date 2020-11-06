@@ -43,6 +43,20 @@ country_event = {
 				}
 			}
 		}
-		ra
+	}
+}
+
+# Releases vassal from triggering country
+country_event = {
+	id = 10602
+	title = "FREEDOM"
+	desc = "How? How are you breaking the game this much?"
+	is_triggered_only = yes
+	
+	option = {
+		name = "Yes"
+		FROM = {
+			release_vassal = THIS
+		}
 	}
 }
