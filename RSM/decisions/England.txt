@@ -180,6 +180,7 @@ political_decisions = {
 		}
 	}
 	the_disunited_kingdom = {
+		# TODO: ADD IMAGE
 		potential = {
 			tag = ENG
 			NOT = { year = 1837 }
@@ -262,10 +263,12 @@ political_decisions = {
 			}
 			
 			set_global_flag = disunited_kingdom
+			set_county_flag = return_irish
 			country_event = { id = 100000 days = 1 }
 		}
 	}
 	returning_english = {
+		# TODO: ADD IMAGE
 		potential = {
 			has_country_flag = return_the_british
 		}
@@ -488,12 +491,14 @@ political_decisions = {
 		potential = {
 			tag = ENL
 			has_global_flag = disunited_kingdom
+			has_country_flag = return_irish
 		}
 		
 		allow = { }
 		
 		effect = {
-			
+			country_event = 100013
+			clr_country_flag = return_irish
 		}
 	}
 }

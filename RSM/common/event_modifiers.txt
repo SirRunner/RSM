@@ -2,6 +2,8 @@
 # scriptable and usable for event-system below.
 ##################################################################################################
 
+##### RSM #####
+
 ##### GENERIC EVENTS #####
 cultural_assimilation = {
 	assimilation_rate = 0.5
@@ -16,6 +18,36 @@ cultural_assimilation_strong = {
 	pop_militancy_modifier = 0.02
 	icon = 7
 }
+
+gold_rush_small = {
+	immigrant_attract = 0.1
+	rgo_output = 0.1
+	icon = 11
+}
+
+#### ENG - UNITED KINGDOM ENL - ENGLAND AGV - ANGEVIN EMPIRE #####
+university_london = {
+	global_pop_consciousness_modifier = 0.01
+	research_points_modifier = 0.1
+	education_efficiency_modifier = 0.25
+	prestige = 0.01
+	icon = 17
+}
+belle_vue_gardens = {
+	global_pop_consciousness_modifier = -0.01
+	global_pop_militancy_modifier = -0.01
+	immigrant_attract = 0.05
+	prestige = 0.01
+	icon = 13
+}
+royal_agricultural_society = {
+	industry_tech_research_bonus = 0.05
+	research_points_modifier = 0.01
+	farm_rgo_eff = 0.1
+	icon = 11
+}
+
+##### VANILLA/NNM #####
 
 ##### POLITICAL EVENTS ######
 government_sanitarium = {
@@ -591,12 +623,6 @@ gold_rush = {
 	icon = 11
 }
 
-gold_rush_small = {
-	immigrant_attract = 0.1
-	rgo_output = 0.1
-	icon = 11
-}
-
 witwatersrand_gold_rush = {
 	prestige = 0.01
 	icon = 11
@@ -693,7 +719,7 @@ economic_boom = {
 	icon = 11
 }
 
-#### ENG - ENGLAND #####
+#### ENG - UNITED KINGDOM ENL - ENGLAND AGV - ANGEVIN EMPIRE #####
 corn_laws_repealed = {
 	max_tariff = -0.05
 	global_pop_militancy_modifier = -0.02
@@ -705,7 +731,7 @@ the_yard = {
 	core_pop_militancy_modifier = -0.02
 	tax_efficiency = 0.01
 	icon = 1
-}
+}	
 
 #### SPA - Spain ####
 la_guardia_civil = {

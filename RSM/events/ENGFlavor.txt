@@ -61,6 +61,7 @@ country_event = {
 	}
 }
 
+# Reform clubs
 country_event = {
 
 	id = 36900  
@@ -106,6 +107,7 @@ country_event = {
 	}
 }
 
+# Oliver Twist release
 country_event = {
 
 	
@@ -168,6 +170,7 @@ country_event = {
 	}
 }
 
+# Packages tours
 country_event = {
 
 	id = 36902  
@@ -219,6 +222,7 @@ country_event = {
 	}
 }
 
+# Queen Victoria marries
 country_event = {
 
 	id = 36903  
@@ -270,6 +274,7 @@ country_event = {
 	}
 }
 
+# First publication of Punch!
 country_event = {
 
 	id = 36904  
@@ -324,6 +329,7 @@ country_event = {
 	}
 }
 
+# The YMCA
 country_event = {
 
 	id = 36905  
@@ -332,6 +338,7 @@ country_event = {
 		OR = {
 			tag = ENG
 			tag = ENL
+			tag = AGV
 		} 
 		year = 1843
 		public_meetings = yes_meeting
@@ -372,6 +379,7 @@ country_event = {
 	}
 }
 
+# Vanity Fair
 country_event = {
 
 	id = 36907  
@@ -380,6 +388,7 @@ country_event = {
 		OR = {
 			tag = ENG
 			tag = ENL
+			tag = AGV
 		} 
 		year = 1846
 		press_rights = free_press 
@@ -429,6 +438,7 @@ country_event = {
 	}
 }
 
+# First telegraph line
 country_event = {
 
 	id = 36908  
@@ -437,6 +447,7 @@ country_event = {
 		OR = {
 			tag = ENG
 			tag = ENL
+			tag = AGV
 		} 
 		year = 1849
 		early_railroad = 1	
@@ -472,6 +483,7 @@ country_event = {
 	}
 }
 
+# 1851 World Fair
 country_event = { 
 	id = 36909
 
@@ -514,6 +526,7 @@ country_event = {
 	}
 }
 
+# Realism in theatre
 country_event = {
 
 	id = 36910  
@@ -522,6 +535,7 @@ country_event = {
 		OR = {
 			tag = ENG
 			tag = ENL
+			tag = AGV
 		} 
 		year = 1884
 		press_rights = free_press
@@ -556,6 +570,7 @@ country_event = {
 	}
 }
 
+# The Rose
 country_event = {
 
 	id = 36911  
@@ -568,6 +583,7 @@ country_event = {
 		OR = {
 			tag = ENG
 			tag = ENL
+			tag = AGV
 		} 
 		year = 1892
 		press_rights = free_press
@@ -604,6 +620,7 @@ country_event = {
 	}
 }
 
+# Gerald Manley Hopkins
 country_event = {
 
 	id = 36912  
@@ -616,6 +633,7 @@ country_event = {
 		OR = {
 			tag = ENG
 			tag = ENL
+			tag = AGV
 		} 
 		year = 1917
 		press_rights = free_press
@@ -653,6 +671,7 @@ country_event = {
 	}
 }
 
+# America's Cup Trophy
 country_event = {
 
 	id = 36913 
@@ -661,6 +680,7 @@ country_event = {
 		OR = {
 			tag = ENG
 			tag = ENL
+			tag = AGV
 		} 
 		year = 1850
 		exists = USA
@@ -695,6 +715,7 @@ country_event = {
 	}
 }
 
+# First Steamer to cross the Atlantic
 country_event = {
 
 	id = 36914 
@@ -703,6 +724,7 @@ country_event = {
 		OR = {
 			tag = ENG
 			tag = ENL
+			tag = AGV
 		} 
 		year = 1850
 		invention = steamer_transports
@@ -741,6 +763,7 @@ country_event = {
 	}
 }
 
+# 60 years on the throne
 country_event = {
 
 	id = 36915 
@@ -749,6 +772,7 @@ country_event = {
 		OR = {
 			tag = ENG
 			tag = ENL
+			tag = AGV
 		} 
 		year = 1896
 		OR = {
@@ -791,6 +815,7 @@ country_event = {
 	}
 }
 
+# First mountaineers club
 country_event = {
 
 	id = 36917  
@@ -799,6 +824,7 @@ country_event = {
 		OR = {
 			tag = ENG
 			tag = ENL
+			tag = AGV
 		} 
 		year = 1856
 		public_meetings = yes_meeting #allows public meetings
@@ -832,6 +858,7 @@ country_event = {
 	}
 }
 
+# First soccer club
 country_event = {
 
 	id = 36918  
@@ -840,6 +867,7 @@ country_event = {
 		OR = {
 			tag = ENG
 			tag = ENL
+			tag = AGV
 		} 
 		year = 1856
 		public_meetings = yes_meeting #allows public meetings
@@ -887,6 +915,7 @@ country_event = {
 	}
 }
 
+# Florence Nightingale
 country_event = {
 
 	id = 36919  
@@ -899,6 +928,7 @@ country_event = {
 		OR = {
 			tag = ENG
 			tag = ENL
+			tag = AGV
 		}
 		war = yes
 		medicine = 1 
@@ -935,6 +965,7 @@ country_event = {
 	}
 }
 
+# Taff Vale
 country_event = {
 
 	id = 36921
@@ -943,6 +974,7 @@ country_event = {
 		OR = {
 			tag = ENG
 			tag = ENL
+			tag = AGV
 		} 
 		year = 1901
 		ruling_party_ideology = conservative
@@ -996,6 +1028,7 @@ country_event = {
 	}
 }
 
+# 1882 Cricket Australia vs England
 country_event = {
 
 	id = 36922
@@ -1008,6 +1041,7 @@ country_event = {
 		OR = {
 			tag = ENG
 			tag = ENL
+			tag = AGV
 		} 
 		year = 1881
 		owns = 2468 #Sydney
@@ -1051,6 +1085,7 @@ country_event = {
 	}
 }
 
+# Darwin
 country_event = {
 
 	id = 36923
@@ -1063,6 +1098,7 @@ country_event = {
 		OR = {
 			tag = ENG
 			tag = ENL
+			tag = AGV
 		} 
 		functionalism = 1
 		year = 1858
@@ -1108,6 +1144,7 @@ country_event = {
 	}
 }
 
+# Wimbledon Championships
 country_event = {
 
 	id = 36924  
@@ -1116,6 +1153,7 @@ country_event = {
 		OR = {
 			tag = ENG
 			tag = ENL
+			tag = AGV
 		} 
 		year = 1876
 		public_meetings = yes_meeting #allows public meetings
@@ -1150,6 +1188,7 @@ country_event = {
 	}
 }
  
+ # Jack the Ripper
 country_event = {
 
 	id = 36925  
@@ -1162,6 +1201,7 @@ country_event = {
 		OR = {
 			tag = ENG
 			tag = ENL
+			tag = AGV
 		}
 		year = 1887
 		experimental_psychology = 1
@@ -1210,6 +1250,7 @@ country_event = {
 	}
 }
 
+# Shakespeare at Sadler's Wells
 country_event = {
 
 	id = 36926  
@@ -1218,6 +1259,7 @@ country_event = {
 		OR = {
 			tag = ENG
 			tag = ENL
+			tag = AGV
 		} 
 		year = 1853
 		public_meetings = yes_meeting
@@ -1253,6 +1295,7 @@ country_event = {
 	}
 }
 
+# Alice in Wonderland
 country_event = {
 
 	id = 36927 
@@ -1261,6 +1304,7 @@ country_event = {
 		OR = {
 			tag = ENG
 			tag = ENL
+			tag = AGV
 		} 
 		year = 1864
 		NOT = {
@@ -1295,6 +1339,7 @@ country_event = {
 	}
 }
 
+# The Thermopylae
 country_event = {
 
 	id = 36928 
@@ -1303,6 +1348,7 @@ country_event = {
 		OR = {
 			tag = ENG
 			tag = ENL
+			tag = AGV
 		} 
 		year = 1867
 		NOT = {
@@ -1337,6 +1383,7 @@ country_event = {
 	}
 }
 
+# Collapse of the Tay Bridge
 country_event = {
 
 	id = 36929 
@@ -1349,6 +1396,7 @@ country_event = {
 		OR = {
 			tag = ENG
 			tag = ENL
+			tag = AGV
 		}
 		year = 1879
 		owns = 270
@@ -1386,6 +1434,7 @@ country_event = {
 	}
 }
 
+# Great Tea Race
 country_event = {
 
 	id = 36930
@@ -1394,6 +1443,7 @@ country_event = {
 		OR = {
 			tag = ENG
 			tag = ENL
+			tag = AGV
 		} 
 		year = 1865
 		NOT = {
@@ -1428,6 +1478,7 @@ country_event = {
 	}
 }
 
+# Elgar - Enigma Variations
 country_event = {
 
 	id = 36932
@@ -1436,6 +1487,7 @@ country_event = {
 		OR = {
 			tag = ENG
 			tag = ENL
+			tag = AGV
 		} 
 		year = 1897
 		expressionism = 1
@@ -1471,6 +1523,7 @@ country_event = {
 	}
 }
 
+# First Athletics
 country_event = {
 
 	id = 36933
@@ -1479,6 +1532,7 @@ country_event = {
 		OR = {
 			tag = ENG
 			tag = ENL
+			tag = AGV
 		}
 		year = 1867
 		NOT = {
@@ -1515,6 +1569,7 @@ country_event = {
 	}
 }
 
+# Charles Stuart Fourth Expedition
 country_event = {
 
 	id = 36935 #parallel to AST43800, ENG more often than not will own AST directly at this point, so needs own event.
@@ -1523,6 +1578,7 @@ country_event = {
 		OR = {
 			tag = ENG
 			tag = ENL
+			tag = AGV
 		} 
 		year = 1844
 		owns = 2468 #Sydney
@@ -1565,6 +1621,7 @@ country_event = {
 	}
 }
 
+# Burke and Wills
 country_event = {
 
 	id = 36936 #parallel to AST43801, ENG more often than not will own AST directly at this point, so needs own event.
@@ -1612,7 +1669,7 @@ country_event = {
 	}
 }
 
-
+# Name of the Royal House
 country_event = {
 
 	id = 36937 #sets up COB35000
@@ -1621,6 +1678,7 @@ country_event = {
 		OR = {
 			tag = ENG
 			tag = ENL
+			tag = AGV
 		}
 		year = 1836
 		exists = COB
@@ -1672,6 +1730,7 @@ country_event = {
 	}
 }
 
+# First Bengali Novel
 province_event = {
 
 	id = 36938
@@ -1720,6 +1779,7 @@ province_event = {
 
 }
 
+# Colonial Army Reform
 country_event = {
 
 	id = 36939
@@ -1732,6 +1792,7 @@ country_event = {
 		OR = {
 			tag = ENG
 			tag = ENL
+			tag = AGV
 		}
 		owns = 1251 #Calcutta
 		year = 1853
@@ -1802,6 +1863,7 @@ country_event = {
 
 }
 
+# Treaty with Maori
 country_event = {
 
 	id = 36940 #Treaty of Waitangi
@@ -1817,6 +1879,7 @@ country_event = {
 		OR = {
 			tag = ENG
 			tag = ENL
+			tag = AGV
 		}
 		owns = 2509 #Auckland
 		year = 1840
@@ -1850,6 +1913,7 @@ country_event = {
 	}
 }
 
+# Flagstaff war
 country_event = {
 
 	id = 36941
@@ -1866,6 +1930,7 @@ country_event = {
 		OR = {
 			tag = ENG
 			tag = ENL
+			tag = AGV
 		}
 		owns = 2509 #Auckland
 		has_global_flag = treaty_of_waitangi
@@ -1912,6 +1977,7 @@ country_event = {
 	}
 }
 
+# Fencibles
 country_event = {
 	
 	id = 36942
@@ -1925,6 +1991,7 @@ country_event = {
 		OR = {
 			tag = ENG
 			tag = ENL
+			tag = AGV
 		}
 		NZL = {
 			exists = no
@@ -1955,6 +2022,7 @@ country_event = {
 	}
 }
 
+# The New Zealand Colony
 country_event = {
 	id = 36943
 	title = "EVTNAME36943" #The New Zealand Colony
@@ -1965,6 +2033,7 @@ country_event = {
 		OR = {
 			tag = ENG
 			tag = ENL
+			tag = AGV
 		}
 		has_global_flag = treaty_of_waitangi
 		any_owned_province = {
@@ -2006,6 +2075,7 @@ country_event = {
 	}
 }
 
+# Sale of Danish Gold Coast
 country_event = {
 	id = 36950
 	title = "EVTNAME36950" #The Danish Gold Coast
@@ -2016,6 +2086,7 @@ country_event = {
 		OR = {
 			tag = ENG
 			tag = ENL
+			tag = AGV
 		}
 		ASH = { owns = 1907 }
 		owns = 1908
@@ -2082,6 +2153,7 @@ country_event = {
 	}
 }
 
+# Conflict with Burma
 country_event = {
 	id = 36955
 	title = "EVTNAME36955" #Conflict with Burma
@@ -2158,6 +2230,7 @@ country_event = {
 	}
 }
 
+# Gold Coast Treaty with Dutch
 country_event = {
 	id = 36960
 	title = "EVTNAME36960" #The Gold Coast Treaty
@@ -2219,6 +2292,7 @@ country_event = {
 	}
 }
 
+# Dutch agreement with Gold Coast
 country_event = {
 	id = 36961
 	title = "The Dutch Have Agreed"
@@ -2302,6 +2376,7 @@ country_event = {
 	}
 }
 
+# Dutch refusal of Gold Coast
 country_event = {
 	id = 36962
 	title = "The Dutch Have Refused"
@@ -2332,6 +2407,7 @@ country_event = {
 	}
 }
 
+# Siezing Lagos from Oyo
 country_event = {
 	id = 36965
 	title = "EVTNAME36965" #The Lagos Slave Trade
@@ -2380,6 +2456,7 @@ country_event = {
 	}
 }
 
+# Oyo Reponse
 country_event = {
 	id = 36966
 	title = "EVTNAME36966" #United Kingdom Seizes Lagos!
@@ -2622,3 +2699,118 @@ country_event = {
 		}
 	}
 }
+
+# University of London
+country_event = {
+	id = 100014
+	title = "The University of London"
+	desc = "EVT100014DESC"
+	fire_only_once = yes
+	# TODO: ADD PICTURE
+	
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = ENL
+			tag = AGV
+		}
+		owns = 300
+	}
+	
+	mean_time_to_happen = {
+		months = 11
+	}
+	
+	option = {
+		name = "Meritaeque expectent praemia palmae!"
+		add_country_modifier = {
+			name = university_london
+			duration = -1
+		}
+	}
+}
+
+province_event = {
+	id = 100015
+	title = "The Belle Vue Zoological Gardens Bankrupt!"
+	desc = "EVT100015DESC"
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 278
+		year = 1842
+		has_province_modifier = belle_vue_gardens
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "We cannot let this business fail"
+		treasury = -50000
+	}
+	
+	option = {
+		name = "In what way is this essential?"
+		remove_province_modifier = belle_vue_gardens
+	}
+}
+
+country_event = {
+	id = 100016
+	title = "Royal Agricultural Society of England"
+	desc = "EVT100016DESC"
+	fire_only_once = yes
+	# TODO: ADD IMAGE
+	
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = ENL
+			tag = AGV
+		}
+		year = 1838
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = {
+		name = "Practice with science!"
+		add_country_modifier = {
+			name = royal_agricultural_society
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+	id = 100017
+	title = "First Civic Public Park"
+	desc = "EVT100017DESC"
+	fire_only_once = yes
+	# TODO: ADD IMAGE
+	
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = ENL
+			tag = AGV
+		}
+		year = 1486
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "As long as it distracts the masses"
+		prestige = 5
+	}
+}
+	
+	
+		

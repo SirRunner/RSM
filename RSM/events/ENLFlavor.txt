@@ -559,6 +559,8 @@ country_event = {
 	desc = "EVT100011DESC"
 	is_triggered_only = yes
 	
+	# TODO: ADD IMAGE
+	
 	option = {
 		name = "We will persecute them all"
 		any_pop = {
@@ -667,6 +669,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
+		name = "Yes"
 		ENL = {
 			any_owned = {
 				limit = {
@@ -676,6 +679,28 @@ country_event = {
 			}
 		}
 		set_country_flag = return_the_british
+	}
+}
+
+country_event = {
+	id = 100013
+	title = "The Irish Settlers"
+	desc = "EVT100013DESC"
+	is_triggered_only = yes
+	
+	# TODO: ADD IMAGE
+	option = {
+		name = "Deport them"
+		any_pop = {
+			limit = {
+				has_pop_culture = irish
+			}
+			move = 263
+		}
+	}
+	
+	option = {
+		name = "They can stay"
 	}
 }
 

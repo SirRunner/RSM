@@ -4,6 +4,7 @@ political_decisions = {
 			OR = {
 				tag = ENG
 				tag = ENL
+				tag = AGV
 			}
 			has_country_flag = great_irish_famine
 			NOT = {
@@ -67,6 +68,7 @@ political_decisions = {
 			OR = {
 				tag = ENG
 				tag = ENL
+				tag = AGV
 			}
 			year = 1900
 			NOT = {
@@ -97,6 +99,7 @@ political_decisions = {
 			OR = {
 				tag = ENG
 				tag = ENL
+				tag = AGV
 			}
 			NOT = {
 				has_country_flag = elementary_my_dear_watson # I know, he never says it in the books, yadiyadi.
@@ -121,6 +124,7 @@ political_decisions = {
 			OR = {
 				tag = ENG
 				tag = ENL
+				tag = AGV
 			}
 			year = 1860
 			ION = {
@@ -187,7 +191,6 @@ political_decisions = {
 		potential = {
 			OR = {
 				tag = ENG
-				tag = ENL
 			}
 			owns = 2068 
 			NOT = {
@@ -272,6 +275,7 @@ political_decisions = {
 			OR = {
 				tag = ENG
 				tag = ENL
+				tag = AGV
 			}
 			exists = CHI
 			has_global_flag = kowloon_incident
@@ -331,7 +335,6 @@ political_decisions = {
 		potential = {
 			OR = {
 				tag = ENG
-				tag = ENL
 			}
 			TIB = {
 				neighbour = THIS
@@ -362,7 +365,6 @@ political_decisions = {
 		potential = {
 			OR = {
 				tag = ENG
-				tag = ENL
 			}
 			owns = 1225
 			NOT = {
@@ -423,6 +425,25 @@ political_decisions = {
 			set_country_flag = created_trucial_protectorate
 			prestige = 5
 			create_vassal = ABU
+		}
+	}
+	
+	annex_aden = {
+		picture = map_arabia
+		potential = {
+			tag = ENG
+			1412 = {
+				owned_by = YEM
+			}
+		}
+		allow = {
+			war = no
+			year = 1838
+		}
+		effect = {
+			1412 = {
+				secede_province = ENG
+			}
 		}
 	}
 	
@@ -555,6 +576,12 @@ political_decisions = {
 				limit = { is_core = IRE }
 				add_province_modifier = {
 					name = irish_oppression
+					duration = -1
+				}
+			}
+			278 = {
+				add_province_modifier = {
+					name = belle_vue_gardens
 					duration = -1
 				}
 			}
@@ -733,6 +760,38 @@ political_decisions = {
 		
 		effect = {
 			SIN = { annex_to = THIS }
+		}
+	}
+	
+	kings_college_hospital = {
+		# TODO: ADD IMAGE
+		potential = {
+			OR = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+				government = hms_government
+			}
+			OR = {
+				tag = ENG
+				tag = ENL
+				tag = AGV
+			}
+			NOT = { has_country_flag = kings_college_hospital }
+			NOT = { 300 = { has_province_modifier = government_sanitarium } }
+		}
+		
+		allow = {
+			year = 1838
+		}
+		
+		effect = {
+			prestige = 5
+			300 = {
+				add_province_modifier = {
+					name = government_sanitarium
+					duration = -1
+				}
+			}
 		}
 	}
 }

@@ -17,6 +17,10 @@ become_angevin_empire_title;The Angevin Empire;;;;;;;;;;;;;;;;;x
 become_angevin_empire_desc;We have beat the French into the dust. Their nation no longer exists. Some may consider it archaic, but we hold much of the lands that the Angevins did in the twelth and thirteenth century. \n\nEngland no longer seems like the right name for our nation. We may be English, however, half of our land is French. Another name may be more suiting to our needs.;;;;;;;;;;;;;;;;;x
 agv_french_integration_title;French Integration;;;;;;;;;;;;;;;;;x
 agv_french_integration_desc;After being confronted by the European community about our occupation of French lands, we informed that that we planned on fully integrating France into the Empire. Today is that day.;;;;;;;;;;;;;;;;;x
+annex_aden_title;The Aden Colony;;;;;;;;;;;;;;;;;x
+annex_aden_desc;The East India Company was pursuing a fast way to transport officials and important communications. After months of debate and discussion, we finally have access to the port of Aden.;;;;;;;;;;;;;;;;;x
+kings_college_hospital_title;King's College Hospital;;;;;;;;;;;;;;;;;x
+kings_college_hospital_desc;An extension of the University of London, King's College Hospital serves both as a community hospital (sanitarium) and a training facility for medical students.;;;;;;;;;;;;;;;;;x
 EVT100000DESC;\nIt has been some time since all English were living England. With our worldwide abdication of all of our colonies, they are no longer welcome in their homes. They became refugees persecuted in their former lands. No longer. England has a home for all English!;;;;;;;;;;;;;;;;;x
 EVT100001DESC;\nWith our claim to Normandy officially recognized, who could doubt its true ownership now? We are the descendents of the Normans. Normandy is our birthright.;;;;;;;;;;;;;;;;;x
 EVT100002DESC;\nWe have been globally embarassed. Not only have we failed in our task given to us by our Queen, but we failed to the French. This embarrassment will stain our honor for all time..;;;;;;;;;;;;;;;;;x
@@ -28,6 +32,8 @@ EVT100008DESC;\nAfter a number of requests from the European community, we shoul
 EVT100009DESC;\nNow that the French have taken their rightful place as equals within English society, their concerns are our concerns; their claimed land is ours.;;;;;;;;;;;;;;;;;x
 EVT100011DESC;\nAs we are now freed from the British, there are a number of questions and trials we must face. One of them is the question of the British settlers that have come to our lands. What should we do about them?;;;;;;;;;;;;;;;;;x
 EVT100011OPT3;These settlers are $COUNTRY_ADJ$!;;;;;;;;;;;;;;;;;x
-TESTING1;$FROM_COUNTRY$ has returned all;;;;;;;;;;;;;;;;;x
-TESTING2;$FROM_COUNTRY$ has returned English;;;;;;;;;;;;;;;;;x
-TESTING3;$FROM_COUNTRY$ has kept;;;;;;;;;;;;;;;;;x
+EVT100013DESC;\nDespite losing control of Ireland, there are still a number of Irish citizens living in England. What should we do with them?;;;;;;;;;;;;;;;;;x
+EVT100014DESC;\nToday, the University of London has been founded. Undoubtedly this will have many effects on our population over time. Let all who come by merit deserve the most reward!;;;;;;;;;;;;;;;;;x
+EVT100015DESC;\nJohn Jennison came to use today asking for monetary support to keep his zoological gardens open. There are a number of prominent individuals who have enjoyed these gardens, and another group who do not see the point of having the gardens. What should we do?;;;;;;;;;;;;;;;;;x
+EVT100016DESC;\nEarlier this afternoon, Queen Victoria gave the Royal Agricultural Society of England its Royal Charter. Now, all farmers can benefit from their discoveries!;;;;;;;;;;;;;;;;;x
+EVT100017DESC'\nToday, Birkenhead Park - in Birkenhead, near Liverpool - the first public park opened for public access.;;;;;;;;;;;;;;;;;x
