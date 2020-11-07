@@ -1846,8 +1846,8 @@ province_event = {
 		name = "For me?"
 		add_province_modifier = {
 			name = gold_rush_small
+			duration = -1
 		}
-		duration = -1
 	}
 }
 
@@ -1894,3 +1894,48 @@ province_event = {
 		trade_goods = precious_metal
 	}
 }
+
+# Wexford change to coal
+province_event = {
+	id = 1145
+	title = "New Coal Mines"
+	desc = "EVTDESC1145"
+	
+	trigger = {
+		province_id = 265
+		NOT = { trade_goods = coal }
+		year = 1920
+	}
+	
+	mean_time_to_happen = {
+		month = 48
+	}
+	
+	option = {
+		name = "We could always use more coal"
+		trade_goods = coal
+	}
+}
+
+# Dublin revert to grain
+province_event = {
+	id = 1146
+	title = "Dried up vein"
+	desc = "EVTDESC1146"
+	
+	trigger = {
+		province_id = 263
+		year = 1910
+		trade_goods = iron
+	}
+	
+	mean_time_to_happen = {
+		month = 72
+	}
+	
+	option = {
+		name = "Drat"
+		trade_goods = grain
+	}
+}
+	
