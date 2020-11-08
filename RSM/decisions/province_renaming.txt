@@ -1,0 +1,108 @@
+# TODO: TO ALL OTHER TODOS
+
+political_decisions = {
+	province_renaming_setup = {
+		potential = {
+			always = no
+		}
+		allow = {
+			year = 1836
+		}
+		effect = {
+			#set_global_flag = british_renamed_ireland
+		}
+	}
+	
+	rename_ireland = {
+		potential = {
+			OR = {
+				AND = {
+					is_culture_group = celtic
+					NOT = { has_global_flag = celtic_renamed_ireland }
+					owns = 254 owns = 255 owns = 256 owns = 257 # Ulster
+					owns = 258 owns = 259 # Connacht
+					owns = 260 owns = 261 owns = 262 # Munster
+					owns = 263 owns = 264 owns = 265 # Leinster
+				}
+				AND = {
+					is_culture_group = british
+					NOT = { has_global_flag = british_renamed_ireland }
+					owns = 254 owns = 255 owns = 256 owns = 257 # Ulster
+					owns = 258 owns = 259 # Connacht
+					owns = 260 owns = 261 owns = 262 # Munster
+					owns = 263 owns = 264 owns = 265 # Leinster
+				}
+			}
+		}
+		allow = {
+			#war = no
+		}
+		effect = {
+			# Celtic
+			random_owned = {
+				limit = {
+					province_id = 254
+					owner = { is_culture_group = celtic }
+				}
+				254 = { change_province_name = "Béal Feirste" # Scots: Bilfawst/Bilfaust
+						state_scope = { change_region_name = "Ulaidh" } # Scots: Ulstèr }
+				255 = { change_province_name = "Doire" # Scots: Derrie/Lunnonderrie }
+				256 = { change_province_name = "Ard Mhacha" # Scots: Airmagh }
+				257 = { change_province_name = "Dún na nGall" }
+				
+				258 = { change_province_name = "Gaillimh"
+						state_scope = { change_region_name = "Connachta" } }
+				259 = { change_province_name = "Sligeach" }
+				
+				260 = { change_province_name = "Corcaigh"
+						state_scope = { change_region_name = "An Mhumhain" } }
+				261 = { change_province_name = "Luimneach" }
+				262 = { change_province_name = "Port Láirge" }
+				
+				263 = { change_province_name = "Baile Átha Cliath"
+						state_scope = { change_region_name = "Laighin" } }
+				264 = { change_province_name = "Cill Dara" }
+				265 = { change_province_name = "Loch Garman" }
+				
+				owner = {
+					set_global_flag = celtic_renamed_ireland
+					clr_global_flag = british_renamed_ireland
+				}
+			}
+			
+			## BUGGED AF RIGHT NOW
+			# British 
+			random_owned = {
+				limit = {
+					province_id = 254
+					owner = { is_culture_group = british }
+				}
+				254 = { change_province_name = "Belfast"
+						state_scope = { change_region_name = "Ulster" } }
+				255 = { change_province_name = "Londonderry" }
+				256 = { change_province_name = "Armagh" }
+				257 = { change_province_name = "Donegal" }
+				
+				258 = { change_province_name = "Galway"
+						state_scope = { change_region_name = "Connacht" } }
+				259 = {	change_province_name = "Sligo" }
+				
+				260 = { change_province_name = "Cork"
+						state_scope = { change_region_name = "Munster" } }
+				261 = { change_province_name = "Limerick" }
+				262 = { change_province_name = "Waterford" }
+				
+				263 = { change_province_name = "Dublin"
+						state_scope = { change_region_name = "Leinster" } }
+				264 = { change_province_name = "Kildare" }
+				265 = { change_province_name = "Wexford" }
+				
+				owner = {
+					set_global_flag = british_renamed_ireland
+					clr_global_flag = celtic_renamed_ireland
+				}
+				owner = { prestige = 100 }
+			}
+		}
+	}
+}
