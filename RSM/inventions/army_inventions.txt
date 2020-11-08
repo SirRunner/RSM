@@ -1,4 +1,5 @@
 #post_napoleonic_thought
+# TODO: TIE MORE INVENTIONS TOGETHER
 skirmisher_infantry = {
 	limit = { post_napoleonic_thought = 1 }
 	chance = {
