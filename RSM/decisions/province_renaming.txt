@@ -1,53 +1,58 @@
-# TODO: TO ALL OTHER TODOS
-
 political_decisions = {
 	province_renaming_setup = {
 		potential = {
-			always = no
+			ai = yes
+			NOT = { has_global_flag = province_name_setup }
 		}
 		allow = {
 			year = 1836
 		}
 		effect = {
-			#set_global_flag = british_renamed_ireland
+			# British Isles
+			set_global_flag = british_renamed_ireland
+			set_global_flag = british_renamed_scotland
+			set_global_flag = british_renamed_wales
+			set_global_flag = british_renamed_isle_of_man
+			set_global_flag = british_renamed_cornwall
+			
+			set_global_flag = province_name_setup
 		}
 	}
 	
 	rename_ireland = {
 		potential = {
+			owns = 254 owns = 255 owns = 256 owns = 257 # Ulster
+			owns = 258 owns = 259 # Connacht
+			owns = 260 owns = 261 owns = 262 # Munster
+			owns = 263 owns = 264 owns = 265 # Leinster
 			OR = {
 				AND = {
 					is_culture_group = celtic
+					NOT = { primary_culture = scottish }
 					NOT = { has_global_flag = celtic_renamed_ireland }
-					owns = 254 owns = 255 owns = 256 owns = 257 # Ulster
-					owns = 258 owns = 259 # Connacht
-					owns = 260 owns = 261 owns = 262 # Munster
-					owns = 263 owns = 264 owns = 265 # Leinster
 				}
 				AND = {
 					is_culture_group = british
 					NOT = { has_global_flag = british_renamed_ireland }
-					owns = 254 owns = 255 owns = 256 owns = 257 # Ulster
-					owns = 258 owns = 259 # Connacht
-					owns = 260 owns = 261 owns = 262 # Munster
-					owns = 263 owns = 264 owns = 265 # Leinster
+				}
+				AND = {
+					primary_culture = scottish
+					NOT = { has_global_flag = scottish_renamed_ireland }
 				}
 			}
 		}
-		allow = {
-			#war = no
-		}
+		allow = { war = no }
 		effect = {
-			# Celtic
+			# Celtic - non Scottish
 			random_owned = {
 				limit = {
 					province_id = 254
-					owner = { is_culture_group = celtic }
-				}
-				254 = { change_province_name = "Béal Feirste" # Scots: Bilfawst/Bilfaust
-						state_scope = { change_region_name = "Ulaidh" } # Scots: Ulstèr }
-				255 = { change_province_name = "Doire" # Scots: Derrie/Lunnonderrie }
-				256 = { change_province_name = "Ard Mhacha" # Scots: Airmagh }
+					owner = { is_culture_group = celtic NOT = { primary_culture = scottish } }
+				} 
+				254 = { change_province_name = "Béal Feirste"
+						state_scope = { change_region_name = "Ulaidh" } }
+				255 = { change_province_name = "Doire" }
+				256 = { change_province_name = "Ard Mhacha" }
 				257 = { change_province_name = "Dún na nGall" }
 				
 				258 = { change_province_name = "Gaillimh"
@@ -67,10 +72,43 @@ political_decisions = {
 				owner = {
 					set_global_flag = celtic_renamed_ireland
 					clr_global_flag = british_renamed_ireland
+					clr_global_flag = scottish_renamed_ireland
 				}
 			}
 			
-			## BUGGED AF RIGHT NOW
+			# Scottish
+			random_owned = {
+				limit = {
+					province_id = 254
+					owner = { primary_culture = scottish }
+				} 
+				254 = { change_province_name = "Bilfaust"
+						state_scope = { change_region_name = "Ulstèr" } }
+				255 = { change_province_name = "Lunnonderrie" }
+				256 = { change_province_name = "Airmagh" }
+				257 = { change_province_name = "Dún na nGall" }
+				
+				258 = { change_province_name = "Gaillimh"
+						state_scope = { change_region_name = "Connachta" } }
+				259 = { change_province_name = "Sligeach" }
+				
+				260 = { change_province_name = "Corcaigh"
+						state_scope = { change_region_name = "An Mhumhain" } }
+				261 = { change_province_name = "Luimneach" }
+				262 = { change_province_name = "Port Láirge" }
+				
+				263 = { change_province_name = "Baile Átha Cliath"
+						state_scope = { change_region_name = "Laighin" } }
+				264 = { change_province_name = "Cill Dara" }
+				265 = { change_province_name = "Loch Garman" }
+				
+				owner = {
+					set_global_flag = scottish_renamed_ireland
+					clr_global_flag = british_renamed_ireland
+					clr_global_flag = celtic_renamed_ireland
+				}
+			}
+			
 			# British 
 			random_owned = {
 				limit = {
@@ -100,8 +138,219 @@ political_decisions = {
 				owner = {
 					set_global_flag = british_renamed_ireland
 					clr_global_flag = celtic_renamed_ireland
+					clr_global_flag = scottish_renamed_ireland
 				}
-				owner = { prestige = 100 }
+			}
+		}
+	}
+	
+	rename_scotland = {
+		potential = {
+			owns = 266 owns = 267 owns = 268 owns = 270 # Highlands
+			owns = 269 owns = 271 owns = 272 # Lowlands
+			OR = {
+				AND = {
+					is_culture_group = celtic
+					NOT = { has_global_flag = celtic_renamed_scotland }
+				}
+				AND = {
+					is_culture_group = british
+					NOT = { has_global_flag = british_renamed_scotland }
+				}
+			}
+		}
+		allow = { war = no }
+		effect = {
+			# Celtic
+			random_owned = {
+				limit = {
+					province_id = 266
+					owner = { is_culture_group = celtic }
+				}
+				266 = { change_province_name = "Aiberdeen" 
+						state_scope = { change_region_name = "A' Ghàidhealtachd" } }
+				267 = { change_province_name = "Inbhir Nis" }
+				268 = { change_province_name = "Dùn Dè" }
+				270 = { change_province_name = "Sruighlea" }
+				
+				269 = { change_province_name = "Dùn Èideann"
+						state_scope = { change_region_name = "A' Ghalldachd" } }
+				271 = { change_province_name = "Glaschu" }
+				272 = { change_province_name = "Dùn Phris" }
+				
+				owner = {
+					set_global_flag = celtic_renamed_scotland
+					clr_global_flag = british_renamed_scotland
+				}
+			}
+			
+			# British
+			random_owned = {
+				limit = {
+					province_id = 266
+					owner = { is_culture_group = british }
+				}
+				266 = { change_province_name = "Aberdeen" 
+						state_scope = { change_region_name = "Highlands" } }
+				267 = { change_province_name = "Inverness" }
+				268 = { change_province_name = "Dundee" }
+				270 = { change_province_name = "Stirling" }
+				
+				269 = { change_province_name = "Edinburgh"
+						state_scope = { change_region_name = "Lowlands" } }
+				271 = { change_province_name = "Glasgow" }
+				272 = { change_province_name = "Dumfries" }
+				
+				owner = {
+					set_global_flag = british_renamed_scotland
+					clr_global_flag = celtic_renamed_scotland
+				}
+			}
+		}
+	}
+	
+	rename_wales = {
+		potential = {
+			owns = 273 owns = 274 owns = 275 owns = 276 # Wales
+			OR = {
+				AND = {
+					is_culture_group = celtic
+					NOT = { has_global_flag = celtic_renamed_wales }
+				}
+				AND = {
+					is_culture_group = british
+					NOT = { has_global_flag = british_renamed_wales }
+				}
+			}
+		}
+		allow = { war = no }
+		effect = {
+			# Celtic
+			random_owned = {
+				limit = {
+					province_id = 273
+					owner = { is_culture_group = celtic }
+				}
+				273 = { change_province_name = "Caerdydd" 
+						state_scope = { change_region_name = "Cymru" } }
+				274 = { change_province_name = "Aberteifi" }
+				275 = { change_province_name = "Llandrindod" }
+				276 = { change_province_name = "Caergybi" }
+				
+				owner = {
+					set_global_flag = celtic_renamed_wales
+					clr_global_flag = british_renamed_wales
+				}
+			}
+			
+			# British
+			random_owned = {
+				limit = {
+					province_id = 273
+					owner = { is_culture_group = british }
+				}
+				273 = { change_province_name = "Cardiff" 
+						state_scope = { change_region_name = "Wales" } }
+				274 = { change_province_name = "Cardigan" }
+				275 = { change_province_name = "Llandrindod" }
+				276 = { change_province_name = "Holyhead" }
+				
+				owner = {
+					set_global_flag = british_renamed_wales
+					clr_global_flag = celtic_renamed_wales
+				}
+			}
+		}
+	}
+	
+	rename_isle_of_man = {
+		potential = {
+			owns = 304
+			OR = {
+				AND = {
+					is_culture_group = celtic
+					NOT = { has_global_flag = celtic_renamed_isle_of_man }
+				}
+				AND = {
+					is_culture_group = british
+					NOT = { has_global_flag = british_renamed_isle_of_man }
+				}
+			}
+		}
+		allow = { war = no }
+		effect = {
+			# Celtic
+			random_owned = {
+				limit = {
+					province_id = 304
+					owner = { is_culture_group = celtic }
+				}
+				304 = { change_province_name = "Ellan Vannin" }
+				
+				owner = {
+					set_global_flag = celtic_renamed_isle_of_man
+					clr_global_flag = british_renamed_isle_of_man
+				}
+			}
+			
+			# British
+			random_owned = {
+				limit = {
+					province_id = 304
+					owner = { is_culture_group = british }
+				}
+				304 = { change_province_name = "Isle of Man" }
+				
+				owner = {
+					set_global_flag = british_renamed_isle_of_man
+					clr_global_flag = celtic_renamed_isle_of_man
+				}
+			}
+		}
+	}
+	
+	rename_cornwall = {
+		potential = {
+			owns = 299
+			OR = {
+				AND = {
+					is_culture_group = celtic
+					NOT = { has_global_flag = celtic_renamed_cornwall }
+				}
+				AND = {
+					is_culture_group = british
+					NOT = { has_global_flag = british_renamed_cornwall }
+				}
+			}
+		}
+		allow = { war = no }
+		effect = {
+			# Celtic
+			random_owned = {
+				limit = {
+					province_id = 299
+					owner = { is_culture_group = celtic }
+				}
+				299 = { change_province_name = "Kernow" }
+				
+				owner = {
+					set_global_flag = celtic_renamed_cornwall
+					clr_global_flag = british_renamed_cornwall
+				}
+			}
+			
+			# British
+			random_owned = {
+				limit = {
+					province_id = 299
+					owner = { is_culture_group = british }
+				}
+				299 = { change_province_name = "Plymouth" }
+				
+				owner = {
+					set_global_flag = british_renamed_cornwall
+					clr_global_flag = celtic_renamed_cornwall
+				}
 			}
 		}
 	}
