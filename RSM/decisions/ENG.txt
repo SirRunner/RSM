@@ -780,7 +780,7 @@ political_decisions = {
 				tag = AGV
 			}
 			NOT = { has_country_flag = kings_college_hospital }
-			NOT = { 300 = { has_province_modifier = government_sanitarium } }
+			NOT = { 300 = { has_province_modifier = local_hospital } }
 		}
 		
 		allow = {
