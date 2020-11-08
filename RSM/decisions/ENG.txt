@@ -1,3 +1,6 @@
+# TODO: REFACTOR SOME DECISIONS (modifiers AND REQUIREMENTS)
+# TODO: REORGANIZE FILE
+# TODO: COMPLETE OTHER TODOS
 political_decisions = {
 	repeal_the_corn_laws = {
 		potential = {
@@ -782,6 +785,7 @@ political_decisions = {
 		
 		allow = {
 			year = 1838
+			medicine = 1
 		}
 		
 		effect = {
@@ -792,6 +796,72 @@ political_decisions = {
 					duration = -1
 				}
 			}
+			treasury = -10000
+		}
+	}
+	
+	st_george_hall = {
+		# TODO: ADD IMAGE
+		# TODO: FIX INVENTION REQUIREMENTS
+		potential = {
+			owns = 277
+			OR = {
+				tag = ENG
+				tag = ENL
+				tag = AGV
+			}
+			NOT = { has_country_flag = built_st_george_hall }
+		}
+		allow = {
+			year = 1850
+			invention = impressionist_art
+		}
+		effect = {
+			treasury = -50000
+			prestige = 15
+			set_country_flag = built_st_george_hall
+		}
+	}
+	
+	blackpool_tower = {
+		# TODO: ADD IMAGE
+		potential = {
+			owns = 285
+			OR = {
+				tag = ENL
+				tag = ENG
+				tag = AGV
+			}
+			NOT = { has_country_flag = built_blackpool_tower }
+		}
+		allow = {
+			year = 1892
+		}
+		effect = {
+			treasury = -200000
+			prestige = 15
+			set_country_flag = built_blackpool_tower
+		}
+	}
+	
+	london_tower_bridge = {
+		#TODO: ADD IMAGE
+		potential = {
+			owns = 300
+			OR = {
+				tag = ENG
+				tag = ENL
+				tag = AGV
+			}
+			NOT = { has_country_flag = built_londer_tower_bridge }
+		}
+		allow = {
+			year = 1890
+		}
+		effect = {
+			treasury = -50000
+			prestige = 5
+			set_country_flag = built_londer_tower_bridge
 		}
 	}
 }

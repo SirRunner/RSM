@@ -21,6 +21,12 @@ annex_aden_title;The Aden Colony;;;;;;;;;;;;;;;;;x
 annex_aden_desc;The East India Company was pursuing a fast way to transport officials and important communications. After months of debate and discussion, we finally have access to the port of Aden.;;;;;;;;;;;;;;;;;x
 kings_college_hospital_title;King's College Hospital;;;;;;;;;;;;;;;;;x
 kings_college_hospital_desc;An extension of the University of London, King's College Hospital serves both as a community hospital (sanitarium) and a training facility for medical students.;;;;;;;;;;;;;;;;;x
+st_george_hall_title;Finish Construction of St. George's Hall;;;;;;;;;;;;;;;;;x
+st_george_hall_desc;Having started construction in 1841, St. George's Hall is one of the finest Neoclassical, specifically, neo-Grecian, buildings built.;;;;;;;;;;;;;;;;;x
+blackpool_tower_title;Finish Blackpool Tower;;;;;;;;;;;;;;;;;x
+blackpool_tower_desc;Upon completion, Blackpool Tower will be the tallest building in England, by far. Towering over all other buildings at the moment, it will stand at 158 meters, or 518 feet for you Americans (yes. I am an American too). Where was I?;;;;;;;;;;;;;;;;;x
+london_tower_bridge_title;Finish the London Tower Bridge;;;;;;;;;;;;;;;;;x
+london_tower_bridge_desc;Most iconic bridge crossing the River Thames. IDK what else to put here. I just wanted this here...;;;;;;;;;;;;;;;;;x
 EVT100000DESC;\nIt has been some time since all English were living England. With our worldwide abdication of all of our colonies, they are no longer welcome in their homes. They became refugees persecuted in their former lands. No longer. England has a home for all English!;;;;;;;;;;;;;;;;;x
 EVT100001DESC;\nWith our claim to Normandy officially recognized, who could doubt its true ownership now? We are the descendents of the Normans. Normandy is our birthright.;;;;;;;;;;;;;;;;;x
 EVT100002DESC;\nWe have been globally embarassed. Not only have we failed in our task given to us by our Queen, but we failed to the French. This embarrassment will stain our honor for all time..;;;;;;;;;;;;;;;;;x
@@ -36,4 +42,7 @@ EVT100013DESC;\nDespite losing control of Ireland, there are still a number of I
 EVT100014DESC;\nToday, the University of London has been founded. Undoubtedly this will have many effects on our population over time. Let all who come by merit deserve the most reward!;;;;;;;;;;;;;;;;;x
 EVT100015DESC;\nJohn Jennison came to use today asking for monetary support to keep his zoological gardens open. There are a number of prominent individuals who have enjoyed these gardens, and another group who do not see the point of having the gardens. What should we do?;;;;;;;;;;;;;;;;;x
 EVT100016DESC;\nEarlier this afternoon, Queen Victoria gave the Royal Agricultural Society of England its Royal Charter. Now, all farmers can benefit from their discoveries!;;;;;;;;;;;;;;;;;x
-EVT100017DESC'\nToday, Birkenhead Park - in Birkenhead, near Liverpool - the first public park opened for public access.;;;;;;;;;;;;;;;;;x
+EVT100017DESC;\nToday, Birkenhead Park - in Birkenhead, near Liverpool - the first public park opened for public access.;;;;;;;;;;;;;;;;;x
+EVT100018DESC;\nToday, the Clifton Suspension Bridge opened to the public. Originally designed by Isambard Kingdom Brunel, this bridge was built as a memorial to him, may he rest in peace.;;;;;;;;;;;;;;;;;x
+EVT100019DESC;\nToday, the first light festival occurred in Blackpool. Aptly named the Blackpool Illuminations, this festival may end up being an annual event, attacting visitors from around the world.;;;;;;;;;;;;;;;;;x
+EVT100020DESC;\nIn the past couple weeks, a new print novelty has become widespread: the stories of Sherlock Holmes by Arthur Conan Doyle. The stories depict a detective, understanding and bringing order to a chaotic world. Perhaps we should follow his example.;;;;;;;;;;;;;;;;;x

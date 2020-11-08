@@ -1,3 +1,9 @@
+# TODO: REMOVE EXCESS FLAGS
+# TODO: ADD OVERVIEW OF FILE AT THE TOP
+# TODO: REFACTOR SOME EVENTS (TO BE MODIFIERS INSTEAD)
+# TODO: CHANGE SOME EVENT REQUIREMENTS - NEED TO FINISH RESEARCH FIRST
+# TODO: DO ALL OTHER TODOS
+
 # Coronation of Queen Victoria
 country_event = {
 	id = 36898
@@ -2730,6 +2736,7 @@ country_event = {
 	}
 }
 
+# Belle Vue Zoological Gardens
 province_event = {
 	id = 100015
 	title = "The Belle Vue Zoological Gardens Bankrupt!"
@@ -2757,6 +2764,7 @@ province_event = {
 	}
 }
 
+# Royal Agricultural Society of England
 country_event = {
 	id = 100016
 	title = "Royal Agricultural Society of England"
@@ -2786,6 +2794,7 @@ country_event = {
 	}
 }
 
+# First Civic Public Park
 country_event = {
 	id = 100017
 	title = "First Civic Public Park"
@@ -2811,6 +2820,86 @@ country_event = {
 		prestige = 5
 	}
 }
+
+# Clifton Suspension Bridge
+country_event = {
+	id = 100018
+	title = "Clifton Suspension Bridge"
+	desc  = "EVT100018DESC"
+	fire_only_once = yes
+	# TODO: ADD IMAGE
 	
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = ENL
+			tag = AGV
+		}
+		owns = 296
+		year = 1860
+	}
 	
+	mean_time_to_happen = {
+		months = 96
+	}
+	
+	option = {
+		name = "An honor"
+		presige = 5
+	}
+}
+	
+# Blackpool Light Festival
+country_event = {
+	id = 100019
+	title = "Blackpool Illuminations"
+	desc = "EVT100019DESC"
+	fire_only_once = yes
+	# TODO: ADD IMAGE
+	
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = ENL
+			tag = AGV
+		}
+		year = 1880
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		"Pretty lights"
+		prestige = 5
+	}
+}
+
+# Sherlock Holmes
+country_event = {
+	id = 100020
+	title = "Sherlock Holmes"
+	desc = "EVT100020DESC"
+	fire_only_once = yes
+	# TODO: ADD IMAGE
+	
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = ENL
+			tag = AGV
+		}
+		year = 1885
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = {
+		name = "It's elementary"
+		prestige = 5
+	}
+}
 		
