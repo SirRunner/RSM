@@ -247,6 +247,7 @@ scandinavian = {
 	union = SCA
 }
 
+# BritishGC section
 british = {
 	leader = european
 	unit = BritishGC
@@ -264,6 +265,11 @@ british = {
 		Moresby Mundy Napier Odoni "of Hannover" "of Saxe-Coburg-Gotha" Plummer Ragland Roberts Seaton Seymour
 		Smith Smith-Dorrien Stewart Thesiger Tyron Tyrwhitt Williams Windsor Wolseley Wood }
 	}
+}
+
+celtic = {
+	leader = european
+	unit = BritishGC
 	irish = { 
 		color = { 35 140 50}
 		radicalism = 15
