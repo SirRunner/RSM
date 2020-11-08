@@ -266,6 +266,14 @@ political_decisions = {
 				country_event = 100012
 			}
 			
+			any_pop = {
+				limit = {
+					has_pop_culture = cornish
+				}
+				militancy = 5
+				consciousness = 5
+			}
+			
 			set_global_flag = disunited_kingdom
 			set_county_flag = return_irish
 			country_event = { id = 100000 days = 1 }

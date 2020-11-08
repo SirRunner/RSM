@@ -7,10 +7,10 @@
 #################################
 
 # TODO: UPDATE COMMENTS, ESPECIALLY ABOVE HERE
-# TODO: REFACTOR A LITTLE
+# TODO: REFACTOR A LITTLE/REORGANIZE
 # TODO: DO ALL OTHER TODOS
 
-# Will need to change this up...
+# TODO: CHANGE THIS TO CHOOSING A NATION
 country_event = {
 	id = 100000
 	title = "Return of the English Settlers"
@@ -253,7 +253,7 @@ country_event = {
 		war = {
 			target = OCC
 			attacker_goal = {
-				casus_belli = acquire_all_cores
+				casus_belli = annex_core_country
 			}
 			defender_goal = {
 				casus_belli = status_quo
@@ -263,7 +263,7 @@ country_event = {
 		war = {
 			target = ALS
 			attacker_goal = {
-				casus_belli = acquire_all_cores
+				casus_belli = annex_core_country
 			}
 			defender_goal = {
 				casus_belli = status_quo
@@ -273,7 +273,7 @@ country_event = {
 		war = {
 			target = CRS
 			attacker_goal = {
-				casus_belli = acquire_all_cores
+				casus_belli = annex_core_country
 			}
 			defender_goal = {
 				casus_belli = status_quo
@@ -675,6 +675,7 @@ country_event = {
 	}
 }
 
+# France getting the British colonies
 country_event = {
 	id = 100012
 	title = "Acquire the English Colonies"
@@ -695,6 +696,7 @@ country_event = {
 	}
 }
 
+# Deciding the fate of Irish settlers
 country_event = {
 	id = 100013
 	title = "The Irish Settlers"
@@ -716,4 +718,98 @@ country_event = {
 		name = "They can stay"
 	}
 }
+
+# The Cornish Rebellion during the Norman War
+# TODO: MAKE IT SO THE PLAYER CAN PLAY CORNWALL
+country_event = {
+	id = 100021
+	title = "The Cornish Rebellion"
+	desc = "EVT100021DESC"
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = ENL
+		war = yes
+		has_global_flag = norman_war
+		NOT = {	has_global_flag = norman_war_end }
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "Really? Now?"
+		297 = { add_core = CNW }
+		298 = { add_core = CNW }
+		release = CNW
+		
+		war = {
+			target = CNW
+			attacker_goal = {
+				casus_belli = annex_core_country
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+			call_ally = yes
+		}
+		set_global_flag = cornish_rebellion
+	}
+}
+
+# BOTH ENDING EVENTS ARE BROKEN.. FIX IMMEDIATELY
+
+# English victory in the Cornish Rebellion
+country_event = {
+	id = 100022
+	title = "The End of the Cornish Rebellion"
+	desc = "EVT100022DESC"
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = ENL
+		has_global_flag = cornish_rebellion
+		299 = { owner = ENL }
+		war = no
+	}
+	
+	option = {
+		name = "Let's hope they don't try it again"
+		297 = { remove_core = CNW }
+		298 = { remove_core = CNW }
+		clr_global_flag = cornish_rebellion
+	}
+}
+
+# Cornish victory in the Cornish Rebellion... somehow
+country_event = {
+	id = 100023
+	title = "The End of the Cornish Rebellion"
+	desc = "EVT100023DESC"
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = ENL
+		has_global_flag = cornish_rebellion
+		299 = { owner = CNW }
+		war = no
+	}
+	
+	option = {
+		name = "The Cornish clearly are not English"
+		297 = { remove_core = ENG }
+		298 = { remove_core = ENG }
+		299 = { remove_core = ENG }
+		CNW = { remove_accepted_culture = british }
+		ENG = { remove_accepted_culture = cornish }
+		clr_global_flag = cornish_rebellion
+	}
+}
+	
+	
+	
 
