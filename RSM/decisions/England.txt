@@ -1,3 +1,7 @@
+# TODO: REFACTOR SOME CODE
+# TODO: DO ALL OTHER TODOS
+# TODO: REORGANIZE FILE
+
 political_decisions = {
 	end_of_the_UK = {
 		potential = {
@@ -412,7 +416,7 @@ political_decisions = {
 			any_core = {
 				owned_by = ENL
 			}
-			FRA_435 = {
+			437 = {
 				owned_by = ENL
 			}
 			425 = {

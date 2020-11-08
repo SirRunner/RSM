@@ -6,6 +6,10 @@
 #								#
 #################################
 
+# TODO: UPDATE COMMENTS, ESPECIALLY ABOVE HERE
+# TODO: REFACTOR A LITTLE
+# TODO: DO ALL OTHER TODOS
+
 # Will need to change this up...
 country_event = {
 	id = 100000
@@ -411,6 +415,15 @@ country_event = {
 				name = cultural_assimilation_strong
 				duration = 365
 			}
+		}
+		411 = {
+			remove_core = LOR
+		}
+		412 = {
+			remove_core = LOR
+		}
+		413 = {
+			remove_core = LOR
 		}
 		badboy = 20
 	}
