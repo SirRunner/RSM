@@ -772,7 +772,7 @@ country_event = {
 	trigger = {
 		tag = ENL
 		has_global_flag = cornish_rebellion
-		299 = { owner = ENL }
+		299 = { owner { tag = ENL } }
 		war = no
 	}
 	
@@ -795,17 +795,17 @@ country_event = {
 	trigger = {
 		tag = ENL
 		has_global_flag = cornish_rebellion
-		299 = { owner = CNW }
+		299 = { owner = { tag = CNW } }
 		war = no
 	}
 	
 	option = {
 		name = "The Cornish clearly are not English"
-		297 = { remove_core = ENG }
-		298 = { remove_core = ENG }
-		299 = { remove_core = ENG }
+		297 = { remove_core = ENL }
+		298 = { remove_core = ENL }
+		299 = { remove_core = ENL }
 		CNW = { remove_accepted_culture = british }
-		ENG = { remove_accepted_culture = cornish }
+		ENL = { remove_accepted_culture = cornish }
 		clr_global_flag = cornish_rebellion
 	}
 }
