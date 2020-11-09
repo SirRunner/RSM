@@ -20,6 +20,7 @@ reactionary_rebels = {
 	
 	# <this is the governement in the country> = <this is what the rebels want>
 	government = {
+		dominion = presidential_dictatorship
 		proletarian_dictatorship = presidential_dictatorship
 		presidential_dictatorship = absolute_monarchy
 		bourgeois_dictatorship = presidential_dictatorship
@@ -351,6 +352,7 @@ fascist_rebels = {
 	
 	# <this is the governement in the country> = <this is what the rebels want>
 	government = {
+		dominion = fascist_dictatorship
 		proletarian_dictatorship = fascist_dictatorship
 		presidential_dictatorship = fascist_dictatorship
 		bourgeois_dictatorship = fascist_dictatorship
@@ -645,6 +647,7 @@ communist_rebels = {
 	
 	# <this is the governement in the country> = <this is what the rebels want>
 	government = {
+		dominion = proletarian_dictatorship
 		proletarian_dictatorship = proletarian_dictatorship
 		presidential_dictatorship = proletarian_dictatorship
 		bourgeois_dictatorship = proletarian_dictatorship
@@ -978,6 +981,7 @@ anarcho_liberal_rebels = {
 	
 	# <this is the governement in the country> = <this is what the rebels want>
 	government = {
+		dominion = democracy
 		proletarian_dictatorship = democracy
 		presidential_dictatorship = democracy
 		bourgeois_dictatorship = democracy
@@ -1292,6 +1296,7 @@ nationalist_rebels = {
 	
 	# <this is the governement in the country> = <this is what the rebels want>
 	government = {
+		dominion = democracy
 		proletarian_dictatorship = proletarian_dictatorship
 		presidential_dictatorship = presidential_dictatorship
 		bourgeois_dictatorship = bourgeois_dictatorship
@@ -1560,6 +1565,7 @@ pan_nationalist_rebels = {
 	
 	# <this is the governement in the country> = <this is what the rebels want>
 	government = {
+		dominion = democracy
 		proletarian_dictatorship = proletarian_dictatorship
 		presidential_dictatorship = presidential_dictatorship
 		bourgeois_dictatorship = bourgeois_dictatorship
@@ -1944,6 +1950,7 @@ carlist_rebels = {
 	
 	# <this is the governement in the country> = <this is what the rebels want>
 	government = {
+		dominion = absolute_monarchy
 		proletarian_dictatorship = absolute_monarchy
 		presidential_dictatorship = absolute_monarchy
 		bourgeois_dictatorship = absolute_monarchy
@@ -2213,6 +2220,7 @@ christino_rebels = {
 	
 	# <this is the governement in the country> = <this is what the rebels want>
 	government = {
+		dominion = hms_government
 		proletarian_dictatorship = hms_government
 		presidential_dictatorship = hms_government
 		bourgeois_dictatorship = hms_government
@@ -2456,6 +2464,7 @@ boxer_rebels = {
 	
 	# <this is the governement in the country> = <this is what the rebels want>
 	government = {
+		dominion = absolute_monarchy
 		proletarian_dictatorship = absolute_monarchy
 		presidential_dictatorship = absolute_monarchy
 		bourgeois_dictatorship = absolute_monarchy
@@ -2635,6 +2644,7 @@ red_shirts = {
 	
 	# <this is the governement in the country> = <this is what the rebels want>
 	government = {
+		dominion = democracy
 		proletarian_dictatorship = proletarian_dictatorship
 		presidential_dictatorship = presidential_dictatorship
 		bourgeois_dictatorship = bourgeois_dictatorship
@@ -2869,6 +2879,7 @@ indian_sepoys = {
 	
 	# <this is the governement in the country> = <this is what the rebels want>
 	government = {
+		dominion = democracy
 		proletarian_dictatorship = proletarian_dictatorship
 		presidential_dictatorship = presidential_dictatorship
 		bourgeois_dictatorship = bourgeois_dictatorship
@@ -3142,6 +3153,7 @@ indian_nationalists = {
 	
 	# <this is the governement in the country> = <this is what the rebels want>
 	government = {
+		dominion = democracy
 		proletarian_dictatorship = proletarian_dictatorship
 		presidential_dictatorship = presidential_dictatorship
 		bourgeois_dictatorship = bourgeois_dictatorship
@@ -3349,6 +3361,7 @@ liberal_rebels = {
 	
 	# <this is the governement in the country> = <this is what the rebels want>
 	government = {
+		dominion = democracy
 		proletarian_dictatorship = democracy
 		presidential_dictatorship = democracy
 		bourgeois_dictatorship = democracy
@@ -3744,6 +3757,7 @@ unciv_reactionary_rebels = {
 	
 	# <this is the governement in the country> = <this is what the rebels want>
 	government = {
+		dominion = absolute_monarchy
 		proletarian_dictatorship = absolute_monarchy
 		presidential_dictatorship = absolute_monarchy
 		bourgeois_dictatorship = absolute_monarchy
@@ -3967,6 +3981,7 @@ separatist_rebels = {
 	
 	# <this is the governement in the country> = <this is what the rebels want>
 	government = {
+		dominion = democracy
 		proletarian_dictatorship = proletarian_dictatorship
 		presidential_dictatorship = presidential_dictatorship
 		bourgeois_dictatorship = bourgeois_dictatorship
@@ -4183,6 +4198,7 @@ socialist_rebels = {
 	
 	# <this is the governement in the country> = <this is what the rebels want>
 	government = {
+		dominion = democracy
 		proletarian_dictatorship = democracy
 		presidential_dictatorship = democracy
 		bourgeois_dictatorship = democracy
@@ -4539,6 +4555,7 @@ independence_rebels = {
 	
 	# <this is the governement in the country> = <this is what the rebels want>
 	government = {
+		dominion = democracy
 		proletarian_dictatorship = proletarian_dictatorship
 		presidential_dictatorship = presidential_dictatorship
 		bourgeois_dictatorship = bourgeois_dictatorship
@@ -4694,6 +4711,7 @@ turkish_nationalist_rebels = {
 	
 	# <this is the governement in the country> = <this is what the rebels want>
 	government = {
+		dominion = democracy
 		proletarian_dictatorship = democracy
 		presidential_dictatorship = democracy
 		bourgeois_dictatorship = democracy
@@ -4972,6 +4990,7 @@ native_rebels = {
 	
 	# <this is the governement in the country> = <this is what the rebels want>
 	government = {
+		dominion = democracy
 		proletarian_dictatorship = democracy
 		presidential_dictatorship = democracy
 		bourgeois_dictatorship = democracy
@@ -5146,6 +5165,7 @@ sioux_nation = {
 	
 	# <this is the governement in the country> = <this is what the rebels want>
 	government = {
+		dominion = democracy
 		proletarian_dictatorship = proletarian_dictatorship
 		presidential_dictatorship = presidential_dictatorship
 		bourgeois_dictatorship = bourgeois_dictatorship
@@ -5266,6 +5286,7 @@ apache = {
 	
 	# <this is the governement in the country> = <this is what the rebels want>
 	government = {
+		dominion = democracy
 		proletarian_dictatorship = proletarian_dictatorship
 		presidential_dictatorship = presidential_dictatorship
 		bourgeois_dictatorship = bourgeois_dictatorship

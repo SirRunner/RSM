@@ -1007,3 +1007,46 @@ country_event = {
 		remove_country_modifier = emergency_tax_measures2
 	}
 }
+
+# TODO: NEEDS SOME MAJOR REFACTORING
+country_event = {
+	id = 60170
+	title = "A Puppet State"
+	desc = "We are now a puppet of greater power."
+	# news = yes
+	# news_desc_long = "EVTDESC60050_NEWS_LONG"
+	# news_desc_medium = "EVTDESC60050_NEWS_MEDIUM"
+	# news_desc_short = "EVTDESC60050_NEWS_SHORT"
+	picture = "senate_debate"
+	major = yes
+	
+	trigger = {
+		is_vassal = yes
+		NOT = { government = dominion }
+	}
+	
+	option = {
+		name = "Unbelievable"
+		government = dominion
+		election = yes
+	}
+}
+
+# TODO: SAME HERE
+country_event = {
+	id = 60180
+	title = "Freedom"
+	desc = "We have been freed from the control of our overlord!"
+	major = yes
+	
+	trigger = {
+		government = dominion
+		is_vassal = no
+	}
+	
+	option = {
+		name = "Democracy, at last"
+		government = democracy
+		election = yes
+	}
+}

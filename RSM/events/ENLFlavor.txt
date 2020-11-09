@@ -324,6 +324,7 @@ country_event = {
 				remove_core = FRA
 			}
 		}
+		OCC = { government = dominion }
 		
 		release_vassal = ALS
 		diplomatic_influence = {
@@ -340,6 +341,7 @@ country_event = {
 				remove_core = FRA
 			}
 		}
+		ALS = { government = dominion }
 		
 		release_vassal = CRS
 		diplomatic_influence = {
@@ -356,6 +358,7 @@ country_event = {
 				remove_core = FRA
 			}
 		}
+		CRS = { government = dominion }
 		
 	}
 	

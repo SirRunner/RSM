@@ -1,4 +1,5 @@
 color = { 120  130  100 }
+dominion = { 48 0 50 }
 graphical_culture = ItalianGC
 
 party = {
