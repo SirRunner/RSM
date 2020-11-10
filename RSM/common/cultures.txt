@@ -307,6 +307,12 @@ celtic = {
 		
 		last_names = { Ace Adams Anwyl Baugh Benbow Campbell Cadwalader Clocker Craddock Faithfull Foulkes Gethin Griffiths Gwyther Hathaway Heilyn Humphreys Ithell Llewelyn Llywarch Phillips Salusbury Smout Trewent Wigley Yorath }
 	}
+	breton = { 
+		color = {100 110 100}
+		first_names = { Yann Yannic Pierre Jakez Elouan Frañsez Jaoua Paol Segal Alain Henri Hoël Michel Théodore }
+		
+		last_names = { "de Cornouaille" Karter Gallo Kergoulay Bellec "le Goff" Treguier Riou Morvan Peron Jezeguel Salaun "le Bihan" }
+	}
 }
 
 italian = {
@@ -434,12 +440,6 @@ french = {
 		"de Langle de Cary" "de MacMahon" "de Montaignac" "de Saint Arnaud" d'Orleans Dubail Dubois Duchêne Dupetit-Thouars Exelmans
 		Foch Forey "Franchet d'Espèrey" Gallieni Gouraud Guillaumat Hamelin Harispe Hoche Humbert
 		Jaurès Joffre Lebouef Lyautey Murat "Ney d'Elchingen" Nivelle Péllissier Petain Vaillant }
-	}
-	breton = { 
-		color = {100 110 100}
-		first_names = { Yann Yannic Pierre Jakez Elouan Frañsez Jaoua Paol Segal Alain Henri Hoël Michel Théodore }
-		
-		last_names = { "de Cornouaille" Karter Gallo Kergoulay Bellec "le Goff" Treguier Riou Morvan Peron Jezeguel Salaun "le Bihan" }
 	}
 	occitan = { 
 		color = {110 110 50}
