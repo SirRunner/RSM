@@ -1600,6 +1600,36 @@ import_substitution_industrialization = {
 		activate_building = synthetic_oil_factory
 	}
 }
+#guild_based_production
+activate_canned_goods_factory = {
+	limit = { guild_based_production = 1 }
+	chance = { base = 100 }
+	effect = {
+		activate_building = canned_food_factory 
+	}
+}
+activate_bakery_factory = {
+	limit = { guild_based_production = 1 }
+	chance = { base = 100 }
+	effect = {
+		activate_building = bakery_factory
+	}
+}
+activate_canned_fish_factory = {
+	limit = { guild_based_production = 1 }
+	chance = { base = 100 }
+	effect = {
+		activate_building = canned_fish_factory
+	}
+}
+activate_canned_fruit_factory = {
+	limit = { guild_based_production = 1 }
+	chance = { base = 100 }
+	effect = {
+		activate_building = canned_fruit_factory
+	}
+}
+
 #organized_factories
 work_classification = {
 	limit = { organized_factories = 1 }

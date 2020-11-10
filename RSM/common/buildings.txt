@@ -151,7 +151,6 @@ machine_parts_factory = {
 	max_level = 99
 	goods_cost =
 	{
-		machine_parts = 200
 		iron = 200
 		cement = 200
 	}
@@ -455,6 +454,8 @@ ammunition_factory = {
 	pop_build_factory = yes
 }
 
+### CANNED FOOD
+
 canned_food_factory = {
 	type = factory
 
@@ -472,6 +473,66 @@ canned_food_factory = {
 	onmap = no
 
 	production_type = canned_food_factory
+	pop_build_factory = yes
+}
+
+bakery_factory = {
+	type = factory
+
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 99
+	goods_cost =
+	{
+		machine_parts = 80
+		iron = 200
+		cement = 200
+	}
+	time = 730
+	visibility = yes
+	onmap = no
+
+	production_type = bakery_factory
+	pop_build_factory = yes
+}
+
+canned_fish_factory = {
+	type = factory
+
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 99
+	goods_cost =
+	{
+		machine_parts = 80
+		iron = 200
+		cement = 200
+	}
+	time = 730
+	visibility = yes
+	onmap = no
+
+	production_type = canned_fish_factory
+	pop_build_factory = yes
+}
+
+canned_fruit_factory = {
+	type = factory
+
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 99
+	goods_cost =
+	{
+		machine_parts = 80
+		iron = 200
+		cement = 200
+	}
+	time = 730
+	visibility = yes
+	onmap = no
+
+	production_type = canned_fruit_factory
 	pop_build_factory = yes
 }
 
