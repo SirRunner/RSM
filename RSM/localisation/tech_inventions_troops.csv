@@ -85,4 +85,12 @@ mass_assault_doctrine;Mass Assault Doctrine;;;;;;;;;;;;;;;;;x
 mass_assault_doctrine_desc;We send our enemy's children to church and let the priests do the work... too far?;;;;;;;;;;;;;;;;;x
 assymetrical_warfare_doctrine;Asymetrical Warfare Doctrine;;;;;;;;;;;;;;;;;x
 assymetrical_warfare_doctrine_desc;Flashbacks to 'Nam...;;;;;;;;;;;;;;;;;x
+activate_canned_goods_factory;Dried Meat;;;;;;;;;;;;;;;;;x
+activate_canned_goods_factory_desc;Looks like meat's back on the menu, boys!
+activate_bakery_factory;Local Bakeries;;;;;;;;;;;;;;;;;x
+activate_bakery_factory_desc;Bonjour! Welcome to France...;;;;;;;;;;;;;;;;;x
+activate_canned_fish_factory;Canned Fish;;;;;;;;;;;;;;;;;x
+activate_canned_fish_factory_desc;Rock and pool\nSo nice and cool\nSo juicy sweet!\n\nNow we wish\nTo catch a fish\nSo juicy sweet!;;;;;;;;;;;;;;;;;x
+activate_canned_fruit_factory;Fruit Processing;;;;;;;;;;;;;;;;;x
+activate_canned_fruit_factory_desc;Because nothing tastes better than canned fruit... /s;;;;;;;;;;;;;;;;;x
 EVT10500DESC;Our military theorists have been busy attempting to steal from Hearts of Iron IV lately and are close to a breakthrough... \n\n§RPlease look at the inventions for Modern Army Doctrine in order to know your different choices;;;;;;;;;;;;;;;;;x

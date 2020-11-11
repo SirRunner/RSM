@@ -89,7 +89,7 @@ impressionism = {
 	year = 1850
 	cost = 14400
 
-	prestige = 0.05
+	prestige = 0.10
 	ai_chance = {
 		factor = 1.05
 		modifier = {
@@ -116,7 +116,7 @@ expressionism = {
 	year = 1870
 	cost = 18000
 
-	prestige = 0.05
+	prestige = 0.10
 	ai_chance = {
 		factor = 1.05
 		modifier = {
@@ -143,7 +143,7 @@ mass_culture_n_the_avant_garde = {
 	year = 1900
 	cost = 21600
 
-	prestige = 0.05
+	prestige = 0.15
 	ai_chance = {
 		factor = 1.01
 		modifier = {
@@ -644,7 +644,7 @@ introspectionism = {
 	year = 1836
 	cost = 3600
 
-
+	shared_prestige = 5
 	regular_experience_level = 5
 	reinforce_rate = 0.05
 	

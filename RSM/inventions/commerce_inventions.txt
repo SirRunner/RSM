@@ -1629,13 +1629,6 @@ activate_canned_fruit_factory = {
 		activate_building = canned_fruit_factory
 	}
 }
-activate_charcoal_factory = {
-	limit = { guild_based_production = 1 }
-	chance = { base = 100 }
-	effect = {
-		activate_building = charcoal_factory
-	}
-}
 
 #organized_factories
 work_classification = {
