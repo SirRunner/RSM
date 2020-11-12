@@ -5,6 +5,7 @@ Welcome to Random Stuff Mod, or if you prefer, Random \*\*\*\* Mod! At the momen
 This mod is made by SirRunner (both on Reddit and Discord - I do post a fair amount on Reddit and I occasionally participate in the V2 Modding Discord). However, not everything used by the mod is made by me.....
 
 ## Notes and Thanks
+I feel obligated to note and thank the modders from whom I have, for lack of a better word, stolen some files/code...
  - This mod is based upon [NNM](https://forum.paradoxplaza.com/forum/threads/hod-new-nations-mod.683896/). As such, the Features will be written as if one knows *everything* that the mod (NNM) offers, which I sincerely doubt anyone does, except perhaps the creators.
  - Both of the unit UI changes come from [PDM](https://forum.paradoxplaza.com/forum/forums/pop-demand-mod.562/)
  - I have integrated a slightly modified version of [Kwizzle's Utility Mod](https://www.moddb.com/mods/kwizzles-utility-mod) (Utility Mod Decision and Events)
@@ -12,50 +13,9 @@ This mod is made by SirRunner (both on Reddit and Discord - I do post a fair amo
  - The base assimilation percentages (that can be seen by checking the POP tab) is a slightly modified version of those that the [Heirs to Aquitania](https://github.com/Savolainen5/The-Heirs-to-Aquitania) use. 
  - Many (but not all) of the cultures added and population changes that have occurred are from [HFM](https://github.com/SighPie/HFM)
 
-## Features
-
-### Easter Eggs
- - Just letting you know they are there...
- - It should be noted that some (but not all) of them have been shared on Reddit...
- 
-### Technology and Inventions
- - Added and changed a number of inventions and techs
- - Currently done the army tab. ***Please note that it is not balanced whatsoever***
-
-### Military
- - added new unit: Mobile Artillery
- - Irregular renamed Light Infantry
- - Guard renamed Motorized Infantry
- - Infantry renamed Regular
- - Cavalry renamed Picket Cavalry
- - Hussar renamed Light Cavalry
- - Artillery renamed Heavy Artillery
- - changed Light Infantry's picture
- - rearranged the army recruitment tab to accomodate the new unit
- 
-### Map
- - moved Stirling from Lowlands to Highlands
- - moved Donegal from Connacht to Ulster
- - moved Channel Islands from South West England to Normandie
- 
-### Countries
- 
-#### United Kingdom
- - bright pink now
- - Some new flavor
-  
-#### Ireland
- - darker green now
-  
-#### Wales
- - brighter green now
-  
-#### Scotland
- - blue now instead of yellow
- 
-#### England
- - darker red now
- - Some new flavor
- 
-### Isle of Man
- - added the country
+## Installation Guide
+ 1. Click the green "Code" button and download the ZIP file.
+ 2. Right click on the ZIP file in your downloads directory and unzip it to your_steam_directory\Victoria II\mod
+ 3. Go into the mod directory, and you should see a folder named something like "RSM-main". Go into the folder and move the folder named "RSM" and the file named "RSM.mod" into your_steam_directory\Victoria II\mod
+ 4. Launch Victoria II. If you see "Random \*\*\*\* Mod" in your mods list, you've done it correctly!
+ 5. Go have fun. 
