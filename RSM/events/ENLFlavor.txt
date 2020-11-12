@@ -1188,6 +1188,51 @@ country_event = {
 		change_tag = ITA
 		clr_global_flag = corsica_crisis
 	}
-}	
+}
+
+# Celtic reaction to annexation of France
+country_event = {
+	id = 100032
+	title = "The English Threat"
+	desc = "EVT100032DESC"
+	fire_only_once = yes
+	major = yes
 	
+	trigger = {
+		NOT = { exists = FRA }
+		is_culture_group = celtic
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "England is a threat to us all"
+		any_country = {
+			limit = {
+				exists = yes
+				is_culture_group = celtic
+				is_vassal = no
+			}
+			annex_to = THIS
+		}
+		
+		any_country = {
+			limit = {
+				is_culture_group = celtic
+			}
+			all_core = {
+				# TODO: REPLACE WITH CELTIC UNION CORE
+				add_core = THIS
+			}
+		}
+		
+		add_accepted_culture = scottish
+		add_accepted_culture = irish
+		add_accepted_culture = manx
+		add_accepted_culture = cornish
+		add_accepted_culture = breton
+	}
+}
 
