@@ -43,6 +43,16 @@ dutch_east_india = {
 vassal_nation = {
 	trigger = {
 		is_vassal = yes
+		ai = yes
+	}
+	icon = 10
+	prestige = -100
+}
+
+vassal_nation_player = {
+	trigger = {
+		is_vassal = yes
+		ai = no
 	}
 	icon = 10
 	prestige = -1
