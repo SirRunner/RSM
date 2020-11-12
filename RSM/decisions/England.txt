@@ -275,7 +275,7 @@ political_decisions = {
 			}
 			
 			set_global_flag = disunited_kingdom
-			set_county_flag = return_irish
+			set_country_flag = return_irish
 			country_event = { id = 100000 days = 1 }
 		}
 	}
@@ -511,6 +511,110 @@ political_decisions = {
 		effect = {
 			country_event = 100013
 			clr_country_flag = return_irish
+		}
+	}
+	
+	secure_northern_continental_border = {
+		# TODO: ADD IMAGE
+		potential = {
+			tag = AGV
+			owns = 412 owns = 409 owns = 410 #Alsace-Lorraine
+			NOT = { has_country_flag = southern_rhine_crisis }
+		}
+		
+		allow = {
+			NOT = { truce_with = GER }
+			NOT = { truce_with = BEL }
+			NOT = { truce_with = NET }
+		}
+		
+		effect = {
+			badboy = 15
+			
+			PRU_570 = { add_core = RHI }
+			PRU_575 = { add_core = RHI }
+			NET_379 = { add_core = RHI }
+			BEL_387 = { add_core = RHI }
+			BEL_394 = { add_core = RHI }
+			
+			casus_belli = {
+				target = GER
+				type = liberate_country
+				months = 12
+			}
+			
+			casus_belli = {
+				target = BEL
+				type = liberate_country
+				months = 12
+			}
+			
+			casus_belli = {
+				target = NET
+				type = liberate_country
+				months = 12
+			}
+			
+			war = {
+				target = GER
+				attacker_goal = {
+					casus_belli = liberate_country
+					country = RHI
+				}
+				call_ally = yes
+			}
+			
+			war = {
+				target = BEL
+				attacker_goal = {
+					casus_belli = liberate_country
+					country = RHI
+				}
+			}
+			
+			war = {
+				target = NET
+				attacker_goal = {
+					casus_belli = liberate_country
+					country = RHI
+				}
+			}
+			
+			set_country_flag = southern_rhine_crisis
+			clr_global_flag = alsace_crisis
+		}
+	}
+	
+	the_rhineland_puppet = {
+		# TODO: ADD IMAGE
+		# TODO: MAY WANT TO MAKE SEPARATE NATION
+		potential = {
+			tag = AGV
+			has_country_flag = southern_rhine_crisis
+		}
+		
+		allow = { 
+			war = no
+			RHI = {
+				all_core = {
+					OR = {
+						owner_by = AGV
+						owner = { in_sphere = AGV }
+					}
+				}
+			}
+		}
+		
+		effect = {
+			RHI = { 
+				government = dominion
+				add_accepted_culture = dutch
+				add_accepted_culture = flemish
+				add_accepted_culture = wallonian
+				country_event = 10603
+			}
+			create_vassal = RHI
+			clr_country_flag = southern_rhine_crisis
 		}
 	}
 }

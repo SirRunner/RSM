@@ -305,58 +305,33 @@ country_event = {
 		
 		badboy = 5
 		
-		inherit = OCC
-		inherit = ALS
-		inherit = CRS
+		# TODO: CHANGE NAMES OF OCC/ALS/CRS FOR DOMINIONS?
 		
-		release_vassal = OCC
-		diplomatic_influence = {
-			who = OCC
-			value = 400
-		}
-		relation = {
-			who = OCC
-			value = 400
-		}
-		create_alliance = OCC
+		create_vassal = OCC
+		create_vassal = ALS
+		create_vassal = CRS
+
 		OCC = {
 			all_core = {
 				remove_core = FRA
 			}
+			country_event = 10603
 		}
 		OCC = { government = dominion }
 		
-		release_vassal = ALS
-		diplomatic_influence = {
-			who = ALS
-			value = 400
-		}
-		relation = {
-			who = ALS
-			value = 400
-		}
-		create_alliance = ALS
 		ALS = {
 			all_core = {
 				remove_core = FRA
 			}
+			country_event = 10603
 		}
 		ALS = { government = dominion }
 		
-		release_vassal = CRS
-		diplomatic_influence = {
-			who = CRS
-			value = 400
-		}
-		relation = {
-			who = CRS
-			value = 400
-		}
-		create_alliance = CRS
 		CRS = {
 			all_core = {
 				remove_core = FRA
 			}
+			country_event = 10603
 		}
 		CRS = { government = dominion }
 		
@@ -762,8 +737,6 @@ country_event = {
 	}
 }
 
-# BOTH ENDING EVENTS ARE BROKEN.. FIX IMMEDIATELY
-
 # English victory in the Cornish Rebellion
 country_event = {
 	id = 100022
@@ -812,7 +785,409 @@ country_event = {
 		clr_global_flag = cornish_rebellion
 	}
 }
+
+# Alsace ask for independence
+country_event = {
+	id = 100024
+	title = "We Want Freedom"
+	desc = "Yes"
+	fire_only_once = yes
+	major = yes
 	
+	trigger = {
+		tag = ALS
+		is_vassal = yes
+		overlord = {
+			OR = {
+				tag = ENL
+				tag = AGV
+			}
+		}
+		OR = {
+			exists = NGF
+			exists = SGF
+			exists = GER
+			exists = PRU
+		}
+	}
 	
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 0.8
+			exists = GER
+		}
+	}
+	
+	option = {
+		name = "Now"
+		country_event = 10600
+		country_event = 10602
+		random_country = {
+			limit = {
+				OR = {
+					tag = GER
+					tag = NGF
+					tag = SGF
+					tag = PRU
+				}
+			}
+			diplomatic_influence = {
+				who = ALS
+				value = 400
+			}
+		}
+		
+		any_country = {
+			limit = {
+				is_culture_group = germanic
+			}
+			relation = {
+				who = ALS
+				value = 400
+			}
+			create_alliance = ALS
+		}
+		
+		FRA_412 = {
+			add_core = GER
+		}
+		
+		overlord = {
+			country_event = 100025	
+			days = 1
+		}
+	}
+}
+
+# English Response to Alsace Freedom
+country_event = {
+	id = 100025
+	title = "Diplomatic Crisis in Alsace"
+	desc = "EVT100025DESC"
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = "They are part of England! We will never let them go!"
+		
+		casus_belli = {
+			target = ALS
+			type = conquest
+			months = 12
+		}
+		
+		NET = { release_vassal = LUX }
+		
+		war = {
+			target = ALS
+			attacker_goal = {
+				casus_belli = conquest
+			}
+			call_ally = yes
+		}
+		
+		badboy = 5
+		set_global_flag = alsace_crisis
+	}
+	
+	option = {
+		name = "We will let them go"
+		prestige = -5
+		
+		# TODO: Add something to make Corsica/Occitania want to become independent
+		
+		any_country = {
+			limit = {
+				is_culture_group = germanic
+			}
+			relation = {
+				who = THIS
+				value = 50
+			}
+		}
+		
+		badboy = -2
+	}
+}
+	
+# English victory in Alsace Crisis
+country_event = {
+	id = 100026
+	title = "The English have won"
+	desc = "Us Germans will unite"
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		has_global_flag = alsace_crisis
+		war = no
+		412 = {
+			owner = {
+				OR = {
+					tag = ENL
+					tag = AGV
+				}
+			}
+		}
+		OR = {
+			tag = GER
+			tag = NGF
+			tag = SGF
+			tag = PRU
+		}
+	}
+	
+	option = {
+		name = "Germany Time"
+		any_country = {
+			limit = {
+				is_culture_group = germanic
+				NOT = { tag = AUS }
+				NOT = { tag = KUK }
+			}
+			annex_to = this
+		}
+		# TODO: Perhaps inherit Austria as well for an even larger threat?
+		change_tag = GER
+	}
+}
+		
+# German victory in Alsace Crisis
+country_event = {
+	id = 100027
+	title = "The Germans have won"
+	desc = "Us Germans will unite"
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		has_global_flag = alsace_crisis
+		war = no
+		412 = {
+			owner = {
+				tag = ALS
+			}
+		}
+		OR = {
+			tag = GER
+			tag = NGF
+			tag = SGF
+			tag = PRU
+		}
+	}
+	
+	option = {
+		name = "Germany Time"
+		any_country = {
+			limit = {
+				is_culture_group = germanic
+				NOT = { tag = AUS }
+				NOT = { tag = KUK }
+			}
+			annex_to = this
+		}
+		# TODO: Perhaps add in something to trigger rebellions in Corsica/Occitania?
+		change_tag = GER
+		clr_global_flag = alsace_crisis
+	}
+}	
+
+# Corsica asking for independence
+country_event = {
+	id = 100028
+	title = "We Want Freedom"
+	desc = "Yes"
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = CRS
+		is_vassal = yes
+		overlord = {
+			OR = {
+				tag = ENL
+				tag = AGV
+			}
+		}
+		OR = {
+			exists = ITA
+			exists = SIC
+			exists = SAR
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 0.8
+			exists = ITA
+		}
+	}
+	
+	option = {
+		name = "Now"
+		country_event = 10600
+		country_event = 10602
+		random_country = {
+			limit = {
+				OR = {
+					tag = ITA
+					tag = SIC
+					tag = SAR
+				}
+			}
+			diplomatic_influence = {
+				who = CRS
+				value = 400
+			}
+		}
+		
+		any_country = {
+			limit = {
+				is_culture_group = italian
+			}
+			relation = {
+				who = CRS
+				value = 400
+			}
+			create_alliance = CRS
+		}
+		
+		473 = {
+			add_core = ITA
+		}
+		
+		overlord = {
+			country_event = 100029	
+			days = 1
+		}
+	}
+}
+
+# English Response to Corsica Freedom
+country_event = {
+	id = 100029
+	title = "Diplomatic Corsica in Alsace"
+	desc = "EVT100025DESC"
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = "They are part of England! We will never let them go!"
+		
+		casus_belli = {
+			target = CRS
+			type = conquest
+			months = 12
+		}
+		
+		war = {
+			target = CRS
+			attacker_goal = {
+				casus_belli = conquest
+			}
+			call_ally = yes
+		}
+		
+		badboy = 5
+		set_global_flag = corsica_crisis
+	}
+	
+	option = {
+		name = "We will let them go"
+		prestige = -5
+		
+		# TODO: Add something to make Alsace/Occitania want to become independent
+		
+		any_country = {
+			limit = {
+				is_culture_group = italian
+			}
+			relation = {
+				who = THIS
+				value = 50
+			}
+		}
+		
+		badboy = -2
+	}
+}
+
+# English victory in Corsica Crisis
+country_event = {
+	id = 100030
+	title = "The English have won"
+	desc = "Us Italians will unite"
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		has_global_flag = corsica_crisis
+		war = no
+		473 = {
+			owner = {
+				OR = {
+					tag = ENL
+					tag = AGV
+				}
+			}
+		}
+		OR = {
+			tag = ITA
+			tag = SIC
+			tag = SAR
+		}
+	}
+	
+	option = {
+		name = "Italy Time"
+		any_country = {
+			limit = {
+				is_culture_group = italian
+			}
+			annex_to = this
+		}
+		change_tag = ITA
+		clr_global_flag = corsica_crisis
+	}
+}
+		
+# German victory in Alsace Crisis
+country_event = {
+	id = 100031
+	title = "The Italians have won"
+	desc = "Us Italians will unite"
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		has_global_flag = corsica_crisis
+		war = no
+		473 = {
+			owner = {
+				tag = CRS
+			}
+		}
+		OR = {
+			tag = ITA
+			tag = SIC
+			tag = SAR
+		}
+	}
+	
+	option = {
+		name = "Italy Time"
+		any_country = {
+			limit = {
+				is_culture_group = italian
+			}
+			annex_to = this
+		}
+		# TODO: Perhaps add in something to trigger rebellions in Alsace/Occitania?
+		change_tag = ITA
+		clr_global_flag = corsica_crisis
+	}
+}	
 	
 

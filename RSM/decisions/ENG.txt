@@ -780,7 +780,6 @@ political_decisions = {
 				tag = AGV
 			}
 			NOT = { has_country_flag = kings_college_hospital }
-			NOT = { 300 = { has_province_modifier = local_hospital } }
 		}
 		
 		allow = {
@@ -792,11 +791,12 @@ political_decisions = {
 			prestige = 5
 			300 = {
 				add_province_modifier = {
-					name = government_sanitarium
+					name = local_hospital
 					duration = -1
 				}
 			}
 			treasury = -10000
+			set_country_flag = kings_college_hospital
 		}
 	}
 	
@@ -811,9 +811,9 @@ political_decisions = {
 				tag = AGV
 			}
 			NOT = { has_country_flag = built_st_george_hall }
+			year = 1850
 		}
 		allow = {
-			year = 1850
 			invention = impressionist_art
 		}
 		effect = {
@@ -825,6 +825,7 @@ political_decisions = {
 	
 	blackpool_tower = {
 		# TODO: ADD IMAGE
+		# TODO: FIX ALLOW
 		potential = {
 			owns = 285
 			OR = {
@@ -833,6 +834,7 @@ political_decisions = {
 				tag = AGV
 			}
 			NOT = { has_country_flag = built_blackpool_tower }
+			year = 1890
 		}
 		allow = {
 			year = 1892
@@ -846,6 +848,7 @@ political_decisions = {
 	
 	london_tower_bridge = {
 		#TODO: ADD IMAGE
+		# TODO: FIX ALLOW
 		potential = {
 			owns = 300
 			OR = {
@@ -854,6 +857,7 @@ political_decisions = {
 				tag = AGV
 			}
 			NOT = { has_country_flag = built_londer_tower_bridge }
+			year = 1890
 		}
 		allow = {
 			year = 1890
