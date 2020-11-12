@@ -189,7 +189,7 @@ canned_food_factory = {
 	template = cheap_factory_template
 	input_goods = { 
 		iron = 0.5 		#1.75
-		cattle = 4 		#8
+		cattle = 12 		#8
 	}
 	output_goods = canned_food 
 	value = 2			#32
@@ -207,7 +207,7 @@ bakery_factory = {
 	template = cheap_factory_template
 	input_goods = { 
 		iron = 0.5 		#1.75
-		grain = 4 		#8.8
+		grain = 12 		#8.8
 	}
 	output_goods = canned_food 
 	value = 2			#32
@@ -225,7 +225,7 @@ canned_fish_factory = {
 	template = cheap_factory_template
 	input_goods = { 
 		iron = 0.5 		#1.75
-		fish = 4 		#6	total input+maint = 28.some
+		fish = 12 		#6	total input+maint = 28.some
 	}
 	output_goods = canned_food 
 	value = 2			#32
@@ -243,7 +243,7 @@ canned_fruit_factory = {
 	template = cheap_factory_template
 	input_goods = { 
 		iron = 0.5 		#1.75
-		fruit = 4
+		fruit = 12
 	}
 	output_goods = canned_food 
 	value = 2			#32
