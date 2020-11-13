@@ -1,0 +1,49 @@
+country_event = {
+	id = 1000000
+	title = "Welcome to RSM!"
+	desc = "EVT1000000DESC"
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		ai = no
+	}
+	
+	option = {
+		name = "Thanks. Go away"
+	}
+}
+
+country_event = {
+	id = 1000001
+	title = "Info on the United Kingdom"
+	desc = "EVT1000001DESC"
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = ENG
+		ai = no
+	}
+	
+	option = {
+		name = "More helpful. Go away"
+	}
+}
+
+country_event = {
+	id = 1000002
+	title = "Info on England"
+	desc = "EVT1000002DESC"
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = ENL
+		ai = no
+	}
+	
+	option = {
+		name = "More helpful. Go away"
+	}
+}
