@@ -617,4 +617,30 @@ political_decisions = {
 			clr_country_flag = southern_rhine_crisis
 		}
 	}
+	
+	the_celtic_puppet = {
+		# TODO: ADD IMAGE
+		potential = {
+			has_global_flag = celtic_english_war
+			war = no
+			263 = { owner = { vassal_of = THIS  } }
+			OR = {
+				tag = ENL
+				tag = AGV
+			}
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			ENG_296 = { secede_province = THIS add_core = THIS }
+			ENG_273 = { secede_province = THIS add_core = THIS }
+			ENG_277 = { secede_province = THIS add_core = THIS }
+			FRA_420 = { secede_province = THIS add_core = THIS }
+		
+			clr_global_flag = celtic_english_war
+		}
+	}
 }

@@ -1233,6 +1233,48 @@ country_event = {
 		add_accepted_culture = manx
 		add_accepted_culture = cornish
 		add_accepted_culture = breton
+		
+		random_country = {
+			limit = {
+				owns = 300
+			}
+			country_event = 100033
+		}
 	}
 }
+
+# English reaction to Celtic formation
+country_event = {
+	id = 100033
+	title = "The Formation of the Celtic Union"
+	desc = "EVT100033DESC"
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = "And they think that will help them?"
+		casus_belli = {
+			target = FROM
+			type = make_puppet
+			months = 1
+		}
+		
+		war = {
+			target = FROM
+			attacker_goal = {
+				casus_belli = make_puppet
+			}
+			call_ally = yes
+		}
+		badboy = 25
+		remove_accepted_culture = manx
+		remove_accepted_culture = cornish
+		set_global_flag = celtic_english_war
+	}
+	
+	option = {
+		name = "They are not a threat"
+	}
+}
+
 
