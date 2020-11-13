@@ -1,0 +1,44 @@
+political_decisions = {
+	turn_on_options = {
+		potential = {
+			NOT = { year = 1837 }
+			ai = no
+			NOT =  { has_global_flag = yes_options }
+		}
+		
+		allow = { }
+		
+		effect = {
+			set_global_flag = yes_options
+		}
+	}
+	
+	turn_off_options = {
+		potential = {
+			NOT = { year = 1837 }
+			ai = no
+			has_global_flag = yes_options
+		}
+		
+		allow = { }
+		
+		effect = {
+			clr_global_flag = yes_options
+		}
+	}
+	
+	disable_infamy = {
+		potential = {
+			NOT = { year = 1837 }
+			ai = no
+			has_global_flag = yes_options
+			NOT = { has_global_flag = no_infamy }
+		}
+		
+		allow = { }
+		
+		effect = {
+			set_global_flag = no_infamy
+		}
+	}
+}

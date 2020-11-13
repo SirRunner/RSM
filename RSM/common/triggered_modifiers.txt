@@ -3,6 +3,14 @@
 #
 # Effects are fully scriptable here.
 
+no_infamy_mod = {
+	trigger = {
+		has_global_flag = no_infamy
+	}
+	badboy = -99
+	icon = -1
+}
+
 the_british_raj  = {
 	trigger = {
 		1236 = {
