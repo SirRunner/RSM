@@ -942,6 +942,7 @@ country_event = {
 		name = "Germany Time"
 		any_country = {
 			limit = {
+				exists = yes
 				is_culture_group = germanic
 				NOT = { tag = AUS }
 				NOT = { tag = KUK }

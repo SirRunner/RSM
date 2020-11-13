@@ -1834,6 +1834,7 @@ province_event = {
 			AND = {
 				province_id = 276
 				year = 1860
+				NOT = { has_province_modifier = gold_rush_small }
 			}
 		}
 	}

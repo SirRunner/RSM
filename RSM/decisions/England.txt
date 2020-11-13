@@ -523,6 +523,7 @@ political_decisions = {
 		}
 		
 		allow = {
+			war = no
 			NOT = { truce_with = GER }
 			NOT = { truce_with = BEL }
 			NOT = { truce_with = NET }

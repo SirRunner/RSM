@@ -309,6 +309,7 @@ political_decisions = {
 							}
 						}
 						NOT = { culture = north_german }
+						NOT = { owner = { is_culture_group = germanic } }
 					}
 				}
 			}
