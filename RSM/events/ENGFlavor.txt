@@ -2845,7 +2845,7 @@ country_event = {
 	
 	option = {
 		name = "An honor"
-		presige = 5
+		prestige = 5
 	}
 }
 	
@@ -2871,7 +2871,7 @@ country_event = {
 	}
 
 	option = {
-		"Pretty lights"
+		name = "Pretty lights"
 		prestige = 5
 	}
 }

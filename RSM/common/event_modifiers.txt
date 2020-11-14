@@ -21,7 +21,7 @@ cultural_assimilation_strong = {
 
 gold_rush_small = {
 	immigrant_attract = 0.1
-	rgo_output = 0.1
+	local_RGO_output = 0.1
 	icon = 11
 }
 local_hospital = {

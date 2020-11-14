@@ -378,7 +378,6 @@ migration_chance =
 colonialmigration_chance = 
 {
 	factor = 0.25
-
 	modifier = {
 		factor = -0.5
 		is_primary_culture = no

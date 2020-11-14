@@ -10,6 +10,8 @@ country_event = {
 	trigger = {
 	}
 	
+	# TODO: FIX CRISIS CALLING
+	# DOESN'T WORK WITH NEW "CONTINENTS"
 	option = {
 		name = "EVTOPTA20000" # declare interest
 		add_crisis_interest = yes

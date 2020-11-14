@@ -1835,6 +1835,7 @@ province_event = {
 				province_id = 276
 				year = 1860
 				NOT = { has_province_modifier = gold_rush_small }
+				NOT = { trade_goods = precious_metal }
 			}
 		}
 	}
@@ -1883,6 +1884,7 @@ province_event = {
 		province_id = 276
 		year = 1890
 		has_province_modifier = gold_rush_small
+		NOT = { trade_goods = precious_metal }
 	}
 	
 	mean_time_to_happen = {

@@ -592,6 +592,7 @@ political_decisions = {
 		potential = {
 			tag = AGV
 			has_country_flag = southern_rhine_crisis
+			NOT = { RHI = { vassal_of = THIS } }
 		}
 		
 		allow = { 
@@ -615,7 +616,6 @@ political_decisions = {
 				country_event = 10603
 			}
 			create_vassal = RHI
-			clr_country_flag = southern_rhine_crisis
 		}
 	}
 	

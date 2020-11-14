@@ -4306,7 +4306,13 @@ annex_africa = {
 		number_of_states = 2
 		THIS = {
 			nationalism_n_imperialism = 1
-			capital_scope = { continent = europe }
+			capital_scope = { 
+				OR = {
+					continent = europe
+					continent = british_isles
+					continent = ireland
+				}
+			}
 			OR = {
 				NOT = { tag = RUS }
 				ai = no
@@ -4395,7 +4401,13 @@ annex_africa_full = {
 		NOT = { number_of_states = 2 }
 		THIS = {
 			nationalism_n_imperialism = 1
-			capital_scope = { continent = europe }
+			capital_scope = { 
+				OR = {
+					continent = europe
+					continent = british_isles
+					continent = ireland 
+				}
+			}
 			OR = {
 				NOT = { tag = RUS }
 				ai = no
@@ -4765,7 +4777,7 @@ make_puppet = {
 		NOT = {
 			is_our_vassal = THIS
 			has_country_modifier = neutrality
-			total_pops = 5000000
+			#total_pops = 5000000
 		}
 		is_vassal = no
 		is_greater_power = no
