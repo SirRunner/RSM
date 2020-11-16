@@ -14,6 +14,12 @@ political_decisions = {
 			set_global_flag = british_renamed_wales
 			set_global_flag = british_renamed_isle_of_man
 			set_global_flag = british_renamed_cornwall
+			set_global_flag = british_renamed_nw_england
+			set_global_flag = british_renamed_ne_england
+			set_global_flag = british_renamed_midlands
+			set_global_flag = british_renamed_eastern_counties
+			set_global_flag = british_renamed_se_england
+			set_global_flag = british_renamed_sw_england
 			
 			set_global_flag = province_name_setup
 		}
@@ -143,7 +149,6 @@ political_decisions = {
 			}
 		}
 	}
-	
 	rename_scotland = {
 		potential = {
 			owns = 266 owns = 267 owns = 268 owns = 270 # Highlands
@@ -208,7 +213,6 @@ political_decisions = {
 			}
 		}
 	}
-	
 	rename_wales = {
 		potential = {
 			owns = 273 owns = 274 owns = 275 owns = 276 # Wales
@@ -262,7 +266,6 @@ political_decisions = {
 			}
 		}
 	}
-	
 	rename_isle_of_man = {
 		potential = {
 			owns = 304
@@ -308,7 +311,6 @@ political_decisions = {
 			}
 		}
 	}
-	
 	rename_cornwall = {
 		potential = {
 			owns = 299
@@ -350,6 +352,328 @@ political_decisions = {
 				owner = {
 					set_global_flag = british_renamed_cornwall
 					clr_global_flag = celtic_renamed_cornwall
+				}
+			}
+		}
+	}
+	rename_nw_england = {
+		potential = {
+			owns = 279 owns = 277 owns = 278 owns = 285
+			OR = {
+				AND = {
+					is_culture_group = celtic
+					NOT = { has_global_flag = celtic_renamed_nw_england }
+				}
+				AND = {
+					is_culture_group = british
+					NOT = { has_global_flag = british_renamed_nw_england }
+				}
+			}
+		}
+		allow = { war = no }
+		effect = {
+			# Celtic
+			random_owned = {
+				limit = {
+					province_id = 279
+					owner = { is_culture_group = celtic }
+				}
+				279 = { change_province_name = "Luguwaljon"
+						state_scope = { change_region_name = "Carvetia" } } # or Kombroges
+				277 = { change_province_name = "Lerpwl" }
+				278 = { change_province_name = "Manceinion" }
+				285 = { change_province_name = "Caer" }
+				
+				owner = {
+					set_global_flag = celtic_renamed_nw_england
+					clr_global_flag = british_renamed_nw_england
+				}
+			}
+			
+			# British
+			random_owned = {
+				limit = {
+					province_id = 279
+					owner = { is_culture_group = british }
+				}
+				279 = { change_province_name = "Carlise"
+						state_scope = { change_region_name = "Cumbria" } }
+				277 = { change_province_name = "Liverpool" }
+				278 = { change_province_name = "Manchester" }
+				285 = { change_province_name = "Chester" }
+				
+				owner = {
+					set_global_flag = british_renamed_nw_england
+					clr_global_flag = celtic_renamed_nw_england
+				}
+			}
+		}
+	}
+	rename_ne_england = {
+		potential = {
+			owns = 280 owns = 281 owns = 282 owns = 283
+			OR = {
+				AND = {
+					is_culture_group = celtic
+					NOT = { has_global_flag = celtic_renamed_ne_england }
+				}
+				AND = {
+					is_culture_group = british
+					NOT = { has_global_flag = british_renamed_ne_england }
+				}
+			}
+		}
+		allow = { war = no }
+		effect = {
+			# Celtic
+			random_owned = {
+				limit = {
+					province_id = 280
+					owner = { is_culture_group = celtic }
+				}
+				280 = { change_province_name = "Newcastle upon Tyne" # TODO: English name, can't find Celtic name
+						state_scope = { change_region_name = "Brigantia" } }
+				281 = { change_province_name = "Hull" } # TODO: English name, can't find Celtic name
+				282 = { change_province_name = "Ladenses" }
+				283 = { change_province_name = "Sheffield" } # TODO: English name, can't find Celtic name
+				
+				owner = {
+					set_global_flag = celtic_renamed_ne_england
+					clr_global_flag = british_renamed_ne_england
+				}
+			}
+			
+			# British
+			random_owned = {
+				limit = {
+					province_id = 280
+					owner = { is_culture_group = british }
+				}
+				280 = { change_province_name = "Newcastle upon Tyne"
+						state_scope = { change_region_name = "Northumbria" } }
+				281 = { change_province_name = "Hull" }
+				282 = { change_province_name = "Leeds" }
+				283 = { change_province_name = "Sheffield" }
+				
+				owner = {
+					set_global_flag = british_renamed_ne_england
+					clr_global_flag = celtic_renamed_ne_england
+				}
+			}
+		}
+	}
+	rename_midlands = {
+		potential = {
+			owns = 284 owns = 286 owns = 287 owns = 288 owns = 289 owns = 290
+			OR = {
+				AND = {
+					is_culture_group = celtic
+					NOT = { has_global_flag = celtic_renamed_midlands }
+				}
+				AND = {
+					is_culture_group = british
+					NOT = { has_global_flag = british_renamed_midlands }
+				}
+			}
+		}
+		allow = { war = no }
+		effect = {
+			# Celtic
+			random_owned = {
+				limit = {
+					province_id = 284
+					owner = { is_culture_group = celtic }
+				}
+				284 = { change_province_name = "Birmingham" # TODO: English name, can't find Celtic name
+						state_scope = { change_region_name = "Coritania" } } # Maybe? # Cornovia?
+				286 = { change_province_name = "Amwythig" }
+				287 = { change_province_name = "Coventry" } # TODO: English name can't find Celtic name
+				288 = { change_province_name = "Tigguo Cobauc" }
+				289 = { change_province_name = "Caerlr" }
+				290 = { change_province_name = "Lindon" }
+				
+				owner = {
+					set_global_flag = celtic_renamed_midlands
+					clr_global_flag = british_renamed_midlands
+				}
+			}
+			
+			# British
+			random_owned = {
+				limit = {
+					province_id = 284
+					owner = { is_culture_group = british }
+				}
+				284 = { change_province_name = "Birmingham"
+						state_scope = { change_region_name = "Mercia" } }
+				286 = { change_province_name = "Shrewsbury" }
+				287 = { change_province_name = "Coventry" }
+				288 = { change_province_name = "Nottingham" }
+				289 = { change_province_name = "Leicester" }
+				290 = { change_province_name = "Lincoln" }
+				
+				owner = {
+					set_global_flag = british_renamed_midlands
+					clr_global_flag = celtic_renamed_midlands
+				}
+			}
+		}
+	}
+	rename_eastern_counties = {
+		potential = {
+			owns = 291 owns = 292 owns = 293 owns = 295
+			OR = {
+				AND = {
+					is_culture_group = celtic
+					NOT = { has_global_flag = celtic_renamed_eastern_counties }
+				}
+				AND = {
+					is_culture_group = british
+					NOT = { has_global_flag = british_renamed_eastern_counties }
+				}
+			}
+		}
+		allow = { war = no }
+		effect = {
+			# Celtic
+			random_owned = {
+				limit = {
+					province_id = 291
+					owner = { is_culture_group = celtic }
+				}
+				291 = { change_province_name = "Cair Grauth"
+						state_scope = { change_region_name = "East Anglia" } } # TODO: English name, can't find Celtic
+				292 = { change_province_name = "Gippeswic" }
+				293 = { change_province_name = "Chelmsford" } # TODO: English name, can't find Celtic name
+				295 = { change_province_name = "Verulamium" }
+				
+				owner = {
+					set_global_flag = celtic_renamed_eastern_counties
+					clr_global_flag = british_renamed_eastern_counties
+				}
+			}
+			
+			# British
+			random_owned = {
+				limit = {
+					province_id = 291
+					owner = { is_culture_group = british }
+				}
+				291 = { change_province_name = "Cambridge"
+						state_scope = { change_region_name = "East Anglia" } }
+				292 = { change_province_name = "Ipswich" }
+				293 = { change_province_name = "Chelmsford" }
+				295 = { change_province_name = "St Albans" }
+				
+				owner = {
+					set_global_flag = british_renamed_eastern_counties
+					clr_global_flag = celtic_renamed_eastern_counties
+				}
+			}
+		}
+	}
+	rename_se_england = {
+		potential = {
+			owns = 294 owns = 300 owns = 301 owns = 302 owns = 303
+			OR = {
+				AND = {
+					is_culture_group = celtic
+					NOT = { has_global_flag = celtic_renamed_se_england }
+				}
+				AND = {
+					is_culture_group = british
+					NOT = { has_global_flag = british_renamed_se_england }
+				}
+			}
+		}
+		allow = { war = no }
+		effect = {
+			# Celtic
+			random_owned = {
+				limit = {
+					province_id = 294
+					owner = { is_culture_group = celtic }
+				}
+				294 = { change_province_name = "Rhydychen"
+						state_scope = { change_region_name = "Cant" } }
+				300 = { change_province_name = "Lowonidonjon" }
+				301 = { change_province_name = "Durouernon" }
+				302 = { change_province_name = "Brighton" } # TODO: English name, can't find Celtic name
+				303 = { change_province_name = "Southampton" } # TODO: English name, can't find Celtic name
+				
+				owner = {
+					set_global_flag = celtic_renamed_se_england
+					clr_global_flag = british_renamed_se_england
+				}
+			}
+			
+			# British
+			random_owned = {
+				limit = {
+					province_id = 294
+					owner = { is_culture_group = british }
+				}
+				294 = { change_province_name = "Oxford"
+						state_scope = { change_region_name = "Sussex-Kent" } }
+				300 = { change_province_name = "London" }
+				301 = { change_province_name = "Canterbury" }
+				302 = { change_province_name = "Brighton" }
+				303 = { change_province_name = "Southampton" }
+				
+				owner = {
+					set_global_flag = british_renamed_se_england
+					clr_global_flag = celtic_renamed_se_england
+				}
+			}
+		}
+	}
+	rename_sw_england = {
+		potential = {
+			owns = 296 owns = 297 owns = 298
+			OR = {
+				AND = {
+					is_culture_group = celtic
+					NOT = { has_global_flag = celtic_renamed_sw_england }
+				}
+				AND = {
+					is_culture_group = british
+					NOT = { has_global_flag = british_renamed_sw_england }
+				}
+			}
+		}
+		allow = { war = no }
+		effect = {
+			# Celtic
+			random_owned = {
+				limit = {
+					province_id = 296
+					owner = { is_culture_group = celtic }
+				}
+				296 = { change_province_name = "Caer Odor"
+						state_scope = { change_region_name = "Cernyw" } }
+				297 = { change_province_name = "Bath" } # TODO: English name, can't find Celtic name
+				298 = { change_province_name = "Sorbiodunum" }
+				
+				owner = {
+					set_global_flag = celtic_renamed_sw_england
+					clr_global_flag = british_renamed_sw_england
+				}
+			}
+			
+			# British
+			random_owned = {
+				limit = {
+					province_id = 296
+					owner = { is_culture_group = british }
+				}
+				296 = { change_province_name = "Bristol"
+						state_scope = { change_region_name = "Wessex" } }
+				297 = { change_province_name = "Bath" }
+				298 = { change_province_name = "Salisbury" }
+				
+				owner = {
+					set_global_flag = british_renamed_sw_england
+					clr_global_flag = celtic_renamed_sw_england
 				}
 			}
 		}

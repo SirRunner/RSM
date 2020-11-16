@@ -1,5 +1,11 @@
 ;;;;;;;;;;;;;;;;;x
 PROV400;Dunkerque;;;;;;;;;;;;;;;;;x
+ENG_277;Cumbria;;;;;;;;;;;;;;;;;x
+ENG_280;Northumbria;;;;;;;;;;;;;;;;;x
+ENG_284;Mercia;;;;;;;;;;;;;;;;;x
+ENG_291;East Anglia;;;;;;;;;;;;;;;;;x
+ENG_296;Wessex;;;;;;;;;;;;;;;;;x
+ENG_300;Sussex-Kent;;;;;;;;;;;;;;;;;x
 british_isles;British Isles;;;;;;;;;;;;;;;;;x
 ireland;Ireland;;;;;;;;;;;;;;;;;x
 rename_ireland_title;Rename Ireland;;;;;;;;;;;;;;;;;x
@@ -12,3 +18,15 @@ rename_isle_of_man_title;Rename Isle of Man;;;;;;;;;;;;;;;;;x
 rename_isle_of_man_desc;We now have complete hegemony over the Isle of Man. It is time that the names reflect that.;;;;;;;;;;;;;;;;;x
 rename_cornwall_title;Rename Cornwall;;;;;;;;;;;;;;;;;x
 rename_cornwall_desc;We now have complete hegemony over the Cornwall. It is time that the names reflect that.;;;;;;;;;;;;;;;;;x
+rename_nw_england_title;Rename Cumbria;;;;;;;;;;;;;;;;;x
+rename_nw_england_desc;We now have complete hegemony over the Cumbria. It is time that the names reflect that.;;;;;;;;;;;;;;;;;x
+rename_ne_england_title;Rename Northumbria;;;;;;;;;;;;;;;;;x
+rename_ne_england_desc;We now have complete hegemony over the Northumbria. It is time that the names reflect that.;;;;;;;;;;;;;;;;;x
+rename_midlands_title;Rename Mercia;;;;;;;;;;;;;;;;;x
+rename_midlands_desc;We now have complete hegemony over the Mercia. It is time that the names reflect that.;;;;;;;;;;;;;;;;;x
+rename_eastern_counties_title;Rename East Anglia;;;;;;;;;;;;;;;;;x
+rename_eastern_counties_desc;We now have complete hegemony over the East Anglia. It is time that the names reflect that.;;;;;;;;;;;;;;;;;x
+rename_se_england_title;Rename Sussex-Kent;;;;;;;;;;;;;;;;;x
+rename_se_england_desc;We now have complete hegemony over the Sussex-Kent. It is time that the names reflect that.;;;;;;;;;;;;;;;;;x
+rename_sw_england_title;Rename Wessex;;;;;;;;;;;;;;;;;x
+rename_sw_england_desc;We now have complete hegemony over the Wessex. It is time that the names reflect that.;;;;;;;;;;;;;;;;;x
