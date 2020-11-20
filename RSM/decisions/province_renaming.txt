@@ -435,7 +435,7 @@ political_decisions = {
 						state_scope = { change_region_name = "Brigantia" } }
 				281 = { change_province_name = "Hull" } # TODO: English name, can't find Celtic name
 				282 = { change_province_name = "Ladenses" }
-				283 = { change_province_name = "Sheffield" } # TODO: English name, can't find Celtic name
+				283 = { change_province_name = "Cambuslang" }
 				
 				owner = {
 					set_global_flag = celtic_renamed_ne_england
@@ -484,10 +484,10 @@ political_decisions = {
 					province_id = 284
 					owner = { is_culture_group = celtic }
 				}
-				284 = { change_province_name = "Birmingham" # TODO: English name, can't find Celtic name
-						state_scope = { change_region_name = "Coritania" } } # Maybe? # Cornovia?
+				284 = { change_province_name = "Bermingham"
+						state_scope = { change_region_name = "Coritania" } }
 				286 = { change_province_name = "Amwythig" }
-				287 = { change_province_name = "Coventry" } # TODO: English name can't find Celtic name
+				287 = { change_province_name = "Coventre" }
 				288 = { change_province_name = "Tigguo Cobauc" }
 				289 = { change_province_name = "Caerlr" }
 				290 = { change_province_name = "Lindon" }
@@ -651,7 +651,7 @@ political_decisions = {
 				}
 				296 = { change_province_name = "Caer Odor"
 						state_scope = { change_region_name = "Cernyw" } }
-				297 = { change_province_name = "Bath" } # TODO: English name, can't find Celtic name
+				297 = { change_province_name = "Sulis" }
 				298 = { change_province_name = "Sorbiodunum" }
 				
 				owner = {

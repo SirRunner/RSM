@@ -10,8 +10,6 @@ country_event = {
 	trigger = {
 	}
 	
-	# TODO: FIX CRISIS CALLING
-	# DOESN'T WORK WITH NEW "CONTINENTS"
 	option = {
 		name = "EVTOPTA20000" # declare interest
 		add_crisis_interest = yes
@@ -35,6 +33,62 @@ country_event = {
 	option = {
 		name = "EVTOPTB20000" # decline
 		prestige_factor = -0.2
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+# Allows countries with the capitals in Ireland or the British Isles to join crises
+# It is not elegant by any means, but it works
+country_event = {
+	id = 20001
+	title = "EVTNAME20000"
+	desc = "EVTDESC20000"
+	picture = "crisis"
+
+	trigger = {
+		crisis_exist = yes
+		capital_scope = {
+			OR = {
+				continent = ireland
+				continent = british_isles
+			}
+		}
+		NOT = {
+			has_country_modifier = no_crisis
+		}
+		war = no
+		is_greater_power = yes
+	}
+
+	option = {
+		name = "EVTOPTA20000" # declare interest
+		add_crisis_interest = yes
+		any_country = {
+			limit = {
+				involved_in_crisis = yes
+				OR = {
+					is_greater_power = no
+					exists = no
+				}
+			}
+			add_country_modifier = {
+				name = recent_crisis
+				duration = 3650
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = "EVTOPTB20000" # decline
+		prestige_factor = -0.2
+		add_country_modifier = {
+			name = no_crisis
+			duration = 365
+		}
 		ai_chance = {
 			factor = 0
 		}

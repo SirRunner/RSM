@@ -4,6 +4,10 @@
 
 ##### RSM #####
 
+no_crisis = {
+	icon = -1
+}
+
 ##### GENERIC EVENTS #####
 cultural_assimilation = {
 	assimilation_rate = 0.5

@@ -184,7 +184,7 @@ political_decisions = {
 		}
 	}
 	the_disunited_kingdom = {
-		# TODO: ADD IMAGE
+		picture = map_british_isles
 		potential = {
 			tag = ENG
 			NOT = { year = 1837 }
@@ -280,7 +280,7 @@ political_decisions = {
 		}
 	}
 	returning_english = {
-		# TODO: ADD IMAGE
+		picture = embrace_minority
 		potential = {
 			has_country_flag = return_the_british
 		}
@@ -292,7 +292,7 @@ political_decisions = {
 	}
 	
 	norman_princes = {
-		# TODO: ADD IMAGE
+		picture = map_france
 		potential = {
 			tag = ENL
 			has_global_flag = disunited_kingdom
@@ -319,7 +319,7 @@ political_decisions = {
 	}
 	
 	english_channel = {
-		# TODO: ADD IMAGE
+		picture = map_france
 		potential = {
 			tag = ENL
 			has_global_flag = norman_war
@@ -358,7 +358,7 @@ political_decisions = {
 	}
 	
 	stabilize_france = {
-		# TODO: ADD IMAGE
+		picture = map_france
 		potential = {
 			tag = ENL
 			has_global_flag = english_channel_crisis
@@ -412,7 +412,7 @@ political_decisions = {
 	}
 	
 	become_angevin_empire = {
-		# TODO: ADD IMAGE
+		picture = map_angevin_empire
 		potential = {
 			tag = ENL
 			has_global_flag = england_stabilize_france
@@ -444,7 +444,7 @@ political_decisions = {
 	}
 	
 	the_french_question = {
-		# TODO: ADD IMAGE
+		picture = embrace_minority
 		potential = {
 			tag = AGV
 			NOT = { has_global_flag = agv_french_question }
@@ -499,7 +499,7 @@ political_decisions = {
 	}
 	
 	irish_settlers = {
-		# TODO: ADD IMAGE
+		picture = embrace_minority
 		potential = {
 			tag = ENL
 			has_global_flag = disunited_kingdom

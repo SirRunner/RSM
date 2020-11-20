@@ -767,7 +767,7 @@ political_decisions = {
 	}
 	
 	kings_college_hospital = {
-		# TODO: ADD IMAGE
+		picture = palais_garnier
 		potential = {
 			OR = {
 				government = absolute_monarchy
@@ -801,7 +801,7 @@ political_decisions = {
 	}
 	
 	st_george_hall = {
-		# TODO: ADD IMAGE
+		picture = the_grunderzeit
 		# TODO: FIX INVENTION REQUIREMENTS
 		potential = {
 			owns = 277
@@ -824,7 +824,7 @@ political_decisions = {
 	}
 	
 	blackpool_tower = {
-		# TODO: ADD IMAGE
+		picture = schwabing_circles
 		# TODO: FIX ALLOW
 		potential = {
 			owns = 285
@@ -847,7 +847,7 @@ political_decisions = {
 	}
 	
 	london_tower_bridge = {
-		#TODO: ADD IMAGE
+		picture = the_heligoland_question
 		# TODO: FIX ALLOW
 		potential = {
 			owns = 300
