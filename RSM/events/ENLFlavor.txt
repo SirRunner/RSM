@@ -1278,4 +1278,59 @@ country_event = {
 	}
 }
 
+# Angevin war for Sicily
+country_event = {
+	id = 100034
+	title = "The Norman Invasion of Sicily"
+	desc = "Hmmm"
+	is_triggered_only = yes
+	
+	option = {
+		name = "They are warmongerers"
+		AGV = {
+			casus_belli = {
+				target = THIS
+				type = liberate_country
+				months = 12
+			}
+		}
+		
+		war = {
+			target = AGV
+			attacker_goal = {
+				casus_belli = status_quo
+			}
+			defender_goal = {
+				casus_belli = liberate_country
+				country = SIC
+			}
+			call_ally = yes
+		}
+	}
+}
 
+# Angevin Victory in Sicily War
+country_event = {
+	id = 100035
+	title = "We Are Victorous!"
+	desc = "EVT100035DESC"
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		SIC = { 
+			exists = yes
+			in_sphere = AGV
+		}
+		tag = AGV
+		has_global_flag = norman_sicily_war
+	}
+	
+	option = {
+		name = "One Sicily, Two Sicily. My Sicily, not Your Sicily"
+		SIC = {
+			country_event = 10603
+		}
+		create_vassal = SIC
+	}
+}

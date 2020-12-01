@@ -299,7 +299,7 @@ political_decisions = {
 			NOT = { has_global_flag = norman_war }
 		}
 		allow = {
-			has_global_flag = regna_victoria
+			has_country_flag = regna_victoria
 		}
 		effect = {
 			FRA_418 = {
@@ -588,7 +588,7 @@ political_decisions = {
 	
 	the_rhineland_puppet = {
 		# TODO: ADD IMAGE
-		# TODO: MAY WANT TO MAKE SEPARATE NATION
+		# TODO: MAY WANT TO MAKE SEPARATE NATION FOR PUPPET
 		potential = {
 			tag = AGV
 			has_country_flag = southern_rhine_crisis
@@ -644,4 +644,52 @@ political_decisions = {
 			clr_global_flag = celtic_english_war
 		}
 	}
+	
+	# TODO: ADD IMAGE
+	# TODO: MAKE UNIQUE COUNTRY FOR PUPPET?
+	norman_sicily = {
+		potential = {
+			tag = AGV
+			OR = {
+				FRA = {
+					exists = no
+				}
+				FRA = {
+					vassal_of = AGV
+				}
+			}
+			SIC = {
+				exists = no
+			}
+			war = no
+			NOT = { has_global_flag = norman_sicily_war }
+		}
+		
+		allow = {
+			NOT = {
+				SIC_763 = {
+					owner = {
+						truce_with = AGV
+					}
+				}
+			}
+		}
+		
+		effect = {
+			SIC_763 = { add_core = SIC }
+			SIC_753 = { add_core = SIC }
+			SIC_754 = { add_core = SIC }
+			
+			854 = { remove_core = SIC }
+			
+			SIC_753 = {
+				owner = {
+					country_event = 100034
+				}
+			}
+			
+			infamy = 10
+			set_global_flag = norman_sicily_war
+		}
+	}			
 }
