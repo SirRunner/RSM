@@ -306,6 +306,10 @@ migration_chance =
 			factor = -0.1
 			not = { consciousness = 8 } 
 		}
+		modifier = {
+			factor = -0.1
+			not = { consciousness = 9 } 
+		}
 	}
 
 	modifier = {
@@ -334,12 +338,11 @@ migration_chance =
 		}
 	}
 
-
 	modifier = {
 		factor = -0.3
 		state_scope = {
 			has_factories = yes
-			}
+		}
 	}
 
 	group = {
@@ -369,8 +372,22 @@ migration_chance =
 			factor = 0.3
 			unemployment = 0.6
 			location = { controlled_by = owner }
-		}	
-		
+		}
+	}
+
+	modifier = {
+		factor = 1
+		country = { citizenship_policy = residency }
+		OR = {
+			is_accepted_culture = yes
+			is_primary_culture = yes
+		}
+		location = { 
+			OR = {
+				is_accepted_culture = yes
+				is_primary_culture = yes
+			}
+		}
 	}
 }
 
@@ -421,12 +438,11 @@ colonialmigration_chance =
 		}
 	}
 
-
 	modifier = {
 		factor = -0.3
 		state_scope = {
 			has_factories = yes
-			}
+		}
 	}
 
 	group = {
@@ -442,7 +458,21 @@ colonialmigration_chance =
 			factor = 0.3
 			unemployment = 0.3
 		}
-		
+	}
+
+	modifier = {
+		factor = 1
+		country = { citizenship_policy = residency }
+		OR = {
+			is_accepted_culture = yes
+			is_primary_culture = yes
+		}
+		location = { 
+			OR = {
+				is_accepted_culture = yes
+				is_primary_culture = yes
+			}
+		}
 	}
 }
 
@@ -452,7 +482,6 @@ emigration_chance =
 	factor = 0.5
 
 	group = {
-
 		modifier = {
 			factor = 0.2
 			militancy = 5
@@ -511,12 +540,11 @@ emigration_chance =
 		}
 	}
 
-
 	modifier = {
 		factor = -0.3
 		state_scope = {
 			has_factories = yes
-			}
+		}
 	}
 
 	group = {
@@ -532,7 +560,10 @@ emigration_chance =
 			factor = 0.3
 			unemployment = 0.3
 		}
-		
+		modifier = {
+			factor = 0.5
+			unemployment = 0.6
+		}
 	}
 	modifier = {
 		factor = -0.2
@@ -544,21 +575,83 @@ emigration_chance =
 		country = { religious_policy = moralism }
 		not = { religion = this }
 	}
+	
+		
+	modifier = {
+		factor = -0.3
+		has_culture_core = yes
+	}
 
 	modifier = {
-		factor = 0.1
+		factor = 0.3
 		country = { citizenship_policy = residency }
 		not = { culture = this }
 	}
-
-	modifier = {
-		factor = -2.0
-		OR = { 
-			continent = north_america
-			continent = south_america
+	
+	group = {
+		modifier = {
+			factor = 0.3
+			country = { vote_franschise = none_voting }
 		}
-		government = democracy
+		
+		modifier = {
+			factor = -0.2
+			country = { vote_franschise = landed_voting }
+			strata = rich
+		}
+		modifier = {
+			factor = 0.3
+			country = { vote_franschise = landed_voting }
+			NOT = { strata = rich }
+		}
+		
+		modifier = {
+			factor = -0.2
+			country = { vote_franschise = wealth_weighted_voting }
+			strata = rich
+		}
+		modifier = {
+			factor = -0.1
+			country = { vote_franschise = wealth_weighted_voting }
+			strata = middle
+		}
+		modifier = {
+			factor = 0.3
+			country = { vote_franschise = wealth_weighted_voting }
+			strata = poor
+		}
+		
+		modifier = {
+			factor = -0.2
+			country = { vote_franschise = wealth_voting }
+			NOT = { strata = poor }
+		}
+		modifier = {
+			factor = 0.3
+			country = { vote_franschise = wealth_voting }
+			strata = poor
+		}
+		
+		modifier = {
+			factor = -0.2
+			country = { vote_franschise = universal_weighted_voting }
+			NOT = { strata = poor }
+		}
+		
+		modifier = {
+			factor = -0.2
+			country = { vote_franschise = universal_voting }
+		}
 	}
+	
+	modifier = {
+		factor = -0.5
+		OR = {
+			is_primary_culture = THIS
+			is_accepted_culture = THIS
+		}
+	}
+
 	modifier = {
 		factor = -2.0
 		state_scope = { is_colonial = yes }
