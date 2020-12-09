@@ -14,7 +14,7 @@
  - Turned the Canned Food factory into 4 different factories: Dried Meat factory, Bakery, Canned Fish factory, canned fruit factory
  
 ### POPs
- - Changed POP assimilation chance
+ - Changed POP assimilation and migration chances
 
 ### Military
  - added new unit: Mobile Artillery
