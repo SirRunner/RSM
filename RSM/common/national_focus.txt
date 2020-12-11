@@ -1,24 +1,174 @@
-rail_focus =
+building_focus =
 {
 	encourage_rail = 
 	{
 		railroads = 0.5 #Capitalists 50% more likeley to choose railroads
 		icon = 2
+		limit = {
+			civilized = yes
+		}
+	}
+	automation_focus =
+	{
+		aeroplanes = 18.3
+		barrels = 18.3
+		automobiles = 18.3
+		icon = 16
+		limit = { 
+			year = 1880 
+			civilized = yes
+		}
+	}
+
+	electrical_focus =
+	{
+		radio = 18.3
+		telephones = 18.3
+		electric_gear = 18.3
+		icon = 17
+		limit = { 
+			year = 1880 
+			civilized = yes
+		}
+	}
+
+	chemical_focus =
+	{
+		fuel = 18.3
+		oil = 18.3
+		icon = 18
+		limit = { 
+			year = 1880 
+			civilized = yes
+		}
+	}
+
+	shipping_focus =
+	{
+		steamer_convoy = 18.3
+		clipper_convoy = 18.3
+		icon = 19
+		limit = { 
+			civilized = yes
+			state_scope = { any_owned_province = { port = yes } }
+		}
+	}
+
+	textile_focus =
+	{
+		luxury_clothes = 18.3
+		regular_clothes = 18.3
+		fabric = 0.3
+		dye = 0.3
+		icon = 20
+		limit = { 
+			civilized = yes
+		}
+	}
+
+	wood_focus = 
+	{
+		paper = 18.3
+		luxury_furniture = 18.3
+		furniture = 18.3
+		lumber = 18.3
+		icon = 21
+		limit = { 
+			civilized = yes
+		}
+	}
+
+	basic_industry_focus =
+	{
+		steel = 18.3
+		machine_parts = 25.3
+		cement = 18.3
+		icon = 22
+		limit = { 
+			civilized = yes
+		}
+	}
+
+	armaments_focus = 
+	{
+		artillery = 18.3
+		small_arms = 18.3
+		ammunition = 18.3
+		canned_food = 18.3  
+		explosives = 18.3
+		fertilizer = 18.3
+		icon = 23
+		limit = { 
+			civilized = yes
+		}
+	}
+
+	consumer_focus = 
+	{
+		liquor = 18.3
+		wine = 18.3
+		glass = 18.3
+		icon = 24
+		limit = { 
+			civilized = yes
+		}
 	}
 }
 
-immigration_focus = 
+production_focus = 
 {
-	immigration =
-	{
-		immigrant_attract = 0.2 #increases attactiveness to immigrants by 20 %
-		icon = 3
+	artisan_prod_focus = {
+		local_artisan_output = 0.5
+		pop_militancy_modifier = 0.03
 		limit = { 
-			#OR = { 
-				#continent = north_america
-				#continent = south_america
-				#is_overseas = yes
-			#}  
+			is_colonial = no
+		}
+		icon = 6
+	}
+	
+	artisan_prod_colony_focus = {
+		local_artisan_output = 1
+		pop_militancy_modifier = 0.05
+		limit = { 
+			is_colonial = yes
+		}
+		icon = 6
+	}
+	
+	factory_prod_focus = {
+		local_factory_output = 0.5
+		pop_militancy_modifier = 0.03
+		limit = { 
+			is_colonial = no
+			civilized = yes
+		}
+		icon = 4
+	}
+	
+	rgo_prod_focus = {
+		local_RGO_output = 0.5
+		pop_militancy_modifier = 0.03
+		icon = 4
+		limit = { 
+			is_colonial = no
+		}
+	}
+	
+	rgo_prod_colony_focus = {
+		local_RGO_output = 1
+		pop_militancy_modifier = 0.05
+		icon = 4
+		limit = { 
+			is_colonial = yes
+		}
+	}
+	
+	ship_focus = {
+		local_repair = 0.25
+		local_ship_build = -0.25
+		icon = 19
+		limit = {
+			state_scope = { any_owned_province = { port = yes } }
 		}
 	}
 }
@@ -31,14 +181,80 @@ diplomatic_focus =
 		has_flashpoint = yes
 		own_provinces = no
 
+		diplomatic_points_modifier = -0.1
 		flashpoint_tension = 0.15
 
 		limit = {
 			is_core = THIS
-			# THIS = {
-				# is_greater_power = no
-			# }
 		}
+	}
+	
+	# increase_noncore_tension = {
+		# icon = 4
+		# has_flashpoint = yes
+		# own_provinces = no
+		
+		# diplomatic_points_modifier = -0.1
+		# flashpoint_tension = 0.05
+		# badboy = 0.01
+		
+		# limit = {
+			# NOT = { is_core = THIS }
+		# }
+	# }
+}
+
+population_focus =
+{
+	militancy_decrease = {
+		pop_militancy_modifier = -0.1
+		icon = 4
+	}
+	
+	militancy_increase = {
+		pop_militancy_modifier = 0.1
+		icon = 4
+	}
+	
+	consciousness_decrease = {
+		pop_consciousness_modifier = -0.05
+		icon = 4
+	}
+	
+	consciousness_increase = {
+		pop_consciousness_modifier = 0.05
+		icon = 4
+	}
+	
+	assimilation_increase = {
+		assimilation_rate = 0.5
+		limit = { 
+			is_colonial = no
+		}
+		icon = 4
+	}
+	
+	immigration =
+	{
+		immigrant_attract = 0.2 #increases attactiveness to immigrants by 20 %
+		icon = 3
+		limit = { 
+			is_colonial = no
+		}
+	}
+	
+	colonial_immigration = 
+	{
+		immigrant_attract = 2
+		icon = 3
+		limit = {
+			is_colonial = yes
+		}
+	}
+	
+	social_programs = {
+		population_growth = 0.002
+		icon = 4
 	}
 }
 
@@ -72,6 +288,7 @@ promotion_focus =
 		outliner_show_as_percent = yes
 		limit = { 
 			civilized = yes
+			is_colonial = no
 		}
 
 	}
@@ -90,6 +307,7 @@ promotion_focus =
 		outliner_show_as_percent = yes
 		limit = { 
 			civilized = yes
+			is_colonial = no
 		}
 	}
 
@@ -100,6 +318,7 @@ promotion_focus =
 		outliner_show_as_percent = yes
 		limit = { 
 			civilized = yes
+			is_colonial = no
 		}
 	}
 
@@ -129,106 +348,6 @@ promotion_focus =
 		soldiers = 0.20 #20% more likeley to become this type
 		icon = 15
 		outliner_show_as_percent = yes
-	}
-}
-
-production_focus =
-{
-	automation_focus =
-	{
-		aeroplanes = 18.3
-		barrels = 18.3
-		automobiles = 18.3
-		icon = 16
-		limit = { year = 1880 }
-	}
-
-	electrical_focus =
-	{
-		radio = 18.3
-		telephones = 18.3
-		electric_gear = 18.3
-		icon = 17
-		limit = { year = 1880 }
-	}
-
-	chemical_focus =
-	{
-		fuel = 18.3
-		oil = 18.3
-		icon = 18
-		limit = { year = 1880 }
-	}
-
-	shipping_focus =
-	{
-		steamer_convoy = 18.3
-		clipper_convoy = 18.3
-		icon = 19
-		limit = { 
-			#civilized = yes
-			state_scope = { any_owned_province = { port = yes } }
-		}
-	}
-
-	textile_focus =
-	{
-		luxury_clothes = 18.3
-		regular_clothes = 18.3
-		fabric = 0.3
-		dye = 0.3
-		icon = 20
-		#limit = { 
-		#	civilized = yes
-		#}
-	}
-
-	wood_focus = 
-	{
-		paper = 18.3
-		luxury_furniture = 18.3
-		furniture = 18.3
-		lumber = 18.3
-		icon = 21
-		#limit = { 
-		#	civilized = yes
-		#}
-	}
-
-	basic_industry_focus =
-	{
-		steel = 18.3
-		machine_parts = 25.3
-		cement = 18.3
-		icon = 22
-		#limit = { 
-		#	civilized = yes
-		#}
-	}
-
-	armaments_focus = 
-	{
-		artillery = 18.3
-		small_arms = 18.3
-		ammunition = 18.3
-		canned_food = 18.3  
-		explosives = 18.3
-		fertilizer = 18.3
-		icon = 23
-		#limit = { 
-		#	civilized = yes
-		#}
-	}
-
-	consumer_focus = 
-	{
-		liquor = 18.3
-		wine = 18.3
-		glass = 18.3
-		icon = 24
-		#limit = { 
-		#	civilized = yes
-		#}
 	}
 }
 
@@ -281,5 +400,10 @@ party_loyalty_focus =
 		ideology = anarcho_liberal
 		loyalty_value = 0.001 # By that much pops will be more loyal
 		icon = 31
+	}
+	
+	ruling_party_focus = {
+		local_ruling_party_support = 0.25
+		icon = 4
 	}
 }
