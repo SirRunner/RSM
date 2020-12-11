@@ -203,7 +203,7 @@ promote_to =
 		}
 		modifier = {
 			factor = -100
-			officers = 0.002
+			officers = 0.0025
 		}		
 
 		modifier = {
@@ -247,17 +247,13 @@ promote_to =
 			}
 		}
 	}
-#	labourers = 
-#	{
-#		factor = 0.01
-#		modifier = {
-#			factor = 1.4
-#			not = { military_spending = 0.35 }
-#		}
-#	}
 
 	craftsmen = {
 		factor = 0.01
+		modifier = {
+				factor = -100
+				state_scope = { craftsmen = 0.40 }
+			}
 			modifier = {
 				factor = -5
 				not = { literacy = 0.1 }

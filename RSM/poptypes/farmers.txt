@@ -390,64 +390,8 @@ promote_to =
 				state_scope = { bureaucrats = 0.010 }
 			}
 			modifier = {
-				factor = -2
-				state_scope = { bureaucrats = 0.012 }
-			}
-			modifier = {
-				factor = -2
-				state_scope = { bureaucrats = 0.014 }
-			}
-			modifier = {
-				factor = -2
-				state_scope = { bureaucrats = 0.016 }
-			}
-			modifier = {
-				factor = -2
-				state_scope = { bureaucrats = 0.018 }
-			}
-			modifier = {
-				factor = -2
-				state_scope = { bureaucrats = 0.020 }
-			}
-			modifier = {
-				factor = -2
-				state_scope = { bureaucrats = 0.022 }
-			}
-			modifier = {
-				factor = -2
-				state_scope = { bureaucrats = 0.024 }
-			}
-			modifier = {
-				factor = -2
-				state_scope = { bureaucrats = 0.026 }
-			}
-			modifier = {
-				factor = -2
-				state_scope = { bureaucrats = 0.028 }
-			}
-			modifier = {
-				factor = -2
-				state_scope = { bureaucrats = 0.030 }
-			}
-			modifier = {
-				factor = -2
-				state_scope = { bureaucrats = 0.032 }
-			}
-			modifier = {
-				factor = -2
-				state_scope = { bureaucrats = 0.034 }
-			}
-			modifier = {
-				factor = -2
-				state_scope = { bureaucrats = 0.036 }
-			}
-			modifier = {
-				factor = -2
-				state_scope = { bureaucrats = 0.038 }
-			}
-			modifier = {
 				factor = -100
-				state_scope = { bureaucrats = 0.040 }
+				state_scope = { bureaucrats = 0.011 }
 			}
 		}
 		
@@ -690,6 +634,10 @@ promote_to =
 
 	craftsmen = {
 		factor = 0.01
+		modifier = {
+				factor = -100
+				state_scope = { craftsmen = 0.40 }
+			}
 			modifier = {
 				factor = -5
 				not = { literacy = 0.1 }
@@ -776,8 +724,6 @@ promote_to =
 				}
 		}
 	}
-
-
 	clergymen =
 	{
 		factor = 0.01
