@@ -6,15 +6,18 @@
  - Just letting you know they are there...
  - It should be noted that some (but not all) of them have been shared on Reddit...
  
+ ### UI Changes
+  - Added more national focuses
+ 
 ### Technology and Inventions
  - Added and changed a number of inventions and techs
  
 ### Industry
  - Added a new factory: Charcoal factory. It is made for players who do not have coal RGOs. It is **supposed** to be less efficient than the RGO, but I have not done that much balancing with it....
- - Turned the Canned Food factory into 4 different factories: Dried Meat factory, Bakery, Canned Fish factory, canned fruit factory
+ - Turned the Canned Food factory into 4 different factories: Dried Meat factory, Bakery, Canned Fish Factory, Canned Fruit Factory
  
 ### POPs
- - Changed POP assimilation and migration chances
+ - Changed POP assimilation, migration and promotion/demotion chances
 
 ### Military
  - added new unit: Mobile Artillery
