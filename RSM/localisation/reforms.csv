@@ -1,0 +1,31 @@
+;;;;;;;;;;;;;;;;;x
+no_meeting;Meetings Not Allowed;;;;;;;;;;;;;;;;;x
+yes_meeting;Meetings Allowed;;;;;;;;;;;;;;;;;x
+work_hours;Max. Workhours;;;;;;;;;;;;;;;;;x
+conscription;Conscription;;;;;;;;;;;;;;;;;x
+mandatory_service;Mandatory Service;;;;;;;;;;;;;;;;;x
+four_year_draft;4 Year Draft;;;;;;;;;;;;;;;;;x
+two_year_draft;2 Year Draft;;;;;;;;;;;;;;;;;x
+one_year_draft;1 Year Draft;;;;;;;;;;;;;;;;;x
+no_draft;No Draft;;;;;;;;;;;;;;;;;x
+border_policy;Border Policy;;;;;;;;;;;;;;;;;x
+closed_borders;Closed Borders;;;;;;;;;;;;;;;;;x
+quota_immigration;Quotas;;;;;;;;;;;;;;;;;x
+open_borders;Open Borders;;;;;;;;;;;;;;;;;x
+citizens_rights;Minority Rights;;;;;;;;;;;;;;;;;x
+primary_culture_only;Surpressed;;;;;;;;;;;;;;;;;x
+culture_voting_only;Discriminated;;;;;;;;;;;;;;;;;x
+all_voting_pops;Full;;;;;;;;;;;;;;;;;x
+religious_freedom;Religous Freedom;;;;;;;;;;;;;;;;;x
+religious_persecution;Persecution;;;;;;;;;;;;;;;;;x
+religious_discrimination;Discrimination;;;;;;;;;;;;;;;;;x
+religious_acceptance;Accepted;;;;;;;;;;;;;;;;;x
+child_labor;Child Labor;;;;;;;;;;;;;;;;;x
+child_labor_legal;Legal;;;;;;;;;;;;;;;;;x
+child_labor_restricted;Restricted;;;;;;;;;;;;;;;;;x
+child_labor_illegal;Illegal;;;;;;;;;;;;;;;;;x
+research_funding;Research Funding;;;;;;;;;;;;;;;;;x
+private_ventures_only;Only Private Ventures;;;;;;;;;;;;;;;;;x
+limited_state_sponsorship;Limited State Sponsorship;;;;;;;;;;;;;;;;;x
+extended_state_sponsorship;Extended State Sponsorship;;;;;;;;;;;;;;;;;x
+excellent_state_sponsorship;Excellent State Sponsorship;;;;;;;;;;;;;;;;;x

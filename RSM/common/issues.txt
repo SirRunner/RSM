@@ -357,6 +357,92 @@ political_reforms = {
 			global_immigrant_attract = 0.05
 		}
 	}
+	
+	conscription = {
+		next_step_only = yes
+		mandatory_service = {
+			mobilisation_size = 0.06
+			mobilisation_economy_impact = 1
+			land_unit_start_experience = 10
+			global_immigrant_attract = -0.1
+			education_efficiency_modifier = -0.01
+		}
+		four_year_draft = {
+			mobilisation_size = 0.04
+			mobilisation_economy_impact = 0.1
+			land_unit_start_experience = 5
+			global_immigrant_attract = -0.05
+		}
+		two_year_draft = {
+			mobilisation_size = 0.02
+			mobilisation_economy_impact = 0.05
+		}
+		one_year_draft = {
+			mobilisation_size = 0.01
+			global_immigrant_attract = 0.01
+			land_unit_start_experience = -2
+			allow = { 
+				OR = {
+					NOT = { war_policy = jingoism }
+					NOT = { war_policy = pro_military}
+				}
+			}
+		}
+		no_draft = {
+			global_immigrant_attract = 0.03
+			land_unit_start_experience = -5
+			allow = {
+				OR = {
+					NOT = { war_policy = jingoism }
+					NOT = { war_policy = pro_military}
+				}
+			}
+		}
+	}
+	
+	citizens_rights = {
+		next_step_only = yes
+		primary_culture_only = {
+			rules = { primary_culture_voting = yes }
+			non_accepted_pop_consciousness_modifier = 0.01
+			allow = {
+				citizenship_policy = residency 
+			}
+		}
+		culture_voting_only = {
+			rules = { culture_voting = yes }
+			global_assimilation_rate = 0.08
+		}
+		all_voting_pops = {
+			rules = { all_voting = yes }
+			non_accepted_pop_militancy_modifier = -0.01
+			global_assimilation_rate = 0.2
+			global_immigrant_attract = 0.08
+		}
+	}
+	
+	border_policy = {
+		next_step_only = yes
+		closed_borders = {
+			global_immigrant_attract = -8
+			badboy = 0.01
+			literacy_con_impact = -0.1
+			administrative_multiplier = 6
+			global_pop_militancy_modifier = 0.01
+			allow = {
+				vote_franschise = none_voting
+				NOT = { press_rights = free_press }
+				citizenship_policy = residency
+			}
+		}
+		quota_immigration = {
+			administrative_multiplier = 2
+			global_immigrant_attract = -0.02
+			core_pop_militancy_modifier = -0.01
+		}
+		open_borders = {
+		}
+	}
 }
 
 ##########################################
@@ -551,7 +637,59 @@ social_reforms = {
 			global_immigrant_attract = 0.04
 			administrative_multiplier = 3
 		}
+	}
+
+	child_labor = {
+		administrative = yes
+		next_step_only = yes
+		child_labor_legal = {
+			#global_population_growth = -0.001
+			education_efficiency_modifier = -0.1
+			factory_throughput = 0.1
+			artisan_throughput = 0.1
+			RGO_throughput = 0.25
+		}
+		
+		child_labor_restricted = {
+			education_efficiency_modifier = -0.03
+			poor_savings_modifier = 0.05
+			RGO_throughput = 0.05
+			artisan_throughput = 0.05
+		}
+		
+		child_labor_illegal = {
+			education_efficiency_modifier = 0.02
+			global_immigrant_attract = 0.05
+		}
+	}
+	
+	religious_freedom = {
+		next_step_only = yes
+		religious_persecution = {
+		}
+		
+		religious_discrimination = {
+		}
+		
+		religious_acceptance = {
+		}
 	}	
+	
+	research_funding = {
+		administrative = yes
+		next_step_only = yes
+		private_ventures_only = {
+		}
+		
+		limited_state_sponsorship = {
+		}
+		
+		extended_state_sponsorship = {
+		}
+		
+		excellent_state_sponsorship = {
+		}
+	}
 }
 
 economic_reforms = {
