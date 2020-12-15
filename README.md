@@ -11,7 +11,8 @@ I feel obligated to note and thank the modders from whom I have, for lack of a b
  - I have integrated a slightly modified version of [Kwizzle's Utility Mod](https://www.moddb.com/mods/kwizzles-utility-mod) (Utility Mod Decision and Events)
  - The army doctrine ideas I stole right off of Heart of Iron IV and a mod for that game, [Road to 56](https://steamcommunity.com/sharedfiles/filedetails/?id=820260968)
  - The base assimilation percentages (that can be seen by checking the POP tab) is a slightly modified version of those that the [Heirs to Aquitania](https://github.com/Savolainen5/The-Heirs-to-Aquitania) use. 
- - Many (but not all) of the cultures added and population changes that have occurred are from [HFM](https://github.com/SighPie/HFM)
+ - Many (but not all) of the cultures added and population changes that have occurred and some of the new social and political policies are from [HFM](https://github.com/SighPie/HFM)
+ - The Research Funding reform is from [End of a New Beginning](https://github.com/team-eoanb/EoaNB/tree/master) a mod for HOI 4.
 
 ## Installation Guide
  1. Click the green "Code" button and download the ZIP file.
