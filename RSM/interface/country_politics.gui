@@ -579,8 +579,8 @@ guiTypes = {
 			windowType = {
 				name = "slavery"
 				backGround =""
-				position = { x = 843 y = 451 }
-				size = { x=151 y=100 }
+				position = { x = 826 y = 73 }
+				size = { x=148 y=58 }
 				moveable = 0
 				dontRender = ""
 				horizontalBorder = "0"
@@ -590,17 +590,18 @@ guiTypes = {
 				iconType = {
 				 name = "politics_slavery"
 				 spriteType = "GFX_politics_slavery"
-				 position = { x= 6 y = 13 }
+				 position = { x= 30 y = 8 }
 				 Orientation = "UPPER_LEFT"
 			 }
 				
 				instantTextBoxType = { 
 					name = "reform_name"
-					position = { x = 39 y = 20 }
+					position = { x = 40 y = 16 }
 					font = "vic_18"
 					text = "REFORM_NAME"	
 					maxWidth = 100
-					maxHeight = 20	
+					maxHeight = 13
+					format = centre
 				}
 			}
 			
@@ -1712,7 +1713,7 @@ guiTypes = {
 		
 		guiButtonType = {
 			name = "reform_option"
-			position = { x = 166 y = 9 }
+			position = { x = 33 y = 40 }
 			quadTextureSprite ="GFX_politics_reform_select"
 			buttonText = ""
 			buttonFont = "Arial14"
@@ -1721,13 +1722,13 @@ guiTypes = {
 		iconType = {
 			name = "selected"
 			spriteType = "GFX_politics_reform_selected"
-			position = { x = 148 y = 8 }
+			position = { x = 15 y = 38 }
 			Orientation = "UPPER_LEFT"
 		}
 		
 		instantTextBoxType = { 
 			name = "reform_name"
-			position = { x = 169 y = 10 }
+			position = { x = 36 y = 39 }
 			font = "Arial12_black"
 			text = "REFORM_OPTION_NAME"	
 			maxWidth = 130
