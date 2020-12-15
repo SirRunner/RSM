@@ -181,27 +181,12 @@ diplomatic_focus =
 		has_flashpoint = yes
 		own_provinces = no
 
-		diplomatic_points_modifier = -0.1
-		flashpoint_tension = 0.15
+		flashpoint_tension = 0.25
 
 		limit = {
 			is_core = THIS
 		}
 	}
-	
-	# increase_noncore_tension = {
-		# icon = NULL
-		# has_flashpoint = yes
-		# own_provinces = no
-		
-		# diplomatic_points_modifier = -0.1
-		# flashpoint_tension = 0.05
-		# badboy = 0.01
-		
-		# limit = {
-			# NOT = { is_core = THIS }
-		# }
-	# }
 }
 
 population_focus =
