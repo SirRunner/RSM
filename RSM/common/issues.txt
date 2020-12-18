@@ -17,6 +17,11 @@ party_issues = {
 			max_tax = 0.5
 			factory_owner_cost = 0.3
 			factory_output = 0.05
+			import_cost = -0.05
+			max_loan_modifier = -0.5
+			mobilisation_economy_impact = 0.05
+			tax_efficiency = -0.01
+			commerce_tech_research_bonus = 0.1
 			
 			rules = {
 				build_factory = no
@@ -39,7 +44,10 @@ party_issues = {
 			}
 		}
 		interventionism = {
+			min_tax = 0.10
+			max_tax = 0.60
 			factory_owner_cost = 0.5
+			commerce_tech_research_bonus = 0.05
 			
 			rules = {
 				build_factory = no
@@ -65,7 +73,10 @@ party_issues = {
 		}
 		state_capitalism = {
 			min_tax = 0.25
+			max_tax = 0.75
 			factory_owner_cost = 0.6
+			commerce_tech_research_bonus = 0.01
+			
 			rules = {
 				build_factory = yes
 				expand_factory = yes
@@ -86,9 +97,12 @@ party_issues = {
 		}
 		planned_economy = {
 			min_tax = 0.5
-			
 			factory_throughput = 0.05
 			factory_owner_cost = -1	#negative costs, can't build.
+			import_cost = 0.05
+			mobilisation_economy_impact = -0.05
+			min_tariff = 0.05
+			
 			rules = {
 				build_factory = yes
 				expand_factory = yes
@@ -108,52 +122,69 @@ party_issues = {
 			}
 		}
 	}
-	
 	religious_policy = {
 		pro_atheism = {
-			#no effect
+			global_pop_consciousness_modifier = 0.05
 		}
 		secularized = {
-			#no effect
+			global_pop_consciousness_modifier = 0.02
 		}
 		pluralism = {
-			#no effect
 		}
 		moralism = {
-			#no effect
+			global_pop_consciousness_modifier = -0.02
 		}
 	}
 	citizenship_policy = {
 		residency = {
-			rules = { primary_culture_voting = yes }
+			non_accepted_pop_consciousness_modifier = 0.01
+			non_accepted_pop_militancy_modifier = 0.01
+			core_pop_militancy_modifier = -0.1
+			core_pop_consciousness_modifier = -0.1
+			max_social_spending = 0.5
 		}
 		limited_citizenship = {
-			rules = { culture_voting = yes }
+			min_social_spending = 0.25
+			max_social_spending = 0.75
 			global_assimilation_rate = 0.10
 		}
 		full_citizenship = {
-			rules = { all_voting = yes }
 			global_assimilation_rate = 0.25
+			min_social_spending = 0.5
+			non_accepted_pop_consciousness_modifier = -0.01
+			non_accepted_pop_militancy_modifier = -0.01
 		}
 	}
 	war_policy = {
 		jingoism = {
-			max_military_spending = 1.0
+			diplomatic_points_modifier = -0.1
+			influence_modifier = -0.1
 			supply_consumption = 0.1
 			war_exhaustion_effect = 0.5
 			is_jingoism = yes
-			cb_generation_speed_modifier = 0.3
+			cb_generation_speed_modifier = 0.5
 			mobilization_impact = 4
 			org_regain = 0.5
 			reinforce_speed = 0.5
+			land_organisation = 0.05
+			naval_organisation = 0.05
+			leadership_modifier = 0.25
+			min_military_spending = 0.5
+			mobilization_size = 0.02
+			army_tech_research_bonus = 0.1
+			navy_tech_research_bonus = 0.1
 		}
 		pro_military = {
-			max_military_spending = 1.0
+			min_military_spending = 0.25
 			war_exhaustion_effect = 0.7
 			cb_generation_speed_modifier = 0.2
 			mobilization_impact = 3
 			org_regain = 0.25
 			reinforce_speed = 0.25
+			leadership_modifier = 0.1
+			mobilization_size = 0.01
+			army_tech_research_bonus = 0.05
+			navy_tech_research_bonus = 0.05
 		}
 		anti_military = {
 			max_military_spending = 0.75
@@ -163,15 +194,29 @@ party_issues = {
 			mobilization_impact = 2
 			org_regain = -0.25
 			reinforce_speed = -0.25
+			land_organisation = -0.05
+			naval_organisation = -0.05
+			leadership_modifier = -0.1
+			mobilization_size = -0.1
+			army_tech_research_bonus = -0.05
+			navy_tech_research_bonus = -0.05
 		}
 		pacifism = {
+			diplomatic_points_modifier = 0.1
+			influence_modifier = 0.1
 			max_military_spending = 0.5
 			supply_consumption = -0.5
 			war_exhaustion_effect = 1.5
-			cb_generation_speed_modifier = -0.4
+			cb_generation_speed_modifier = -0.3
 			mobilization_impact = 1
 			org_regain = -0.5
 			reinforce_speed = -0.5
+			land_organisation  = -0.1
+			naval_organisation = -0.1
+			leadership_modifier = -0.25
+			mobilisation_size = -0.2
+			army_tech_research_bonus = -0.1
+			navy_tech_research_bonus = -0.1
 		}
 	}
 }
@@ -422,9 +467,11 @@ political_reforms = {
 	}
 	
 	border_policy = {
+		administrative = yes
 		next_step_only = yes
 		closed_borders = {
-			global_immigrant_attract = -8
+			# TODO: This breaks immigration because every country has it
+			# global_immigrant_attract = -8
 			badboy = 0.01
 			literacy_con_impact = -0.1
 			administrative_multiplier = 6
@@ -643,7 +690,6 @@ social_reforms = {
 		administrative = yes
 		next_step_only = yes
 		child_labor_legal = {
-			#global_population_growth = -0.001
 			education_efficiency_modifier = -0.1
 			factory_throughput = 0.1
 			artisan_throughput = 0.1

@@ -2,6 +2,7 @@
 
 # Uses all 'modifiers' possible thats exported as a Modifier.
 
+# TODO: Add Atheistic "religion"
 christian = {
 
 	catholic = {
