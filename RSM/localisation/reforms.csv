@@ -17,10 +17,10 @@ citizens_rights;Minority Rights;;;;;;;;;;;;;;;;;x
 primary_culture_only;Surpressed;;;;;;;;;;;;;;;;;x
 culture_voting_only;Discriminated;;;;;;;;;;;;;;;;;x
 all_voting_pops;Full;;;;;;;;;;;;;;;;;x
-religious_freedom;Religous Freedom;;;;;;;;;;;;;;;;;x
-religious_persecution;Persecution;;;;;;;;;;;;;;;;;x
-religious_discrimination;Discrimination;;;;;;;;;;;;;;;;;x
-religious_acceptance;Accepted;;;;;;;;;;;;;;;;;x
+population_growth;Population Growth;;;;;;;;;;;;;;;;;x
+encouraged_growth;Encouraged;;;;;;;;;;;;;;;;;x
+stagnation;Stagnation;;;;;;;;;;;;;;;;;x
+restricted_growth;Restricted;;;;;;;;;;;;;;;;;x
 child_labor;Child Labor;;;;;;;;;;;;;;;;;x
 child_labor_legal;Legal;;;;;;;;;;;;;;;;;x
 child_labor_restricted;Restricted;;;;;;;;;;;;;;;;;x
