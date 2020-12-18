@@ -643,14 +643,6 @@ emigration_chance =
 			country = { vote_franschise = universal_voting }
 		}
 	}
-	
-	modifier = {
-		factor = -0.5
-		OR = {
-			is_primary_culture = THIS
-			is_accepted_culture = THIS
-		}
-	}
 
 	modifier = {
 		factor = -2.0
