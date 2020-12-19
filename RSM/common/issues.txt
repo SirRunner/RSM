@@ -221,6 +221,7 @@ party_issues = {
 
 # TODO: Go through POP files and add to the issues
 # TODO: Make closed borders actually work
+# TODO: Increase Bureaucrat cap to 2%
 
 ##########################################
 # Political reforms.
