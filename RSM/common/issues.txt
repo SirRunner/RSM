@@ -44,8 +44,7 @@ party_issues = {
 			}
 		}
 		interventionism = {
-			min_tax = 0.10
-			max_tax = 0.60
+			max_tax = 0.75
 			factory_owner_cost = 0.5
 			commerce_tech_research_bonus = 0.05
 			
@@ -73,7 +72,6 @@ party_issues = {
 		}
 		state_capitalism = {
 			min_tax = 0.25
-			max_tax = 0.75
 			factory_owner_cost = 0.6
 			commerce_tech_research_bonus = 0.01
 			
@@ -220,6 +218,9 @@ party_issues = {
 		}
 	}
 }
+
+# TODO: Go through POP files and add to the issues
+# TODO: Make closed borders actually work
 
 ##########################################
 # Political reforms.
