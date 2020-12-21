@@ -19,8 +19,14 @@ press_rights = free_press
 trade_unions = all_trade_unions
 voting_system = first_past_the_post
 political_parties = gerrymandering
+conscription = mandatory_service
+citizen_rights = primary_culture_only
+border_policy = open_borders
 
 # Social Reforms
+child_labor = child_labor_legal
+population_growth = encouraged_growth
+research_funding = private_ventures_only
 wage_reform = trinket_wage
 work_hours = twelve_hours
 safety_regulations = trinket_safety
@@ -38,13 +44,4 @@ upper_house = {
 	anarcho_liberal = 5
 	socialist = 0
 	communist = 0
-}
-
-1861.1.1 = {
-	oob = "/1861/QUE_oob.txt"
-}
-1861.1.1 = {
-# Technologies
-
-#Inventions
 }

@@ -18,6 +18,7 @@ upper_house = {
 	communist = 0
 }
 
+# Political Reforms
 slavery = yes_slavery
 upper_house_composition = state_equal_weight
 vote_franschise = universal_weighted_voting
@@ -26,7 +27,14 @@ press_rights = free_press
 trade_unions = no_trade_unions
 voting_system = first_past_the_post
 political_parties = gerrymandering
+conscription = mandatory_service
+citizen_rights = primary_culture_only
+border_policy = open_borders
 
+# Social Reforms
+child_labor = child_labor_legal
+population_growth = encouraged_growth
+research_funding = private_ventures_only
 wage_reform = no_minimum_wage
 work_hours = no_work_hour_limit
 safety_regulations = no_safety
@@ -34,8 +42,3 @@ health_care = no_health_care
 unemployment_subsidies = no_subsidies
 pensions = no_pensions 
 school_reforms = low_schools
-
-1861.1.1 = {
-	oob = "/1861/CHE_oob.txt"
-	religion = protestant
-}

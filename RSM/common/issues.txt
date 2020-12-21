@@ -220,8 +220,8 @@ party_issues = {
 }
 
 # TODO: Go through POP files and add to the issues
-# TODO: Make closed borders actually work
 # TODO: Increase Bureaucrat cap to 2%
+# TODO: Add descriptions for new reforms
 
 ##########################################
 # Political reforms.
@@ -479,9 +479,7 @@ political_reforms = {
 		administrative = yes
 		next_step_only = yes
 		closed_borders = {
-			# TODO: This breaks immigration because every country has it
-			# Actually make it so the country cannot receive immigrants or have emmigration
-			# global_immigrant_attract = -8
+			global_immigrant_attract = -8
 			badboy = 0.01
 			literacy_con_impact = -0.1
 			administrative_multiplier = 6

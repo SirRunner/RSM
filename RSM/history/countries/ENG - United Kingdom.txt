@@ -15,7 +15,6 @@ civilized = yes
 #GreaterPowers = prestige
 prestige = 100
 
-
 # Political reforms
 slavery = no_slavery
 upper_house_composition = appointed
@@ -25,8 +24,14 @@ press_rights = censored_press
 trade_unions = non_socialist
 voting_system = first_past_the_post
 political_parties = non_secret_ballots
+conscription = mandatory_service
+citizen_rights = primary_culture_only
+border_policy = open_borders
 
 # Social Reforms
+child_labor = child_labor_legal
+population_growth = encouraged_growth
+research_funding = private_ventures_only
 wage_reform = no_minimum_wage
 work_hours = no_work_hour_limit
 safety_regulations = trinket_safety
@@ -41,34 +46,6 @@ flintlock_rifles = 1
 bronze_muzzle_loaded_artillery = 1
 military_staff_system = 1
 army_command_principle = 1
-
-# strategic_mobility = 1
-# muzzle_loaded_rifles = 1
-# iron_muzzle_loaded_artillery = 1
-# military_plans = 1
-# army_professionalism = 1
-# point_defense_system = 1
-# breech_loaded_rifles = 1
-# iron_breech_loaded_artillery = 1
-# military_statistics = 1
-# army_decision_making = 1
-# deep_defense_system = 1
-# machine_guns = 1
-# steel_breech_loaded_artillery = 1
-# military_logistics = 1
-# army_risk_management = 1
-# infiltration = 1
-# bolt_action_rifles = 1
-# indirect_artillery_fire = 1
-# military_directionism = 1
-# army_nco_training = 1
-# modern_army_doctrine = 1
-# modern_divisional_structure = 1
-# heavy_armament_dunno = 1
-# aeronautics = 1
-# army_nco_training = 1
-# great_war_experience = 1
-
 post_nelsonian_thought = 1
 clipper_design = 1
 steamers = 1
