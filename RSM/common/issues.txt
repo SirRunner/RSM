@@ -539,32 +539,32 @@ social_reforms = {
 		no_work_hour_limit = {
 		}
 		fourteen_hours = {
-			factory_throughput = -0.05
-			rgo_throughput = -0.05
+			factory_throughput = -0.02
+			rgo_throughput = -0.02
 			poor_luxury_needs = -0.05
 			middle_luxury_needs = -0.05
 			administrative_multiplier = 1
 			global_immigrant_attract = 0.01
 		}
 		twelve_hours = {
-			factory_throughput = -0.10
-			rgo_throughput = -0.10
+			factory_throughput = -0.03
+			rgo_throughput = -0.03
 			poor_luxury_needs = -0.10
 			middle_luxury_needs = -0.10
 			administrative_multiplier = 2
 			global_immigrant_attract = 0.02
 		}
 		ten_hours = {
-			factory_throughput = -0.15
-			rgo_throughput = -0.15
+			factory_throughput = -0.04
+			rgo_throughput = -0.04
 			poor_luxury_needs = -0.15
 			middle_luxury_needs = -0.15
 			administrative_multiplier = 3
 			global_immigrant_attract = 0.03
 		}
 		eight_hours = {
-			factory_throughput = -0.20
-			rgo_throughput = -0.20
+			factory_throughput = -0.05
+			rgo_throughput = -0.05
 			poor_luxury_needs = -0.20
 			middle_luxury_needs = -0.20
 			administrative_multiplier = 4
@@ -579,8 +579,8 @@ social_reforms = {
 		}
 		trinket_safety = {
 			factory_cost = 0.25
-			factory_output = -0.05
-			rgo_output = -0.05
+			factory_output = -0.02
+			rgo_output = -0.02
 			rich_everyday_needs = -0.05
 			middle_everyday_needs = -0.05
 			poor_everyday_needs = -0.05
@@ -589,8 +589,8 @@ social_reforms = {
 		}
 		low_safety = {
 			factory_cost = 0.50
-			factory_output = -0.1
-			rgo_output = -0.1
+			factory_output = -0.03
+			rgo_output = -0.03
 			rich_everyday_needs = -0.10
 			middle_everyday_needs = -0.10
 			poor_everyday_needs = -0.10
@@ -599,8 +599,8 @@ social_reforms = {
 		}
 		acceptable_safety = {
 			factory_cost = 0.75
-			factory_output = -0.15
-			rgo_output = -0.15
+			factory_output = -0.04
+			rgo_output = -0.04
 			rich_everyday_needs = -0.15
 			middle_everyday_needs = -0.15
 			poor_everyday_needs = -0.15
@@ -609,8 +609,8 @@ social_reforms = {
 		}
 		good_safety = {
 			factory_cost = 1.0
-			factory_output = -0.2
-			rgo_output = -0.2
+			factory_output = -0.05
+			rgo_output = -0.05
 			rich_everyday_needs = -0.20
 			middle_everyday_needs = -0.20
 			poor_everyday_needs = -0.20
